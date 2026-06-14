@@ -1,0 +1,94 @@
+---
+layout: base.njk
+---
+{% set titleText = title or Title or page.fileSlug %}
+{% set img = image | imageDetailUrl %}
+{% set srcset = image | imageSrcset %}
+{% set dateText = page | dateRange %}
+{% set dimensionText = page.data | dimensions %}
+{% macro valueList(value, lookup) %}
+  {% set values = value | asArray %}
+  {% if values.length > 1 %}
+    <ul class="plain-list">
+      {% for v in values %}<li>{% if lookup %}{{ v | labelFor(lookup) }}{% else %}{{ v }}{% endif %}</li>{% endfor %}
+    </ul>
+  {% elif values.length == 1 %}
+    {% if lookup %}{{ values[0] | labelFor(lookup) }}{% else %}{{ values[0] }}{% endif %}
+  {% else %}
+    <span class="empty-value">Not recorded</span>
+  {% endif %}
+{% endmacro %}
+{% macro row(label, value, lookup) %}
+  <div>
+    <dt>{{ label }}</dt>
+    <dd>{{ valueList(value, lookup) }}</dd>
+  </div>
+{% endmacro %}
+<article class="detail-view" aria-labelledby="item-title">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="/">All images</a><span aria-hidden="true">/</span><span>{{ titleText }}</span>
+  </nav>
+
+  <div class="detail-layout">
+    <figure class="detail-image">
+      {% if img %}
+        <img src="{{ img }}"{% if srcset %} srcset="{{ srcset }}" sizes="(min-width: 900px) 45vw, 100vw"{% endif %} alt="{{ titleText }}">
+      {% else %}
+        <div class="placeholder-image placeholder-large" role="img" aria-label="No image available for {{ titleText }}">No image available</div>
+      {% endif %}
+    </figure>
+
+    <div class="detail-copy">
+      <p class="eyebrow">Catalogue item</p>
+      <h1 id="item-title">{{ titleText }}</h1>
+
+      <section class="tab-card" data-tabs aria-label="Catalogue item details">
+        <div class="tab-list" role="tablist" aria-label="Detail sections">
+          <button id="tab-overview" class="tab-button" type="button" role="tab" aria-selected="true" aria-controls="panel-overview">Overview</button>
+          <button id="tab-inscriptions" class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="panel-inscriptions" tabindex="-1">Inscriptions</button>
+          <button id="tab-related" class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="panel-related" tabindex="-1">Related</button>
+          <button id="tab-literature" class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="panel-literature" tabindex="-1">Literature</button>
+        </div>
+
+        <div id="panel-overview" class="tab-panel" role="tabpanel" aria-labelledby="tab-overview">
+          <dl class="metadata-list">
+            {{ row('Title', title) }}
+            {{ row('Creator', creator) }}
+            {{ row('Former attribution', former_attribution or formerattribution) }}
+            {{ row('Date', dateText) }}
+            <div>
+              <dt>Location</dt>
+              <dd>{{ valueList(location, lookups.locations) }}{% if location_extra %}<span class="field-note">{{ location_extra }}</span>{% endif %}</dd>
+            </div>
+            {{ row('Medium', medium) }}
+            {{ row('Dimensions', dimensionText) }}
+            {{ row('Classification', classification) }}
+            {{ row('Collection', collection) }}
+            {{ row('Credit line', credit_line or creditline) }}
+          </dl>
+        </div>
+
+        <div id="panel-inscriptions" class="tab-panel" role="tabpanel" aria-labelledby="tab-inscriptions" hidden>
+          <dl class="metadata-list">
+            {{ row('Signatures', signatures) }}
+            {{ row('Inscriptions', inscriptions) }}
+          </dl>
+        </div>
+
+        <div id="panel-related" class="tab-panel" role="tabpanel" aria-labelledby="tab-related" hidden>
+          <dl class="metadata-list">
+            {{ row('Bundles', bundle or bundles, lookups.bundles) }}
+            {{ row('Iconclass', iconclass, lookups.iconclasses) }}
+            {{ row('Subjects', subject or subjects, lookups.subjects) }}
+          </dl>
+        </div>
+
+        <div id="panel-literature" class="tab-panel" role="tabpanel" aria-labelledby="tab-literature" hidden>
+          <div class="prose-value">
+            {% if literature %}{{ literature | safe | nl2br }}{% else %}<p class="empty-value">No literature recorded.</p>{% endif %}
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</article>

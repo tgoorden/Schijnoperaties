@@ -1,0 +1,24 @@
+<ol class="card-grid" data-card-grid>
+  {% for item in items %}
+    {% set titleText = item | titleFor %}
+    {% set img = item.data.image | imageDetailUrl %}
+    {% set srcset = item.data.image | imageSrcset %}
+    <li class="image-card"
+        data-card
+        data-date-start="{{ item.data | dataValue(['date_start', 'datestart']) }}">
+      <a href="{{ item.url }}" class="card-link">
+        <figure>
+          {% if img %}
+            <img src="{{ img }}"{% if srcset %} srcset="{{ srcset }}" sizes="(min-width: 1200px) 18rem, (min-width: 800px) 25vw, 50vw"{% endif %} alt="{{ titleText }}" loading="lazy" decoding="async">
+          {% else %}
+            <div class="placeholder-image" role="img" aria-label="No thumbnail available for {{ titleText }}">No image</div>
+          {% endif %}
+          <figcaption>
+            <strong>{{ titleText }}</strong>
+            <span>{{ item | dateRange }}</span>
+          </figcaption>
+        </figure>
+      </a>
+    </li>
+  {% endfor %}
+</ol>

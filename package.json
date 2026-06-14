@@ -1,0 +1,24 @@
+{
+  "name": "xls-to-11ty-datafiles",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "xls-to-11ty": "./bin/xls-to-11ty.mjs"
+  },
+  "scripts": {
+    "convert": "node ./bin/xls-to-11ty.mjs",
+    "build": "eleventy",
+    "start": "eleventy --serve",
+    "images": "node ./bin/generate-images.mjs"
+  },
+  "dependencies": {
+    "exceljs": "^4.4.0",
+    "js-yaml": "^4.1.0",
+    "slugify": "^1.6.6",
+    "sharp": "^0.33.5"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.5"
+  }
+}

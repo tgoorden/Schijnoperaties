@@ -1,0 +1,9 @@
+export default {
+  title: 'Medieval Imagery Index',
+  description: 'A research-oriented catalogue for browsing historical imagery, iconography, subjects, and related visual motifs.',
+  collectionName: 'metadata',
+  taxonomies: [
+    { key: 'locations', label: 'Locations', singular: 'Location', field: 'location', aliases: ['location'], data: 'locations', url: '/locations/' },
+    { key: 'subjects', label: 'Subjects', singular: 'Subject', field: 'subject', aliases: ['subject', 'subjects'], data: 'subjects', url: '/subjects/' }
+  ]
+};

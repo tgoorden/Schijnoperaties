@@ -1,0 +1,15 @@
+---
+layout: base.njk
+title: All images
+---
+<section class="page-heading page-heading-with-action" aria-labelledby="page-title">
+  <div>
+    <p class="eyebrow">Catalogue</p>
+    <h1 id="page-title">All images</h1>
+    <p>Browse the full metadata collection as thumbnails. The default order is ascending by <code>date_start</code>.</p>
+  </div>
+  <button class="button button-secondary sort-toggle" type="button" data-reverse-grid aria-pressed="false">Ascending</button>
+</section>
+
+{% set items = collections.metadata | sortByDate('asc') %}
+{% include "components/card-grid.njk" %}

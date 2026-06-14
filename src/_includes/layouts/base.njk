@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if title %}{{ title }} · {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ description or site.description }}">
+  <link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div class="site-shell">
+    <aside class="site-sidebar" aria-label="Primary navigation">
+      <a class="brand" href="/" aria-label="{{ site.title }} home">
+        <span class="brand-mark" aria-hidden="true">✦</span>
+        <span>
+          <strong>{{ site.title }}</strong>
+          <small>Historical image catalogue</small>
+        </span>
+      </a>
+      <nav class="nav-list" aria-label="Collection navigation">
+        <a href="/">All images</a>
+        {% for taxonomy in site.taxonomies %}
+          <a href="{{ taxonomy.url }}">{{ taxonomy.label }}</a>
+        {% endfor %}
+      </nav>
+    </aside>
+
+    <div class="site-main">
+      <header class="site-header">
+        <p class="eyebrow">Research resource</p>
+        <p>{{ site.description }}</p>
+      </header>
+      <main id="main-content" tabindex="-1">
+        {{ content | safe }}
+      </main>
+    </div>
+  </div>
+  <script src="/assets/js/catalogue.js" defer></script>
+</body>
+</html>
