@@ -1,5 +1,6 @@
 export default {
-  title: 'Medieval Imagery Index',
+  title: 'Fictional Healing',
+  subtitle: 'Iconographic Database',
   description: 'A research-oriented catalogue for browsing historical imagery, iconography, subjects, and related visual motifs.',
   collectionName: 'metadata',
   taxonomies: [

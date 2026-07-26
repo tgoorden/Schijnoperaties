@@ -10,27 +10,33 @@
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
   <div class="site-shell">
-    <aside class="site-sidebar" aria-label="Primary navigation">
-      <a class="brand" href="/" aria-label="{{ site.title }} home">
-        <span class="brand-mark" aria-hidden="true">✦</span>
-        <span>
+    <header class="site-header">
+      <div class="masthead">
+        <a class="brand" href="/" aria-label="{{ site.title }} home">
+          <span>
           <strong>{{ site.title }}</strong>
-          <small>Historical image catalogue</small>
-        </span>
-      </a>
-      <nav class="nav-list" aria-label="Collection navigation">
-        <a href="/">All images</a>
-        {% for taxonomy in site.taxonomies %}
-          <a href="{{ taxonomy.url }}">{{ taxonomy.label }}</a>
-        {% endfor %}
-      </nav>
-    </aside>
+            <small>{{ site.subtitle }}</small>
+          </span>
+        </a>
+
+        <a class="about-link" href="/about/">About</a>
+
+        <div class="header-tools">
+          <nav class="nav-list" aria-label="Collection navigation">
+            <a href="/">All images</a>
+            {% for taxonomy in site.taxonomies %}
+              <a href="{{ taxonomy.url }}">{{ taxonomy.label }}</a>
+            {% endfor %}
+          </nav>
+          <div class="search-placeholder" role="search">
+            <label class="visually-hidden" for="catalogue-search">Search the catalogue</label>
+            <input id="catalogue-search" type="search" placeholder="Search" autocomplete="off">
+          </div>
+        </div>
+      </div>
+    </header>
 
     <div class="site-main">
-      <header class="site-header">
-        <p class="eyebrow">Research resource</p>
-        <p>{{ site.description }}</p>
-      </header>
       <main id="main-content" tabindex="-1">
         {{ content | safe }}
       </main>

@@ -1,0 +1,13 @@
+---
+layout: base.njk
+title: About
+description: About the Fictional Healing Iconographic Database.
+---
+
+# About
+
+The Fictional Healing Iconographic Database brings together historical images
+of imagined cures, transformations, and bodily interventions.
+
+This page is a placeholder. A fuller account of the project, its contributors,
+research context, and use of the catalogue will be added later.

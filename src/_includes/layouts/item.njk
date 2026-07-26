@@ -26,7 +26,7 @@ layout: base.njk
 {% endmacro %}
 <article class="detail-view" aria-labelledby="item-title">
   <nav class="breadcrumb" aria-label="Breadcrumb">
-    <a href="/">All images</a><span aria-hidden="true">/</span><span>{{ titleText }}</span>
+    <a href="/">All images</a><span aria-hidden="true">/</span><span id="item-title">{{ titleText }}</span>
   </nav>
 
   <div class="detail-layout">
@@ -39,9 +39,6 @@ layout: base.njk
     </figure>
 
     <div class="detail-copy">
-      <p class="eyebrow">Catalogue item</p>
-      <h1 id="item-title">{{ titleText }}</h1>
-
       <section class="tab-card" data-tabs aria-label="Catalogue item details">
         <div class="tab-list" role="tablist" aria-label="Detail sections">
           <button id="tab-overview" class="tab-button" type="button" role="tab" aria-selected="true" aria-controls="panel-overview">Overview</button>
