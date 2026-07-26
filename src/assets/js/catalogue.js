@@ -41,4 +41,31 @@
       button.textContent = descending ? 'Descending' : 'Ascending';
     });
   });
+
+  document.querySelectorAll('form.search-placeholder').forEach((form) => {
+    const input = form.querySelector('input[name="q"]');
+    const button = form.querySelector('button[type="submit"]');
+    if (!input) return;
+
+    const openSearch = () => {
+      const query = input.value.trim();
+      const target = new URL('/search/', window.location.origin);
+      if (query) target.searchParams.set('q', query);
+      window.location.assign(target);
+    };
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      openSearch();
+    });
+    input.addEventListener('keydown', (event) => {
+      if (event.key !== 'Enter') return;
+      event.preventDefault();
+      openSearch();
+    });
+    button?.addEventListener('click', (event) => {
+      event.preventDefault();
+      openSearch();
+    });
+  });
 })();

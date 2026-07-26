@@ -1,0 +1,25 @@
+---
+layout: base.njk
+title: Search
+searchPage: true
+permalink: /search/index.html
+---
+<section class="page-heading" aria-labelledby="page-title">
+  <p class="eyebrow">Catalogue</p>
+  <h1 id="page-title">Search</h1>
+</section>
+
+<form class="search-page-form" role="search" action="/search/" method="get" data-search-form>
+  <label for="search-page-query">Search the catalogue</label>
+  <div>
+    <input id="search-page-query" name="q" type="search" autocomplete="off" required>
+    <button class="button" type="submit">Search</button>
+  </div>
+</form>
+
+<p class="search-status" data-search-status aria-live="polite">Enter a search term to search the catalogue.</p>
+<ol class="card-grid search-results" data-search-results></ol>
+
+<noscript>
+  <p>This local search requires JavaScript.</p>
+</noscript>

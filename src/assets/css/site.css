@@ -114,6 +114,35 @@ code { padding: 0.1em 0.3em; border-radius: 0.35em; background: #efe5d6; }
   color: var(--ink);
   font: inherit;
 }
+.search-page-form {
+  max-width: 44rem;
+  margin-bottom: 1rem;
+}
+.search-page-form > label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 700;
+}
+.search-page-form > div {
+  display: flex;
+  gap: 0.65rem;
+}
+.search-page-form input {
+  min-width: 0;
+  flex: 1;
+  border: 1px solid var(--ink);
+  border-radius: 0;
+  padding: 0.65rem 0.75rem;
+  background: var(--paper);
+  color: var(--ink);
+  font: inherit;
+}
+.search-status {
+  min-height: 1.55em;
+  margin: 0 0 1rem;
+  color: var(--muted);
+}
+.search-results:empty { display: none; }
 .visually-hidden {
   position: absolute;
   width: 1px;

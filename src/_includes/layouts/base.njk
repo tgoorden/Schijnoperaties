@@ -28,10 +28,11 @@
               <a href="{{ taxonomy.url }}">{{ taxonomy.label }}</a>
             {% endfor %}
           </nav>
-          <div class="search-placeholder" role="search">
+          <form class="search-placeholder" role="search" action="/search/" method="get">
             <label class="visually-hidden" for="catalogue-search">Search the catalogue</label>
-            <input id="catalogue-search" type="search" placeholder="Search" autocomplete="off">
-          </div>
+            <input id="catalogue-search" name="q" type="search" placeholder="Search" autocomplete="off">
+            <button class="visually-hidden" type="submit">Search</button>
+          </form>
         </div>
       </div>
     </header>
@@ -43,5 +44,6 @@
     </div>
   </div>
   <script src="/assets/js/catalogue.js" defer></script>
+  {% if searchPage %}<script src="/assets/js/search.js" defer></script>{% endif %}
 </body>
 </html>
