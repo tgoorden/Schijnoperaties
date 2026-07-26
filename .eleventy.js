@@ -74,14 +74,67 @@ function dateRange(itemOrData) {
   return start || end || 'Date unknown';
 }
 
-function dimensions(data) {
-  const h = dataValue(data, ['dimensions_height', 'dimensionsheight']);
-  const w = dataValue(data, ['dimensions_width', 'dimensionswidth']);
-  const d = dataValue(data, ['dimensions_diameter', 'dimensionsdiameter']);
-  const parts = [];
-  if (h || w) parts.push([h && `H ${h}`, w && `W ${w}`].filter(Boolean).join(' × '));
-  if (d) parts.push(`Diameter ${d}`);
-  return parts.join('; ');
+function dateComposite(startPrefix, startValue, endPrefix, endValue) {
+  const start = [startPrefix, startValue].filter(value => value !== undefined && value !== null && value !== '').join(' ');
+  const end = [endPrefix, endValue].filter(value => value !== undefined && value !== null && value !== '').join(' ');
+  if (start && end && start !== end) return `${start}–${end}`;
+  return start || end || 'Date unknown';
+}
+
+function dimensions(heightOrData, width) {
+  const isData = heightOrData && typeof heightOrData === 'object';
+  const h = isData ? dataValue(heightOrData, ['dimensions_height', 'dimensionsheight']) : heightOrData;
+  const w = isData ? dataValue(heightOrData, ['dimensions_width', 'dimensionswidth']) : width;
+  if (h && w) return `${h} x ${w}`;
+  return h || w || '';
+}
+
+function relationValues(data, field) {
+  const aliases = field === 'artistic_relations'
+    ? ['artistic_relations', 'Artistic_relations']
+    : ['related_items', 'Related_items'];
+  return valuesFor(data, aliases).map(String);
+}
+
+function relationPeers(items, currentPage, field) {
+  const current = (items || []).find(item => item.url === currentPage?.url);
+  if (!current) return [];
+  const relationIds = new Set(relationValues(current.data, field));
+  if (!relationIds.size) return [];
+
+  return sortByDate((items || []).filter(item => {
+    if (item.url === current.url) return false;
+    return relationValues(item.data, field).some(id => relationIds.has(id));
+  }));
+}
+
+function escapeHtml(value) {
+  return String(value ?? '').replace(/[&<>"']/g, ch => ({
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#39;'
+  })[ch]);
+}
+
+function linkifyUrls(value) {
+  const text = String(value ?? '');
+  const urlPattern = /https?:\/\/[^\s<]+/g;
+  let result = '';
+  let cursor = 0;
+
+  for (const match of text.matchAll(urlPattern)) {
+    const rawUrl = match[0];
+    const trailing = rawUrl.match(/[.,;:!?]+$/)?.[0] || '';
+    const url = trailing ? rawUrl.slice(0, -trailing.length) : rawUrl;
+    result += escapeHtml(text.slice(cursor, match.index));
+    result += `<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(url)}</a>`;
+    result += escapeHtml(trailing);
+    cursor = match.index + rawUrl.length;
+  }
+
+  return result + escapeHtml(text.slice(cursor));
 }
 
 function metadataEntries(item) {
@@ -110,7 +163,10 @@ export default function(eleventyConfig) {
   eleventyConfig.addFilter('imageDetailUrl', imageDetailUrl);
   eleventyConfig.addFilter('imageSrcset', imageSrcset);
   eleventyConfig.addFilter('dateRange', dateRange);
+  eleventyConfig.addFilter('dateComposite', dateComposite);
   eleventyConfig.addFilter('dimensions', dimensions);
+  eleventyConfig.addFilter('relationPeers', relationPeers);
+  eleventyConfig.addFilter('linkifyUrls', linkifyUrls);
   eleventyConfig.addFilter('metadataEntries', metadataEntries);
   eleventyConfig.addFilter('dataValue', dataValue);
   eleventyConfig.addFilter('valuesFor', valuesFor);

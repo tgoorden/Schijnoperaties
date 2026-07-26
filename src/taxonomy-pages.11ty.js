@@ -64,6 +64,7 @@ export default class TaxonomyPages {
 
   render(data) {
     const { taxonomy, key, label } = data.taxonomyPage;
+    const emptyValue = data.site?.ui?.emptyValue || '-';
     const fields = taxonomy.aliases || [taxonomy.field];
     const items = (data.collections.metadata || []).filter((item) => {
       return valuesFor(item.data, fields).map(String).includes(String(key));
@@ -74,8 +75,6 @@ export default class TaxonomyPages {
   <div>
     <p class="eyebrow">${html(taxonomy.singular)}</p>
     <h1 id="page-title">${html(label)}</h1>
-    <p>${items.length} catalogue item${items.length === 1 ? '' : 's'} tagged with this ${html(taxonomy.singular.toLowerCase())}.</p>
-    <p><a href="${html(taxonomy.base)}">Back to all ${html(taxonomy.label.toLowerCase())}</a></p>
   </div>
   <button class="button button-secondary sort-toggle" type="button" data-reverse-grid aria-pressed="false">Ascending</button>
 </section>
@@ -83,13 +82,14 @@ export default class TaxonomyPages {
 <ol class="card-grid" data-card-grid>
 ${items.map((item) => {
   const title = item.data.title || item.fileSlug || 'Untitled image';
+  const creator = toText(item.data.creator) || emptyValue;
   const img = imageDetailUrl(item.data);
   const srcset = imageSrcset(item.data);
   return `<li class="image-card" data-card data-date-start="${html(dataValue(item.data, ['date_start', 'datestart']) || '')}">
     <a href="${html(item.url)}" class="card-link">
       <figure>
         ${img ? `<img src="${html(img)}" srcset="${html(srcset)}" sizes="(min-width: 1200px) 18rem, (min-width: 800px) 25vw, 50vw" alt="${html(title)}" loading="lazy" decoding="async">` : `<div class="placeholder-image" role="img" aria-label="No thumbnail available for ${html(title)}">No image</div>`}
-        <figcaption><strong>${html(title)}</strong><span>${html(dateLabel(item))}</span></figcaption>
+        <figcaption><strong>${html(title)}</strong><em class="card-creator">${html(creator)}</em><span class="card-date">${html(dateLabel(item))}</span></figcaption>
       </figure>
     </a>
   </li>`;

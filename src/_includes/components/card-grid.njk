@@ -1,6 +1,7 @@
 <ol class="card-grid" data-card-grid>
   {% for item in items %}
     {% set titleText = item | titleFor %}
+    {% set creatorText = item.data.creator | labelFor %}
     {% set img = item.data | imageDetailUrl %}
     {% set srcset = item.data | imageSrcset %}
     <li class="image-card"
@@ -15,7 +16,8 @@
           {% endif %}
           <figcaption>
             <strong>{{ titleText }}</strong>
-            <span>{{ item | dateRange }}</span>
+            <em class="card-creator">{{ creatorText or site.ui.emptyValue }}</em>
+            <span class="card-date">{{ item | dateRange }}</span>
           </figcaption>
         </figure>
       </a>

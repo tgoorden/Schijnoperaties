@@ -4,8 +4,8 @@ layout: base.njk
 {% set titleText = title or Title or page.fileSlug %}
 {% set img = image_file | imageDetailUrl %}
 {% set srcset = image_file | imageSrcset %}
-{% set dateText = page | dateRange %}
-{% set dimensionText = page.data | dimensions %}
+{% set dateText = (date_start_prefix or Date_start_prefix) | dateComposite(date_start or Date_start, date_end_prefix or Date_end_prefix, date_end or Date_end) %}
+{% set dimensionText = (dimensions_height or Dimensions_Height) | dimensions(dimensions_width or Dimensions_Width) %}
 {% macro valueList(value, lookup) %}
   {% set values = value | asArray %}
   {% if values.length > 1 %}
@@ -15,7 +15,7 @@ layout: base.njk
   {% elif values.length == 1 %}
     {% if lookup %}{{ values[0] | labelFor(lookup) }}{% else %}{{ values[0] }}{% endif %}
   {% else %}
-    <span class="empty-value">Not recorded</span>
+    <span class="empty-value">{{ site.ui.emptyValue }}</span>
   {% endif %}
 {% endmacro %}
 {% macro row(label, value, lookup) %}
@@ -23,6 +23,20 @@ layout: base.njk
     <dt>{{ label }}</dt>
     <dd>{{ valueList(value, lookup) }}</dd>
   </div>
+{% endmacro %}
+{% macro relationList(items) %}
+  {% if items.length %}
+    <ul class="plain-list relation-list">
+      {% for item in items %}
+        {% set relatedCreator = item.data.creator | labelFor %}
+        <li>
+          <a href="{{ item.url }}"><em>{{ relatedCreator or site.ui.emptyValue }}</em>, {{ item | titleFor }}, {{ item | dateRange }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <span class="empty-value">{{ site.ui.emptyValue }}</span>
+  {% endif %}
 {% endmacro %}
 <article class="detail-view" aria-labelledby="item-title">
   <nav class="breadcrumb" aria-label="Breadcrumb">
@@ -52,7 +66,7 @@ layout: base.njk
             {{ row('Title', title) }}
             {{ row('Creator', creator) }}
             {{ row('Former attribution', former_attribution or formerattribution) }}
-            {{ row('Signatures', signatures) }}
+            {{ row('Signature', signatures or signature) }}
             {{ row('Date', dateText) }}
             <div>
               <dt>Location</dt>
@@ -62,7 +76,8 @@ layout: base.njk
             {{ row('Dimensions', dimensionText) }}
             {{ row('Classification', classification) }}
             {{ row('Collection', collection) }}
-            {{ row('Credit line', credit_line or creditline) }}
+            {{ row('Inventory number', inventory_number or inventorynumber) }}
+            {{ row('Credits and rights', credits_and_rights or creditsandrights) }}
           </dl>
         </div>
 
@@ -73,8 +88,18 @@ layout: base.njk
         </div>
 
         <div id="panel-related" class="tab-panel" role="tabpanel" aria-labelledby="tab-related" hidden>
+          {% set relatedItems = collections.metadata | relationPeers(page, 'related_items') %}
+          {% set artisticRelations = collections.metadata | relationPeers(page, 'artistic_relations') %}
           <dl class="metadata-list">
-            {{ row('Bundles', bundle or bundles, lookups.bundles) }}
+            {{ row('Part of', part_of or Part_of) }}
+            <div>
+              <dt>Related items</dt>
+              <dd>{{ relationList(relatedItems) }}</dd>
+            </div>
+            <div>
+              <dt>Artistic relations</dt>
+              <dd>{{ relationList(artisticRelations) }}</dd>
+            </div>
             {{ row('Iconclass', iconclass, lookups.iconclasses) }}
             {{ row('Subjects', subject or subjects, lookups.subjects) }}
           </dl>
@@ -85,7 +110,7 @@ layout: base.njk
             {% set references = literature | asArray %}
             {% if references.length %}
               <div class="literature-list">
-                {% for reference in references %}<div>{{ reference }}</div>{% endfor %}
+                {% for reference in references %}<div>{{ reference | linkifyUrls | safe }}</div>{% endfor %}
               </div>
             {% else %}
               <p class="empty-value">No literature recorded.</p>
