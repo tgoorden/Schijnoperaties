@@ -62,6 +62,12 @@ function valuesFor(data, names) {
   return [];
 }
 
+function taxonomyCount(items, key, names) {
+  return (items || []).filter(item =>
+    valuesFor(item?.data, names).map(String).includes(String(key))
+  ).length;
+}
+
 function titleFor(item) {
   return dataValue(item?.data, ['title', 'Title']) || item?.fileSlug || 'Untitled image';
 }
@@ -170,6 +176,7 @@ export default function(eleventyConfig) {
   eleventyConfig.addFilter('metadataEntries', metadataEntries);
   eleventyConfig.addFilter('dataValue', dataValue);
   eleventyConfig.addFilter('valuesFor', valuesFor);
+  eleventyConfig.addFilter('taxonomyCount', taxonomyCount);
   eleventyConfig.addFilter('json', value => JSON.stringify(value));
   eleventyConfig.addFilter('readableKey', value => String(value ?? '').replace(/_/g, ' '));
   eleventyConfig.addFilter('nl2br', value => String(value ?? '').replace(/\n/g, '<br>'));

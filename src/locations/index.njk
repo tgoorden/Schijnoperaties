@@ -9,6 +9,7 @@ title: Locations
 <ol class="taxonomy-list">
 {% for key in lookups.locations | keys %}
   {% set label = key | labelFor(lookups.locations) %}
-  <li><a href="/locations/{{ key | slug }}/"><span>{{ label }}</span><small>{{ key }}</small></a></li>
+  {% set itemCount = collections.metadata | taxonomyCount(key, ['place_creation', 'location']) %}
+  <li><a href="/locations/{{ key | slug }}/"><span>{{ label }}</span><small>{{ itemCount }}</small></a></li>
 {% endfor %}
 </ol>

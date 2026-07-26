@@ -9,6 +9,7 @@ title: Subjects
 <ol class="taxonomy-list">
 {% for key in lookups.subjects | keys %}
   {% set label = key | labelFor(lookups.subjects) %}
-  <li><a href="/subjects/{{ key | slug }}/"><span>{{ label }}</span><small>{{ key }}</small></a></li>
+  {% set itemCount = collections.metadata | taxonomyCount(key, ['subject', 'subjects']) %}
+  <li><a href="/subjects/{{ key | slug }}/"><span>{{ label }}</span><small>{{ itemCount }}</small></a></li>
 {% endfor %}
 </ol>
