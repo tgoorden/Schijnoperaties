@@ -83,8 +83,8 @@ export default class TaxonomyPages {
 <ol class="card-grid" data-card-grid>
 ${items.map((item) => {
   const title = item.data.title || item.fileSlug || 'Untitled image';
-  const img = item.data.image;
-  const srcset = imageSrcset(item.data.image);
+  const img = imageDetailUrl(item.data);
+  const srcset = imageSrcset(item.data);
   return `<li class="image-card" data-card data-date-start="${html(dataValue(item.data, ['date_start', 'datestart']) || '')}">
     <a href="${html(item.url)}" class="card-link">
       <figure>

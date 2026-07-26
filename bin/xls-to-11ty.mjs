@@ -27,6 +27,9 @@ Options:
   --image-filename-frontmatter-key
                           YAML key for extracted image filename(s). Default: image_file.
                           Use an empty value to disable this extra key.
+  --ignore-embedded-images
+                          Do not extract images embedded in worksheet cells.
+                          Keeps the corresponding cell values and image_file unchanged.
   --preserve-header-case   Use column headers as YAML keys exactly as written, except unsafe characters.
   --omit-empty             Omit empty cells from markdown frontmatter. Default: keep as empty string.
   --dry-run                Print what would be exported, without writing files.
@@ -46,6 +49,7 @@ function parseArgs(argv) {
     imageUrlPrefix: '/img/',
     imageFilenameFrontmatterKey: 'image_file',
     fileNameColumn: 'Title',
+    ignoreEmbeddedImages: false,
     preserveHeaderCase: false,
     omitEmpty: false,
     dryRun: false,
@@ -68,6 +72,7 @@ function parseArgs(argv) {
       case '--file-name-column': opts.fileNameColumn = next(); break;
       case '--image-url-prefix': opts.imageUrlPrefix = next(); break;
       case '--image-filename-frontmatter-key': opts.imageFilenameFrontmatterKey = next(); break;
+      case '--ignore-embedded-images': opts.ignoreEmbeddedImages = true; break;
       case '--preserve-header-case': opts.preserveHeaderCase = true; break;
       case '--omit-empty': opts.omitEmpty = true; break;
       case '--dry-run': opts.dryRun = true; break;
@@ -112,24 +117,31 @@ function isEmptyValue(v) {
   return v === null || v === undefined || v === '';
 }
 
-function cellToPlainValue(cell) {
-  const v = cell?.value;
+function excelValueToPlain(v) {
   if (v === null || v === undefined) return '';
   if (v instanceof Date) return v.toISOString().slice(0, 10);
   if (typeof v === 'object') {
     if (Array.isArray(v.richText)) return v.richText.map(x => x.text ?? '').join('');
-    if ('hyperlink' in v && 'text' in v) return v.text || v.hyperlink || '';
-    if ('formula' in v) return v.result ?? '';
-    if ('result' in v) return v.result ?? '';
-    if ('text' in v) return v.text ?? '';
+    if ('hyperlink' in v && 'text' in v) return excelValueToPlain(v.text) || v.hyperlink || '';
+    if ('formula' in v) return excelValueToPlain(v.result);
+    if ('result' in v) return excelValueToPlain(v.result);
+    if ('text' in v) return excelValueToPlain(v.text);
     if ('error' in v) return v.error ?? '';
   }
   return v;
 }
 
+function cellToPlainValue(cell) {
+  return excelValueToPlain(cell?.value);
+}
+
 function normalizeValue(value) {
   if (typeof value !== 'string') return value;
-  const trimmed = value.trim();
+  const trimmed = value
+    .split(/\r?\n/)
+    .map(line => line.trimEnd())
+    .join('\n')
+    .trim();
   if (trimmed.includes(';')) {
     return trimmed
       .split(';')
@@ -147,6 +159,13 @@ function findHeaderIndex(headers, requested) {
     const raw = String(h.raw ?? '').trim();
     return raw === requested || makeSlug(raw) === needleSlug || h.key === needleKey;
   });
+}
+
+function shouldImportHeader(header) {
+  const key = String(header?.key ?? '').toLowerCase();
+  return key !== 'preview' &&
+    key !== 'inscriptions' &&
+    !key.startsWith('column_');
 }
 
 async function ensureCleanDir(dir, dryRun) {
@@ -247,7 +266,11 @@ async function main() {
 
   const imageNameIdx = findHeaderIndex(headers, opts.imageNameColumn);
   const fileNameIdx = findHeaderIndex(headers, opts.fileNameColumn);
-  const cellImages = getCellImageMap(workbook, mainSheet);
+  const inscriptionsIdx = findHeaderIndex(headers, 'inscriptions');
+  const importedHeaders = headers.filter(shouldImportHeader);
+  const cellImages = opts.ignoreEmbeddedImages
+    ? new Map()
+    : getCellImageMap(workbook, mainSheet);
 
   let mdCount = 0;
   let imageCount = 0;
@@ -255,18 +278,26 @@ async function main() {
 
   for (let rowNumber = 2; rowNumber <= mainSheet.rowCount; rowNumber++) {
     const row = mainSheet.getRow(rowNumber);
-    const hasContent = headers.some(h => !isEmptyValue(cellToPlainValue(row.getCell(h.col)))) ||
-      [...cellImages.keys()].some(k => k.startsWith(`${rowNumber}:`));
+    const inscriptionBody = inscriptionsIdx >= 0
+      ? String(cellToPlainValue(row.getCell(headers[inscriptionsIdx].col)) ?? '')
+        .split(/\r?\n/)
+        .map(line => line.trimEnd())
+        .join('\n')
+        .trim()
+      : '';
+    const hasContent = importedHeaders.some(h => !isEmptyValue(cellToPlainValue(row.getCell(h.col)))) ||
+      Boolean(inscriptionBody) ||
+      importedHeaders.some(h => cellImages.has(`${rowNumber}:${h.col}`));
     if (!hasContent) continue;
 
     const frontmatter = {};
-    for (const h of headers) {
+    for (const h of importedHeaders) {
       const rawValue = cellToPlainValue(row.getCell(h.col));
       if (opts.omitEmpty && isEmptyValue(rawValue)) continue;
       frontmatter[h.key] = normalizeValue(rawValue);
     }
 
-    for (const h of headers) {
+    for (const h of importedHeaders) {
       const imgs = cellImages.get(`${rowNumber}:${h.col}`) || [];
       if (!imgs.length) continue;
       const paths = [];
@@ -299,7 +330,7 @@ async function main() {
     const fileExtra = fileNameIdx >= 0 ? makeSlug(cellToPlainValue(row.getCell(headers[fileNameIdx].col)), '') : '';
     const mdFile = `${pad3(rowNumber - 1)}${fileExtra ? `_${fileExtra}` : ''}.md`;
     const fm = yaml.dump(frontmatter, { noRefs: true, lineWidth: -1, sortKeys: false }).trimEnd();
-    const body = `---\n${fm}\n---\n`;
+    const body = `---\n${fm}\n---\n${inscriptionBody ? `\n${inscriptionBody}\n` : ''}`;
     if (!opts.dryRun) await fs.writeFile(path.join(collectionDir, mdFile), body, 'utf8');
     mdCount++;
   }

@@ -2,8 +2,8 @@
 layout: base.njk
 ---
 {% set titleText = title or Title or page.fileSlug %}
-{% set img = image | imageDetailUrl %}
-{% set srcset = image | imageSrcset %}
+{% set img = image_file | imageDetailUrl %}
+{% set srcset = image_file | imageSrcset %}
 {% set dateText = page | dateRange %}
 {% set dimensionText = page.data | dimensions %}
 {% macro valueList(value, lookup) %}
@@ -55,10 +55,11 @@ layout: base.njk
             {{ row('Title', title) }}
             {{ row('Creator', creator) }}
             {{ row('Former attribution', former_attribution or formerattribution) }}
+            {{ row('Signatures', signatures) }}
             {{ row('Date', dateText) }}
             <div>
               <dt>Location</dt>
-              <dd>{{ valueList(location, lookups.locations) }}{% if location_extra %}<span class="field-note">{{ location_extra }}</span>{% endif %}</dd>
+              <dd>{{ valueList(place_creation or location, lookups.locations) }}{% if place_creation_extra or location_extra %}<span class="field-note">{{ place_creation_extra or location_extra }}</span>{% endif %}</dd>
             </div>
             {{ row('Medium', medium) }}
             {{ row('Dimensions', dimensionText) }}
@@ -69,10 +70,9 @@ layout: base.njk
         </div>
 
         <div id="panel-inscriptions" class="tab-panel" role="tabpanel" aria-labelledby="tab-inscriptions" hidden>
-          <dl class="metadata-list">
-            {{ row('Signatures', signatures) }}
-            {{ row('Inscriptions', inscriptions) }}
-          </dl>
+          <div class="prose-value">
+            {% if content %}{{ content | safe }}{% else %}<p class="empty-value">No inscriptions recorded.</p>{% endif %}
+          </div>
         </div>
 
         <div id="panel-related" class="tab-panel" role="tabpanel" aria-labelledby="tab-related" hidden>
@@ -85,7 +85,14 @@ layout: base.njk
 
         <div id="panel-literature" class="tab-panel" role="tabpanel" aria-labelledby="tab-literature" hidden>
           <div class="prose-value">
-            {% if literature %}{{ literature | safe | nl2br }}{% else %}<p class="empty-value">No literature recorded.</p>{% endif %}
+            {% set references = literature | asArray %}
+            {% if references.length %}
+              <div class="literature-list">
+                {% for reference in references %}<div>{{ reference }}</div>{% endfor %}
+              </div>
+            {% else %}
+              <p class="empty-value">No literature recorded.</p>
+            {% endif %}
           </div>
         </div>
       </section>

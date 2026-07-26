@@ -1,0 +1,35 @@
+---
+image_file: 121_stoneoperation.jpg
+title: The Dean of Renaix
+title_2: The Stone Operation
+creator: Manner of Pieter Bruegel
+former_attribution: ''
+place_creation: Southern Netherlands
+place_creation_extra: ''
+date_start_prefix: after
+date_start: 1570
+date_end_prefix: after
+date_end: 1570
+part_of: ''
+artistic_relations: 2
+related_items: ''
+subjects: 1
+signatures: ''
+iconclass:
+  - 31B81
+  - 49G911
+classification: Print
+medium: Engraving
+dimensions_height: ''
+dimensions_width: ''
+dimensions_diameter: ''
+collection: Netherlands, Leiden, Universiteit Leiden, Prentenkabinet
+inventory_number: PK-P-121501
+literature:
+  - 'Museum: http://hdl.handle.net/1887.1/item:1993234'
+  - Van Gils, J.B.F., ‘Het snijden van den kei’, Nederlands Tijdschrift voor Geneeskunde 84, 2 (1940), pp. 1310-1318.
+  - 'Wauters, Wendy, ‘The Stone Operation or The Dean of Renaix’, Maarten Bassens, Joris van Grieken (eds.), Bruegel in Black and White. The Complete Graphic Works, exh. cat. (Royal Library of Belgium, Brussels), Veurne: Hannibal Publishing, 2019, p. 259, fig. 3'
+credits_and_rights: Leiden University Libraries / public domain
+locatie_afbeelding: ''
+beeldrechten: vrij gebruik
+---

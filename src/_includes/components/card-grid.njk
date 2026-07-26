@@ -1,8 +1,8 @@
 <ol class="card-grid" data-card-grid>
   {% for item in items %}
     {% set titleText = item | titleFor %}
-    {% set img = item.data.image | imageDetailUrl %}
-    {% set srcset = item.data.image | imageSrcset %}
+    {% set img = item.data | imageDetailUrl %}
+    {% set srcset = item.data | imageSrcset %}
     <li class="image-card"
         data-card
         data-date-start="{{ item.data | dataValue(['date_start', 'datestart']) }}">
