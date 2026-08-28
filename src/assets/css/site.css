@@ -79,9 +79,8 @@ code { padding: 0.1em 0.3em; border-radius: 0.35em; background: #efe5d6; }
 .about-link {
   justify-self: end;
   align-self: start;
-  color: var(--accent-dark);
+  color: var(--ink);
   font-size: 1.05rem;
-  font-weight: 750;
 }
 .header-tools {
   display: flex;
@@ -194,7 +193,6 @@ h1 { margin: 0 0 0.65rem; font-size: clamp(2rem, 5vw, 4.5rem); }
 
 .button {
   border: 1px solid var(--accent);
-  border-radius: 999px;
   padding: 0.55rem 0.9rem;
   background: var(--accent);
   color: white;
@@ -202,7 +200,7 @@ h1 { margin: 0 0 0.65rem; font-size: clamp(2rem, 5vw, 4.5rem); }
   cursor: pointer;
 }
 .button-secondary { background: transparent; color: var(--accent-dark); }
-.sort-toggle { flex: 0 0 auto; margin-top: 1.2rem; }
+.sort-toggle { flex: 0 0 auto; }
 
 .card-grid {
   display: grid;
