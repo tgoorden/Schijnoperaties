@@ -6,10 +6,10 @@ creator: Attributed to Pieter Huys
 former_attribution: ''
 place_creation: Southern Netherlands
 place_creation_extra: ''
-date_start_prefix: ''
-date_start: 1548 or 1561
+date_start_prefix: '1548 or '
+date_start: 1561
 date_end_prefix: ''
-date_end: 1548 or 1561
+date_end: ''
 part_of: ''
 artistic_relations: 20
 related_items: ''
