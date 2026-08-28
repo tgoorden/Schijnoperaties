@@ -44,9 +44,10 @@ layout: base.njk
   </nav>
 
   <div class="detail-layout">
-    <figure class="detail-image">
+    <figure class="detail-image"{% if img %} data-image-viewer{% endif %}>
       {% if img %}
-        <img src="{{ img }}"{% if srcset %} srcset="{{ srcset }}" sizes="(min-width: 900px) 45vw, 100vw"{% endif %} alt="{{ titleText }}">
+        <img src="{{ img }}"{% if srcset %} srcset="{{ srcset }}" sizes="(min-width: 900px) 45vw, 100vw"{% endif %} data-original-src="{{ img }}" alt="{{ titleText }}" draggable="false">
+        <button class="image-fullscreen-toggle" type="button" data-image-fullscreen-toggle aria-label="View image fullscreen" aria-pressed="false" title="View image fullscreen"><span aria-hidden="true">⛶</span></button>
       {% else %}
         <div class="placeholder-image placeholder-large" role="img" aria-label="No image available for {{ titleText }}">No image available</div>
       {% endif %}

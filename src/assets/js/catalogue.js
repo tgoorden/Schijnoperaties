@@ -42,6 +42,151 @@
     });
   });
 
+  document.querySelectorAll('[data-image-viewer]').forEach((viewer) => {
+    const image = viewer.querySelector('img[data-original-src]');
+    const button = viewer.querySelector('[data-image-fullscreen-toggle]');
+    const icon = button?.querySelector('[aria-hidden="true"]');
+    if (!image || !button || typeof viewer.requestFullscreen !== 'function') {
+      button?.remove();
+      return;
+    }
+
+    const normalSource = image.getAttribute('src');
+    const normalSourceSet = image.getAttribute('srcset');
+    const normalSizes = image.getAttribute('sizes');
+    let scale = 1;
+    let translateX = 0;
+    let translateY = 0;
+    let pointerId = null;
+    let pointerX = 0;
+    let pointerY = 0;
+    let gestureStartScale = 1;
+
+    const isFullscreen = () => document.fullscreenElement === viewer;
+    const renderTransform = () => {
+      image.style.transform = `translate3d(${translateX}px, ${translateY}px, 0) scale(${scale})`;
+    };
+    const resetTransform = () => {
+      scale = 1;
+      translateX = 0;
+      translateY = 0;
+      image.style.removeProperty('transform');
+    };
+    const showOriginal = () => {
+      image.removeAttribute('srcset');
+      image.removeAttribute('sizes');
+      image.setAttribute('src', image.dataset.originalSrc);
+    };
+    const restoreNormalSource = () => {
+      image.setAttribute('src', normalSource);
+      if (normalSourceSet) image.setAttribute('srcset', normalSourceSet);
+      else image.removeAttribute('srcset');
+      if (normalSizes) image.setAttribute('sizes', normalSizes);
+      else image.removeAttribute('sizes');
+    };
+
+    button.addEventListener('click', async () => {
+      if (isFullscreen()) {
+        await document.exitFullscreen();
+        return;
+      }
+
+      showOriginal();
+      try {
+        await viewer.requestFullscreen();
+      } catch (_error) {
+        restoreNormalSource();
+      }
+    });
+
+    document.addEventListener('fullscreenchange', () => {
+      const active = isFullscreen();
+      button.setAttribute('aria-label', active ? 'Exit fullscreen' : 'View image fullscreen');
+      button.setAttribute('title', active ? 'Exit fullscreen' : 'View image fullscreen');
+      button.setAttribute('aria-pressed', active ? 'true' : 'false');
+      if (icon) icon.textContent = active ? 'x' : '⛶';
+      if (!active) {
+        pointerId = null;
+        viewer.classList.remove('is-panning');
+        resetTransform();
+        restoreNormalSource();
+      }
+    });
+
+    viewer.addEventListener('wheel', (event) => {
+      if (!isFullscreen()) return;
+      event.preventDefault();
+
+      if (event.ctrlKey || event.metaKey) {
+        const previousScale = scale;
+        scale = Math.min(8, Math.max(1, scale * Math.exp(-event.deltaY * 0.01)));
+        const rect = viewer.getBoundingClientRect();
+        const cursorX = event.clientX - rect.left - rect.width / 2;
+        const cursorY = event.clientY - rect.top - rect.height / 2;
+        const ratio = scale / previousScale;
+        translateX = cursorX - (cursorX - translateX) * ratio;
+        translateY = cursorY - (cursorY - translateY) * ratio;
+        if (scale === 1) {
+          translateX = 0;
+          translateY = 0;
+        }
+      } else if (scale > 1) {
+        translateX -= event.deltaX;
+        translateY -= event.deltaY;
+      }
+
+      renderTransform();
+    }, { passive: false });
+
+    viewer.addEventListener('gesturestart', (event) => {
+      if (!isFullscreen()) return;
+      event.preventDefault();
+      gestureStartScale = scale;
+    });
+    viewer.addEventListener('gesturechange', (event) => {
+      if (!isFullscreen()) return;
+      event.preventDefault();
+      scale = Math.min(8, Math.max(1, gestureStartScale * event.scale));
+      if (scale === 1) {
+        translateX = 0;
+        translateY = 0;
+      }
+      renderTransform();
+    });
+    viewer.addEventListener('gestureend', (event) => {
+      if (isFullscreen()) event.preventDefault();
+    });
+
+    viewer.addEventListener('pointerdown', (event) => {
+      if (!isFullscreen() || scale <= 1 || event.target.closest('button')) return;
+      pointerId = event.pointerId;
+      pointerX = event.clientX;
+      pointerY = event.clientY;
+      viewer.setPointerCapture(pointerId);
+      viewer.classList.add('is-panning');
+    });
+    viewer.addEventListener('pointermove', (event) => {
+      if (event.pointerId !== pointerId) return;
+      translateX += event.clientX - pointerX;
+      translateY += event.clientY - pointerY;
+      pointerX = event.clientX;
+      pointerY = event.clientY;
+      renderTransform();
+    });
+    const stopPanning = (event) => {
+      if (event.pointerId !== pointerId) return;
+      pointerId = null;
+      viewer.classList.remove('is-panning');
+    };
+    viewer.addEventListener('pointerup', stopPanning);
+    viewer.addEventListener('pointercancel', stopPanning);
+    viewer.addEventListener('dblclick', (event) => {
+      if (!isFullscreen() || event.target.closest('button')) return;
+      event.preventDefault();
+      resetTransform();
+    });
+  });
+
   document.querySelectorAll('form.search-placeholder').forEach((form) => {
     const input = form.querySelector('input[name="q"]');
     const button = form.querySelector('button[type="submit"]');
