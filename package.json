@@ -10,7 +10,10 @@
     "convert": "node ./bin/xls-to-11ty.mjs",
     "build": "eleventy",
     "start": "eleventy --serve",
-    "images": "node ./bin/generate-images.mjs"
+    "images": "node ./bin/generate-images.mjs",
+    "deploy": "npm run build && npm run deploy:upload",
+    "deploy:upload": "node ./bin/upload-to-bunny.mjs",
+    "deploy:check": "node ./bin/upload-to-bunny.mjs --check"
   },
   "dependencies": {
     "exceljs": "^4.4.0",
@@ -20,6 +23,7 @@
     "slugify": "^1.6.6"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^3.1.5"
+    "@11ty/eleventy": "^3.1.5",
+    "upload-to-bunny": "^2.1.1"
   }
 }

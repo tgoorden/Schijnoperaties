@@ -177,6 +177,73 @@ npm start
 
 The generated site is written to `_site/`. The development server is started by Eleventy with `eleventy --serve`.
 
+## Deploy to Bunny.net
+
+The deployment wrapper uses
+[`upload-to-bunny`](https://github.com/markwylde/upload-to-bunny) to upload the
+compiled `_site/` directory. It requires Node.js 20 or newer. Credentials and
+deployment settings are read only from environment variables, so the same
+script can be used locally and in GitHub Actions.
+
+A local `.envrc` file is provided and ignored by Git. Add the real values, then
+allow it with [direnv](https://direnv.net/):
+
+```bash
+direnv allow
+npm run deploy:check
+```
+
+The available settings are:
+
+| Environment variable | Required | Default | Purpose |
+| --- | --- | --- | --- |
+| `BUNNY_STORAGE_ZONE_NAME` | yes | — | Bunny.net storage-zone name |
+| `BUNNY_ACCESS_KEY` | yes | — | Storage-zone access key |
+| `BUNNY_STORAGE_REGION` | no | Frankfurt, DE | Leave blank (or use `de`) for Frankfurt; otherwise use `uk`, `ny`, `la`, `sg`, `se`, `br`, `jh`, or `syd` |
+| `BUNNY_STORAGE_PATH` | no | `/` | Destination directory within the storage zone |
+| `BUNNY_CLEAN_DESTINATION` | no | `avoid-deletes` | `avoid-deletes`, `simple`, or `none` |
+| `BUNNY_MAX_CONCURRENT_UPLOADS` | no | `10` | Number of parallel uploads |
+
+Check the local build and configuration without making a network request:
+
+```bash
+npm run build
+npm run deploy:check
+```
+
+Build and upload:
+
+```bash
+npm run deploy
+```
+
+Upload an already compiled `_site/` directory:
+
+```bash
+npm run deploy:upload
+```
+
+`avoid-deletes` prunes remote files that no longer exist locally while
+preserving files that are about to be replaced. `simple` deletes the entire
+remote target before uploading, and `none` performs no remote cleanup.
+
+For a future GitHub Actions workflow, use Node.js 22 and map repository
+variables/secrets to the same environment names:
+
+```yaml
+- uses: actions/setup-node@v4
+  with:
+    node-version: 22
+- run: npm ci
+- run: npm run deploy
+  env:
+    BUNNY_STORAGE_ZONE_NAME: ${{ vars.BUNNY_STORAGE_ZONE_NAME }}
+    BUNNY_ACCESS_KEY: ${{ secrets.BUNNY_ACCESS_KEY }}
+    BUNNY_STORAGE_REGION: ${{ vars.BUNNY_STORAGE_REGION }}
+    BUNNY_STORAGE_PATH: ${{ vars.BUNNY_STORAGE_PATH }}
+    BUNNY_CLEAN_DESTINATION: avoid-deletes
+```
+
 ## Selected subcollection pages
 
 Only `Locations` and `Subjects` are exposed in the left navigation and have generated overview pages. The other lookup tables remain available as translation/label data through the global `lookups` object:
