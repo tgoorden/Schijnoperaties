@@ -52,7 +52,7 @@ export default class SearchDocuments {
       const dateText = dateComposite(fields);
       const lookupText = [
         ...lookupLabels(fields.subject || fields.subjects, data.lookups?.subjects),
-        ...lookupLabels(fields.iconclass, data.lookups?.iconclasses)
+        ...lookupLabels(fields.iconclass, data.lookups?.iconclass)
       ];
       const searchText = toText({ ...fields, content, lookupText });
 

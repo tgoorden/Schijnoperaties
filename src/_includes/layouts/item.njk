@@ -26,6 +26,18 @@ layout: base.njk
     <dd>{{ valueList(value, lookup) }}</dd>
   </div>
 {% endmacro %}
+{% macro codeLabelList(value, lookup) %}
+  {% set values = value | asArray %}
+  {% if values.length > 1 %}
+    <ul class="plain-list">
+      {% for code in values %}<li>{{ code }}: {{ code | labelFor(lookup) }}</li>{% endfor %}
+    </ul>
+  {% elif values.length == 1 %}
+    {{ values[0] }}: {{ values[0] | labelFor(lookup) }}
+  {% else %}
+    <span class="empty-value">{{ site.ui.emptyValue }}</span>
+  {% endif %}
+{% endmacro %}
 {% macro relationList(items) %}
   {% if items.length %}
     <ul class="plain-list relation-list">
@@ -107,7 +119,10 @@ layout: base.njk
               <dt>Artistic relations</dt>
               <dd>{{ relationList(artisticRelations) }}</dd>
             </div>
-            {{ row('Iconclass', iconclass, lookups.iconclasses) }}
+            <div>
+              <dt>Iconclass</dt>
+              <dd>{{ codeLabelList(iconclass, lookups.iconclass) }}</dd>
+            </div>
             {{ row('Subjects', subject or subjects, lookups.subjects) }}
           </dl>
         </div>
