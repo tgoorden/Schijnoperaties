@@ -24,4 +24,4 @@ Every effort has been made to identify and acknowledge copyright holders and to 
 
 The iconographic database is curated and administered by **Dr Wendy Wauters**. General enquiries are welcome at: [contact@fictionalhealing.be](mailto:contact@fictionalhealing.be)
 
-The technical design was implemented by Antwerp based wizard Thomas Goorden. All source code and files can be found on [Github](https://github.com/tgoorden/Schijnoperaties).
+The technical design was implemented by Antwerp based wizard [Thomas Goorden](https://www.goorden.be). All source code and files can be found on [Github](https://github.com/tgoorden/Schijnoperaties).
