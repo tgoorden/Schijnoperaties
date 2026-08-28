@@ -6,10 +6,10 @@ creator: Alexandre Boudan (printer)
 former_attribution: ''
 place_creation: France
 place_creation_extra: Paris
-date_start_prefix: c.
-date_start: 1660
-date_end_prefix: c.
-date_end: 1660
+date_start_prefix: ''
+date_start: 1659
+date_end_prefix: ''
+date_end: 1664
 part_of: ''
 artistic_relations: 12
 related_items: ''
