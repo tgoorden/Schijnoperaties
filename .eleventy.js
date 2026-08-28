@@ -60,6 +60,15 @@ function labelFor(value, lookup = {}) {
   return toText(lookup?.[key] ?? key);
 }
 
+function keysByLabel(lookup = {}) {
+  return Object.keys(lookup).sort((a, b) =>
+    labelFor(a, lookup).localeCompare(labelFor(b, lookup), 'en', {
+      sensitivity: 'base',
+      numeric: true
+    })
+  );
+}
+
 function valuesFor(data, names) {
   for (const name of asArray(names)) {
     const value = data?.[name];
@@ -168,6 +177,7 @@ export default function(eleventyConfig) {
   eleventyConfig.addFilter('asArray', asArray);
   eleventyConfig.addFilter('slug', slug);
   eleventyConfig.addFilter('keys', obj => Object.keys(obj || {}));
+  eleventyConfig.addFilter('keysByLabel', keysByLabel);
   eleventyConfig.addFilter('sortByDate', sortByDate);
   eleventyConfig.addFilter('labelFor', labelFor);
   eleventyConfig.addFilter('titleFor', titleFor);

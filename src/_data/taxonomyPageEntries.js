@@ -3,7 +3,7 @@ import path from 'node:path';
 import yaml from 'js-yaml';
 
 const TAXONOMIES = [
-  { key: 'locations', label: 'Locations', singular: 'Location', field: 'place_creation', aliases: ['place_creation', 'location'], dataName: 'locations', base: '/locations/' },
+  { key: 'locations', label: 'Place of origin', singular: 'Location', field: 'place_creation', aliases: ['place_creation', 'location'], dataName: 'locations', base: '/locations/' },
   { key: 'subjects', label: 'Subjects', singular: 'Subject', field: 'subject', aliases: ['subject', 'subjects'], dataName: 'subjects', base: '/subjects/' }
 ];
 

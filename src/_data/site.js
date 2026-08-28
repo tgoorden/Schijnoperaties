@@ -8,6 +8,6 @@ export default {
   },
   taxonomies: [
     { key: 'subjects', label: 'Subjects', singular: 'Subject', field: 'subject', aliases: ['subject', 'subjects'], data: 'subjects', url: '/subjects/' },
-    { key: 'locations', label: 'Locations', singular: 'Location', field: 'place_creation', aliases: ['place_creation', 'location'], data: 'locations', url: '/locations/' }
+    { key: 'locations', label: 'Place of origin', singular: 'Location', field: 'place_creation', aliases: ['place_creation', 'location'], data: 'locations', url: '/locations/' }
   ]
 };
