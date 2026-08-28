@@ -41,9 +41,26 @@ function dateLabel(item) {
   if (start && end && String(start) !== String(end)) return `${start}–${end}`;
   return start || end || 'Date unknown';
 }
-function sortDate(item) {
-  const n = Number(dataValue(item.data, ['date_start', 'datestart']) || 999999);
-  return Number.isFinite(n) ? n : 999999;
+function sortNumber(item, fields) {
+  const value = dataValue(item.data, fields);
+  if (value === '') return null;
+  const n = Number(String(value).replace(/[^0-9.-]/g, ''));
+  return Number.isFinite(n) ? n : null;
+}
+function sortByDate(a, b) {
+  const aStart = sortNumber(a, ['date_start', 'datestart', 'begin_date', 'begindatum']);
+  const bStart = sortNumber(b, ['date_start', 'datestart', 'begin_date', 'begindatum']);
+  if (aStart === null && bStart === null) return 0;
+  if (aStart === null) return 1;
+  if (bStart === null) return -1;
+  if (aStart !== bStart) return aStart - bStart;
+
+  const aEnd = sortNumber(a, ['date_end', 'dateend', 'end_date', 'einddatum']);
+  const bEnd = sortNumber(b, ['date_end', 'dateend', 'end_date', 'einddatum']);
+  if (aEnd === null && bEnd === null) return 0;
+  if (aEnd === null) return -1;
+  if (bEnd === null) return 1;
+  return aEnd - bEnd;
 }
 
 export default class TaxonomyPages {
@@ -68,7 +85,7 @@ export default class TaxonomyPages {
     const fields = taxonomy.aliases || [taxonomy.field];
     const items = (data.collections.metadata || []).filter((item) => {
       return valuesFor(item.data, fields).map(String).includes(String(key));
-    }).sort((a, b) => sortDate(a) - sortDate(b));
+    }).sort(sortByDate);
 
     return `
 <section class="page-heading page-heading-with-action" aria-labelledby="page-title">

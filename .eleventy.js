@@ -36,7 +36,14 @@ function sortByDate(items, dir = 'asc') {
     if (av === null && bv === null) return 0;
     if (av === null) return 1;
     if (bv === null) return -1;
-    return (av - bv) * factor;
+    if (av !== bv) return (av - bv) * factor;
+
+    const ae = numberOrNull(dataValue(a?.data, ['date_end', 'dateend', 'end_date', 'einddatum']));
+    const be = numberOrNull(dataValue(b?.data, ['date_end', 'dateend', 'end_date', 'einddatum']));
+    if (ae === null && be === null) return 0;
+    if (ae === null) return -1;
+    if (be === null) return 1;
+    return (ae - be) * factor;
   });
 }
 
