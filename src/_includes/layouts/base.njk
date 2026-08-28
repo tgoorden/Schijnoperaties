@@ -19,10 +19,13 @@
           </span>
         </a>
 
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu" aria-label="Open menu"><span aria-hidden="true">☰</span></button>
+
         <a class="about-link" href="/about/">Practical information</a>
 
-        <div class="header-tools">
+        <div class="header-tools" id="site-menu" data-mobile-menu>
           <nav class="nav-list" aria-label="Collection navigation">
+            <a class="mobile-about-link" href="/about/">Practical information</a>
             <a href="/">All images</a>
             {% for taxonomy in site.taxonomies %}
               <a href="{{ taxonomy.url }}">{{ taxonomy.label }}</a>

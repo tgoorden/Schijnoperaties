@@ -30,6 +30,30 @@
     });
   });
 
+  const menuToggle = document.querySelector('[data-menu-toggle]');
+  const mobileMenu = document.querySelector('[data-mobile-menu]');
+  if (menuToggle && mobileMenu) {
+    const menuIcon = menuToggle.querySelector('[aria-hidden="true"]');
+    const setMenuOpen = (open) => {
+      menuToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      menuToggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      mobileMenu.classList.toggle('is-open', open);
+      if (menuIcon) menuIcon.textContent = open ? '×' : '☰';
+    };
+
+    menuToggle.addEventListener('click', () => {
+      setMenuOpen(menuToggle.getAttribute('aria-expanded') !== 'true');
+    });
+    mobileMenu.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => setMenuOpen(false));
+    });
+    document.addEventListener('keydown', (event) => {
+      if (event.key !== 'Escape' || menuToggle.getAttribute('aria-expanded') !== 'true') return;
+      setMenuOpen(false);
+      menuToggle.focus();
+    });
+  }
+
   document.querySelectorAll('[data-reverse-grid]').forEach((button) => {
     const grid = document.querySelector('[data-card-grid]');
     if (!grid) return;
