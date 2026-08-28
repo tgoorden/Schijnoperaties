@@ -4,6 +4,7 @@ import {
       imageThumbUrl,
       imageSrcset,
 } from "./src/lib/image.js";
+import { catalogueId } from './src/lib/catalogue.js';
 
 function asArray(value) {
   if (value === undefined || value === null || value === '') return [];
@@ -178,6 +179,7 @@ export default function(eleventyConfig) {
   eleventyConfig.addFilter('slug', slug);
   eleventyConfig.addFilter('keys', obj => Object.keys(obj || {}));
   eleventyConfig.addFilter('keysByLabel', keysByLabel);
+  eleventyConfig.addFilter('catalogueId', catalogueId);
   eleventyConfig.addFilter('sortByDate', sortByDate);
   eleventyConfig.addFilter('labelFor', labelFor);
   eleventyConfig.addFilter('titleFor', titleFor);
