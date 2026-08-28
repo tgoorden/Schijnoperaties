@@ -44,7 +44,7 @@ layout: base.njk
       {% for item in items %}
         {% set relatedCreator = item.data.creator | labelFor %}
         <li>
-          <a href="{{ item.url }}"><em>{{ relatedCreator or site.ui.emptyValue }}</em>, {{ item | titleFor }}, {{ item | dateRange }}</a>
+          <a href="{{ item.url }}">{{ relatedCreator or site.ui.emptyValue }}, <em>{{ item | titleFor }}</em>, {{ item | dateRange }}</a>
         </li>
       {% endfor %}
     </ul>
