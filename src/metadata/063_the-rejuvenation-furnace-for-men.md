@@ -7,9 +7,9 @@ former_attribution: ''
 place_creation: Germany
 place_creation_extra: Augsburg
 date_start_prefix: ''
-date_start: 1540
+date_start: 1543
 date_end_prefix: ''
-date_end: 1550
+date_end: 1552
 part_of: ''
 artistic_relations: ''
 related_items: 5
