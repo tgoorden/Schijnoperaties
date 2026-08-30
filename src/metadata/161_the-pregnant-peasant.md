@@ -36,4 +36,5 @@ beeldrechten: ''
 ---
 
 Title: Der Schwanger Baur und Grillen vogt. Haben ietz g’funden hilff und rath;
+
 Caption: Wem die Grillen im Haupt thun bang / Der kom herbey, bsinn sich nicht lang / Kuenstlich man sie hie distillirt / Durchreutert und evaporirt / Die Mueken, Tauben, thun versteuben / Die grosse Mauss im Zieb nur bleiben. // Ein anders. // Ich Doctor Filtzhut sich im Harn / Viel wunder Ding, ein seltzam Narrn / Zeigt an wer stoltz geht auffgeblosen / Mag schwerlich von dem Narrn genesen / Wem das haupt aber sehr thut gschwillen / Dem kompt die Kranckheit von Grillen. // Ein anders. // Ach Bawr werstu ehr zu mir kommen / Ehe der schad uberhandt hett genommen: / Du hast ein rohen Narrn verschlickt / Derselb jetzt übers Hertz dich trückt / Viel Jungen in der generirt / Die durch Purgatz werdn auszgeführt.

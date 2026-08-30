@@ -34,5 +34,6 @@ beeldrechten: ''
 ---
 
 Caption, top: Vous, pauvres malheureux que l’esprit lunatique / Des femmes d’à présent fait toujours enrager / Et qui ne croyez pas les voir jamais changer / Amenez-les ici dedans notre boutique. / De quelque qualité que leurs têtes puissent être / Nous y mettrons si bien la lime et le marteau / Que la lune en son plein fût-elle en leur cerveau / Au sortir de chez nous vous en serez le Maître. / Notre boutique aussi n’est point jamais déserte: / L’on y voit aborder de toutes nations / Toutes sortes d’états et de conditions; / Jour et nuit en tout temps elle demeure ouverte. / On amène en vaisseaux, à cheval, en brouettes; / Sans intermission l’on nous fait travailler. / Nous n’avons pas le temps même de sommeiller / Car tant plus nous vivons, leurs têtes sont mal faites. ;
+
 Text (anvil): Touche fort sur la bouche, elle a méchante langue.;
 Caption, bottom: Céans Me. LUSTUCRU a un secret admirable, qu’il a apporté de Madagascar pour reforger et repolir sans faire mal ni douleur les têtes des femmes acariâtres, bizarres, criardes, diablesses, enragées, fantasques, glorieuses, hargneuses, insupportables, lunatiques, méchantes, noiseuses, obstinées, pie-grièches, revêches, sottes, têtues, volontaires, et qui ont d’autres incommodités.

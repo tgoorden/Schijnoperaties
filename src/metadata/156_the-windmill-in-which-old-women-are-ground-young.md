@@ -32,4 +32,6 @@ locatie_afbeelding: ''
 beeldrechten: ''
 ---
 
-Title: Künstliche Winnd-müll. Auff welche mann die Alten: Sowol auch sonsten hesslich unnd ungestalten Weibe widerumbgank, schön und saube durchmallen ... Next two words of lettering indistinct: "Beitel kan"?
+Title: Künstliche Winnd-müll. Auff welche mann die Alten: Sowol auch sonsten hesslich unnd ungestalten Weibe widerumbgank, schön und saube durchmallen ... 
+
+Next two words of lettering indistinct: "Beitel kan"?
