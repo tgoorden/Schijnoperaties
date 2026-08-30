@@ -1,21 +1,32 @@
 # Fictional Healing website
 
-Eleventy website for browsing the Fictional Healing catalogue of historical
-imagery. The website provides:
+This is a fully serverless implementation to generate and deploy the fictionalhealing.be website. It uses 11ty to generate a static website and can automatically deploy to a Bunny.net CDN.
 
-- a clean, accessible catalogue interface for historical imagery;
-- an index page showing all `metadata/*.md` items as thumbnail cards;
-- a left-hand navigation menu for selected subcollections only: `Locations` and `Subjects`;
-- generated subcollection pages, for example `/subjects/2/`, showing matching catalogue items;
-- lookup/translation data for all code tables, including bundles, motives, iconclasses, locations, and subjects;
-- a simple overview sort button that reverses the card order between ascending and descending date order;
-- a tabbed detail-card template with Overview, Inscriptions, Related, and Literature sections;
-- an image-derivative script for generating smaller WebP versions of large originals.
+## General usage
 
-The project uses Eleventy v3.x and expects Node.js 22 or newer. The exact local
-development version is recorded in `.nvmrc`.
+### editing contents
 
-## Install
+If you have edit rights on the repository and don't want to deal with a local install, you are recommended to use [online VS Code editor](https://vscode.dev/). Steps to take:
+
+1. Edit any of the catalogue items (under `src/metadata`), anything in `src/_data` or `src/about.md`.
+2. Preferably make as many changes together at once. A full website update (deploy) can easily take about half a minute, so you don't want to do this for every little change.
+3. You will see your "pending changes" under "Source control" in the left hand menu.
+4. Make a commit message describing what you did and press "commit & push".
+
+Doing this will trigger a fully automated website update. You can (theoretically) also change other aspects of the website, but keep in mind that the website update currently only triggers on metadata, _data or about.md. (See the workflows inside `.github` for more details.)
+
+If you **do not** have edit rights:
+
+1. Create a fork of this repository and [create a pull request](https://docs.github.com/en/pull-requests/how-tos/create-pull-requests/creating-a-pull-request).
+2. Get an editor/owner of the website to accept your pull request.
+
+### Changing or adding images
+
+All catalogue images are currently kept inside `src/img/originals`. You can add new images in the regular Github interface or using the VS Code Editor. A commit of any changes inside that directory will trigger a process which creates new scaled versions inside `src/resized` and trigger a full website rebuild. So you can actually combine this with text edits as described in the previous section. Since rescaling images is a fairly slow process, it is again (strongly) recommended to combine as many updates/additions as possible in a single commit.
+
+## Install (technical documentation)
+
+Only do this if you are trying to build the website on your local machine and have experience with node applications.
 
 ```bash
 npm install
@@ -94,8 +105,8 @@ files come from Eleventy's destination-to-source passthrough map. The output
 directory is never scanned, so stale files left in `_site/` cannot enter a
 deployment.
 
-Synchronization compares the ignored local manifest with a compact manifest in
-Bunny Storage. It never lists the Storage Zone. As a result, files uploaded
+Synchronization compares the local manifest with a compact manifest in
+Bunny Storage. It never lists files from the Storage Zone! As a result, files uploaded
 manually—and therefore absent from the remote manifest—are never changed or
 deleted. Comparisons use only paths and SHA-256 hashes, not timestamps.
 
@@ -103,7 +114,7 @@ The scripts require Node.js 22 or newer. Credentials and settings are read
 only from environment variables, so the same commands work locally and in
 GitHub Actions.
 
-A local `.envrc` file is provided and ignored by Git. Add the real values, then
+Use local `.envrc` file for example to register local ENV variables. Add the real values, then
 allow it with [direnv](https://direnv.net/):
 
 ```bash
@@ -128,7 +139,7 @@ The available settings are:
 | `BUNNY_FULL_PURGE_THRESHOLD` | no | `100` | Affected URL count at which one full-zone purge replaces targeted purges |
 | `BUNNY_MAX_CONCURRENT_PURGES` | no | `8` | Parallel exact-URL CDN invalidations |
 
-Synchronization metadata uses fixed paths. The build writes the ignored local
+Synchronization metadata uses fixed paths. The build writes the local
 manifest to `.bunny-sync/manifest.json`; the deploy stores its remote form at
 the same path inside `BUNNY_STORAGE_PATH`. The remote purge journal is
 `.bunny-sync/purge-log.json`.
@@ -231,7 +242,7 @@ Configure these repository variables:
 
 ## Selected subcollection pages
 
-Only `Locations` and `Subjects` are exposed in the left navigation and have generated overview pages. The other lookup tables remain available as translation/label data through the global `lookups` object:
+Only `Locations` and `Subjects` are exposed in the navigation menu and have generated overview pages. The other lookup tables remain available as translation/label data through the global `lookups` object:
 
 ```njk
 {{ bundle | labelFor(lookups.bundles) }}
