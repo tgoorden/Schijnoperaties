@@ -203,24 +203,31 @@ re-uploading files solely because an earlier CDN request failed. Deployments
 with no file changes also write a completed purge journal with an empty path
 list, providing a timestamp for the latest synchronization attempt.
 
-For a future GitHub Actions workflow, use Node.js 22 and map repository
-variables/secrets to the same environment names:
+## GitHub deployments
 
-```yaml
-- uses: actions/setup-node@v4
-  with:
-    node-version: 22
-- run: npm ci
-- run: npm run deploy
-  env:
-    BUNNY_STORAGE_ZONE_NAME: ${{ vars.BUNNY_STORAGE_ZONE_NAME }}
-    BUNNY_ACCESS_KEY: ${{ secrets.BUNNY_ACCESS_KEY }}
-    BUNNY_CDN_HOSTNAME: ${{ vars.BUNNY_CDN_HOSTNAME }}
-    BUNNY_PULL_ZONE_ID: ${{ vars.BUNNY_PULL_ZONE_ID }}
-    BUNNY_API_KEY: ${{ secrets.BUNNY_API_KEY }}
-    BUNNY_STORAGE_REGION: ${{ vars.BUNNY_STORAGE_REGION }}
-    BUNNY_STORAGE_PATH: ${{ vars.BUNNY_STORAGE_PATH }}
-```
+Two workflows deploy the `main` branch to Bunny:
+
+- `deploy-content.yml` builds and deploys after changes below `src/metadata`
+  or `src/_data`, or to `src/about.md`. It deliberately does not regenerate
+  images.
+- `deploy-images.yml` runs after changes below `src/img/originals`. It
+  regenerates every responsive image, commits changed files below
+  `src/img/resized` as `github-actions[bot]`, then builds and deploys.
+
+Both workflows share the `bunny-production` concurrency group, preventing them
+from changing the same remote manifest simultaneously. Configure these GitHub
+Actions repository secrets:
+
+- `BUNNY_ACCESS_KEY`
+- `BUNNY_API_KEY` when CDN invalidation is enabled
+
+Configure these repository variables:
+
+- `BUNNY_STORAGE_ZONE_NAME`
+- `BUNNY_STORAGE_REGION`
+- `BUNNY_STORAGE_PATH`
+- `BUNNY_CDN_HOSTNAME` when CDN invalidation is enabled
+- `BUNNY_PULL_ZONE_ID` when full-zone invalidation is enabled
 
 ## Selected subcollection pages
 

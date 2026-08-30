@@ -1,0 +1,47 @@
+name: Deploy content to Bunny
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - src/metadata/**
+      - src/_data/**
+      - src/about.md
+
+permissions:
+  contents: read
+
+concurrency:
+  group: bunny-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build website
+        run: npm run build
+
+      - name: Deploy to Bunny
+        run: npm run deploy:upload -- --interactive
+        env:
+          BUNNY_STORAGE_ZONE_NAME: ${{ vars.BUNNY_STORAGE_ZONE_NAME }}
+          BUNNY_ACCESS_KEY: ${{ secrets.BUNNY_ACCESS_KEY }}
+          BUNNY_STORAGE_REGION: ${{ vars.BUNNY_STORAGE_REGION }}
+          BUNNY_STORAGE_PATH: ${{ vars.BUNNY_STORAGE_PATH }}
+          BUNNY_CDN_HOSTNAME: ${{ vars.BUNNY_CDN_HOSTNAME }}
+          BUNNY_API_KEY: ${{ secrets.BUNNY_API_KEY }}
+          BUNNY_PULL_ZONE_ID: ${{ vars.BUNNY_PULL_ZONE_ID }}
