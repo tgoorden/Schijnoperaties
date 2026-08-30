@@ -36,4 +36,5 @@ beeldrechten: ''
 ---
 
 Title: Le médecin guarissant Phantasie purgeant aussi par drogues la folie ;
+
 Caption: Aprochez vous qu’avez la teste pleine / de phantasie, qui vous met en grande peine // asseurez vous de ce Maistre sçavant, / quil voz humeurs seicherat tellemant, // dedans ce four, qu’aurez en peu de temps, / grand allegeance de beaucoup de torments, // aussi serez purge per ses brevages / qu’incontinant deviendrez du tout sages.

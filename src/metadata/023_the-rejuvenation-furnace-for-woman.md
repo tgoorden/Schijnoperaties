@@ -1,6 +1,6 @@
 ---
 image_file: 50_mill.png
-title: The rejuvenation furnace for woman
+title: The rejuvenation furnace for women
 title_2: ''
 creator: Buryam Walda
 former_attribution: ''
