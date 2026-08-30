@@ -39,6 +39,7 @@ export default class Shortlinks {
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="refresh" content="0; url=${html(target)}">
   <link rel="canonical" href="${html(canonicalTarget)}">
+  <meta property="og:url" content="${html(canonicalTarget)}">
   <title>Redirecting to ${html(title)}</title>
 </head>
 <body>

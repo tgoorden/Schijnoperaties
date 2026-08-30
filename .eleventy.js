@@ -5,6 +5,7 @@ import {
       imageSrcset,
 } from "./src/lib/image.js";
 import { catalogueId } from './src/lib/catalogue.js';
+import eleventyBunnyManifest from 'eleventy-bunny-sync/eleventy';
 
 function asArray(value) {
   if (value === undefined || value === null || value === '') return [];
@@ -168,6 +169,8 @@ function metadataEntries(item) {
 }
 
 export default function(eleventyConfig) {
+  eleventyConfig.addPlugin(eleventyBunnyManifest);
+
   eleventyConfig.addPassthroughCopy({ 'src/assets': 'assets' });
   eleventyConfig.addPassthroughCopy({ 'src/img': 'img' });
 

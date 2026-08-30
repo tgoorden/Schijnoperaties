@@ -2,4 +2,6 @@ node_modules
 .DS_Store
 **/*.swp
 _site
+.bunny-sync
 .envrc
+AGENTS.md

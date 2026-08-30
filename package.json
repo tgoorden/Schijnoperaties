@@ -12,8 +12,8 @@
     "start": "eleventy --serve",
     "images": "node ./bin/generate-images.mjs",
     "deploy": "npm run build && npm run deploy:upload",
-    "deploy:upload": "node ./bin/upload-to-bunny.mjs",
-    "deploy:check": "node ./bin/upload-to-bunny.mjs --check"
+    "deploy:upload": "eleventy-bunny-sync",
+    "deploy:check": "eleventy-bunny-sync --dry-run"
   },
   "dependencies": {
     "exceljs": "^4.4.0",
@@ -24,6 +24,6 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.5",
-    "upload-to-bunny": "^2.1.1"
+    "eleventy-bunny-sync": "^0.1.0"
   }
 }

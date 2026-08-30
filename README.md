@@ -179,11 +179,21 @@ The generated site is written to `_site/`. The development server is started by 
 
 ## Deploy to Bunny.net
 
-The deployment wrapper uses
-[`upload-to-bunny`](https://github.com/markwylde/upload-to-bunny) to upload the
-compiled `_site/` directory. It requires Node.js 20 or newer. Credentials and
-deployment settings are read only from environment variables, so the same
-script can be used locally and in GitHub Actions.
+The published [`eleventy-bunny-sync`](https://www.npmjs.com/package/eleventy-bunny-sync)
+package creates a SHA-256 deployment manifest as part of every standalone
+Eleventy build. Rendered files come from `eleventy.after.results`; passthrough
+files come from Eleventy's destination-to-source passthrough map. The output
+directory is never scanned, so stale files left in `_site/` cannot enter a
+deployment.
+
+Synchronization compares the ignored local manifest with a compact manifest in
+Bunny Storage. It never lists the Storage Zone. As a result, files uploaded
+manually—and therefore absent from the remote manifest—are never changed or
+deleted. Comparisons use only paths and SHA-256 hashes, not timestamps.
+
+The scripts require Node.js 22 or newer. Credentials and settings are read
+only from environment variables, so the same commands work locally and in
+GitHub Actions.
 
 A local `.envrc` file is provided and ignored by Git. Add the real values, then
 allow it with [direnv](https://direnv.net/):
@@ -201,15 +211,29 @@ The available settings are:
 | `BUNNY_ACCESS_KEY` | yes | — | Storage-zone access key |
 | `BUNNY_STORAGE_REGION` | no | Frankfurt, DE | Leave blank (or use `de`) for Frankfurt; otherwise use `uk`, `ny`, `la`, `sg`, `se`, `br`, `jh`, or `syd` |
 | `BUNNY_STORAGE_PATH` | no | `/` | Destination directory within the storage zone |
-| `BUNNY_CLEAN_DESTINATION` | no | `avoid-deletes` | `avoid-deletes`, `simple`, or `none` |
-| `BUNNY_MAX_CONCURRENT_UPLOADS` | no | `10` | Number of parallel uploads |
+| `BUNNY_MAX_CONCURRENT_OPERATIONS` | no | `12` | Parallel uploads and parallel deletions |
+| `BUNNY_MAX_ATTEMPTS` | no | `4` | Total attempts for retryable HTTP requests |
+| `BUNNY_REQUEST_TIMEOUT_MS` | no | `120000` | Per-request timeout in milliseconds |
+| `BUNNY_CDN_HOSTNAME` | no | — | Pull Zone hostname used for selective invalidation; requires `BUNNY_API_KEY` |
+| `BUNNY_API_KEY` | no | — | Account API key for CDN purges—not the Storage Zone key |
+| `BUNNY_PULL_ZONE_ID` | no | — | Numeric Pull Zone ID; enables one full-zone purge when the threshold is reached |
+| `BUNNY_FULL_PURGE_THRESHOLD` | no | `100` | Affected URL count at which one full-zone purge replaces targeted purges |
+| `BUNNY_MAX_CONCURRENT_PURGES` | no | `8` | Parallel exact-URL CDN invalidations |
 
-Check the local build and configuration without making a network request:
+Synchronization metadata uses fixed paths. The build writes the ignored local
+manifest to `.bunny-sync/manifest.json`; the deploy stores its remote form at
+the same path inside `BUNNY_STORAGE_PATH`. The remote purge journal is
+`.bunny-sync/purge-log.json`.
+
+Build and compare without changing remote files:
 
 ```bash
 npm run build
 npm run deploy:check
 ```
+
+The check downloads the remote manifest but performs no uploads, deletions,
+purges, or manifest update.
 
 Build and upload:
 
@@ -217,15 +241,59 @@ Build and upload:
 npm run deploy
 ```
 
-Upload an already compiled `_site/` directory:
+For an active terminal display showing the current stage, completed and active
+request counts, elapsed time, the latest path, and HTTP retries:
+
+```bash
+npm run build
+npm run deploy:upload -- --interactive
+```
+
+Uploads use `BUNNY_MAX_CONCURRENT_OPERATIONS` streaming HTTP connections in
+parallel. Deletions have a separate pool of the same size and can run alongside
+uploads. Bunny's current limits allow 100 concurrent HTTP connections per IP
+and server, 250 per zone and server, and 30 simultaneous deletes, so the
+default of 12 per pool remains comfortably below those limits.
+
+If the local manifest is missing, deployment stops and asks you to run the
+build first. If the remote manifest is missing, the deploy automatically treats
+the destination as a first deployment and uploads every local manifest entry:
+
+```bash
+npm run build
+npm run deploy:upload
+```
+
+Synchronize from an already generated local manifest:
 
 ```bash
 npm run deploy:upload
 ```
 
-`avoid-deletes` prunes remote files that no longer exist locally while
-preserving files that are about to be replaced. `simple` deletes the entire
-remote target before uploading, and `none` performs no remote cleanup.
+Uploads and deletes run concurrently. Deletion is limited to paths owned by the
+previous remote manifest; an already-missing path is reported as a warning so
+an interrupted deployment can resume. Changed CDN URLs are purged after all
+storage mutations succeed. Once they do, the deploy records a pending purge
+journal and advances the remote manifest before invalidating the CDN. Targeted
+purges use `exactPath=true`, ensuring Bunny
+applies its higher-throughput exact-purge limit rather than the prefix-purge
+limit. If
+`BUNNY_PULL_ZONE_ID` is configured and at least
+`BUNNY_FULL_PURGE_THRESHOLD` URLs are affected, the deploy makes one full-zone
+purge request instead. The default crossover of 100 leaves headroom below
+Bunny's documented 120-token exact-purge burst. An `index.html` output in targeted mode is purged by its
+public trailing-slash URL (`about/index.html` becomes `/about/`) with Bunny's
+`exactPath=true`. A `429` response honors both the `Retry-After` header and
+Bunny's JSON `retry_after_seconds` value.
+
+If CDN invalidation fails, the command still exits with an error, but the
+remote manifest remains current because Storage completed successfully. The
+remote purge journal remains `pending`, including the remaining paths and error
+details. A later deployment retries those paths even when the local and remote
+manifests already match, then marks the journal `completed`. This also avoids
+re-uploading files solely because an earlier CDN request failed. Deployments
+with no file changes also write a completed purge journal with an empty path
+list, providing a timestamp for the latest synchronization attempt.
 
 For a future GitHub Actions workflow, use Node.js 22 and map repository
 variables/secrets to the same environment names:
@@ -239,9 +307,11 @@ variables/secrets to the same environment names:
   env:
     BUNNY_STORAGE_ZONE_NAME: ${{ vars.BUNNY_STORAGE_ZONE_NAME }}
     BUNNY_ACCESS_KEY: ${{ secrets.BUNNY_ACCESS_KEY }}
+    BUNNY_CDN_HOSTNAME: ${{ vars.BUNNY_CDN_HOSTNAME }}
+    BUNNY_PULL_ZONE_ID: ${{ vars.BUNNY_PULL_ZONE_ID }}
+    BUNNY_API_KEY: ${{ secrets.BUNNY_API_KEY }}
     BUNNY_STORAGE_REGION: ${{ vars.BUNNY_STORAGE_REGION }}
     BUNNY_STORAGE_PATH: ${{ vars.BUNNY_STORAGE_PATH }}
-    BUNNY_CLEAN_DESTINATION: avoid-deletes
 ```
 
 ## Selected subcollection pages

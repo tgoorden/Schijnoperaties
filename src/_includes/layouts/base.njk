@@ -1,10 +1,26 @@
 <!doctype html>
 <html lang="en">
 <head>
+  {% set canonicalUrl = site.host + page.url %}
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if title %}{{ title }} · {% endif %}{{ site.title }}</title>
   <meta name="description" content="{{ description or site.description }}">
+  <link rel="canonical" href="{{ canonicalUrl | escape }}">
+  <meta property="og:url" content="{{ canonicalUrl | escape }}">
+  {% if catalogueItemPage %}
+    {% set ogTitle = title or Title or page.fileSlug %}
+    {% set ogCreator = creator | labelFor %}
+    {% set ogDate = (date_start_prefix or Date_start_prefix) | dateComposite(date_start or Date_start, date_end_prefix or Date_end_prefix, date_end or Date_end) %}
+    {% set ogImage = image_file | imageDetailUrl %}
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="{{ site.title | escape }}">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="{{ ogTitle | escape }}">
+  <meta property="og:description" content="{{ (ogCreator or site.ui.emptyValue) | escape }}, {{ ogTitle | escape }}, {{ ogDate | escape }}">
+  {% if ogImage %}<meta property="og:image" content="{{ (site.host + ogImage) | escape }}">
+  <meta property="og:image:alt" content="{{ ogTitle | escape }}">{% endif %}
+  {% endif %}
   <link rel="stylesheet" href="/assets/css/site.css">
 </head>
 <body>
