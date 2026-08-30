@@ -1,9 +1,12 @@
 ---
 image_file: 163_forgingofheads.jpg
-title: src/metadata/163_forging-of-heads.md
-title_2: The forging of heads
-creator: ''
-former_attribution: Jean Bollard (printer) ; After print by Hendrick Goltzius (attributed to workshop of); After drawing by Karel van Mander
+title: The forging of heads
+title_2: 
+creator: 
+- Jean Bollard (print maker) 
+- After print by Hendrick Goltzius (attributed to workshop of)
+- After drawing by Karel van Mander
+former_attribution: ''
 place_creation: Northern Netherlands
 place_creation_extra: Amsterdam
 date_start_prefix: ''
