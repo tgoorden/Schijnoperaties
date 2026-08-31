@@ -31,13 +31,13 @@ collection: United Kingdom, Londen, Wellcome collection
 inventory_number: 62/5000
 literature:
   - 'Breen, Benjamin, ‘The Alchemy of Madness: Understanding a Seventeenth-century “Brain-scan”’, ​Res Obscura 17/12/2015 (2015): http://resobscura.blogspot.be/2015/12/the-alchemy-of-madness.html'
-  - Gilman, Sander L., ​Seeing the Insane​, New York 1982, p. 41 afb. 53.
-  - Holländer, Eugen, ​Die Karikatur und Satire in der Medizin​, Stuttgart 1921, p. 206.
+  - 'Gilman, Sander L., ​Seeing the Insane​, New York 1982, p. 41 afb. 53.'
+  - 'Holländer, Eugen, ​Die Karikatur und Satire in der Medizin​, Stuttgart 1921, p. 206.'
   - 'Hollstein, Friedrich Wilhelm, ​Dutch and Flemish Etchings, Engravings and Woodcuts ca. 1450-1700​, vol. 4: Brun - Coques, Amsterdam 1951, p. 38, nr. 240-287.'
   - Jurina, Kitti, ​Vom Quacksalber bis zum Doctor medicinae. Die Heilkunde in der deutschen Graphik des 16. Jahrhunderts​, Cologne/ Vienna 1985, p. 249 afb. 342.
   - 'Vandenbroeck, Paul, ‘Zur Herkunft und Verwurzelung der “Grillen”: Vom Volksmythos zum Kunst- und Literaturtheoretischen Begriff, 15.-17. Jahrhundert’, ​De Zeventiende Eeuw​ 3 (1987), p. 63, fig. 15.'
-  - Wauters, Wendy, Een oven vol van menig hoofd en zotten bol, thesis (KU Leuven, Art History), Leuven 2017, inv. nr. C06a.
-  - Wauters, Wendy, 'Het uitkoken van de narheid' en zijn verwantschap met de geneeskunst en de alchemistische beeldtaal', Volkskunde 120, 2 (2019), p. 144, fig. 4.
+  - 'Wauters, Wendy, Een oven vol van menig hoofd en zotten bol, thesis (KU Leuven, Art History), Leuven 2017, inv. nr. C06a.'
+  - 'Wauters, Wendy, ‘Het uitkoken van de narheid en zijn verwantschap met de geneeskunst en de alchemistische beeldtaal’, Volkskunde 120, 2 (2019), p. 144, fig. 4.'
 credits_and_rights: Wellcome Collection / Public domain
 locatie_afbeelding: https://wellcomecollection.org/works/dpc9syce
 beeldrechten: ''
