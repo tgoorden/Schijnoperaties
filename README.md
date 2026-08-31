@@ -216,18 +216,23 @@ list, providing a timestamp for the latest synchronization attempt.
 
 ## GitHub deployments
 
-Two workflows deploy the `main` branch to Bunny:
+Three workflows deploy to Bunny:
 
 - `deploy-content.yml` builds and deploys after changes below `src/metadata`
-  or `src/_data`, or to `src/about.md`. It deliberately does not regenerate
-  images.
+  or `src/_data`, or to `src/about.md`. It continues to use a normal full
+  checkout while the content-only deployment is being verified.
 - `deploy-images.yml` runs after changes below `src/img/originals`. It
   regenerates every responsive image, commits changed files below
   `src/img/resized` as `github-actions[bot]`, then builds and deploys.
+- `deploy-content-test.yml` runs the same content-only deployment from `dev`,
+  but targets a separate test Storage Zone and CDN using only `TEST_BUNNY_*`
+  secrets. It can also be run manually.
 
-Both workflows share the `bunny-production` concurrency group, preventing them
-from changing the same remote manifest simultaneously. Configure these GitHub
-Actions repository secrets:
+The two production workflows share the `bunny-production` concurrency group,
+preventing them from changing the same remote manifest simultaneously. The
+test workflow has an independent `bunny-test` concurrency group.
+
+Configure these GitHub Actions repository secrets for production:
 
 - `BUNNY_ACCESS_KEY`
 - `BUNNY_API_KEY` when CDN invalidation is enabled
@@ -239,6 +244,22 @@ Configure these repository variables:
 - `BUNNY_STORAGE_PATH`
 - `BUNNY_CDN_HOSTNAME` when CDN invalidation is enabled
 - `BUNNY_PULL_ZONE_ID` when full-zone invalidation is enabled
+
+Configure these GitHub Actions repository secrets for the isolated test target:
+
+- `TEST_BUNNY_STORAGE_ZONE_NAME`
+- `TEST_BUNNY_ACCESS_KEY`
+- `TEST_BUNNY_STORAGE_REGION` (optional)
+- `TEST_BUNNY_STORAGE_PATH` (optional)
+- `TEST_BUNNY_CDN_HOSTNAME` (optional)
+- `TEST_BUNNY_API_KEY` when test CDN invalidation is enabled
+- `TEST_BUNNY_PULL_ZONE_ID` when test full-zone invalidation is enabled
+
+The source checkout exclusion and manifest preservation use different path
+forms deliberately: Git excludes `/src/img/`, while Bunny preserves the
+deployed `img/**` paths. On a new test zone with no remote manifest, there are
+no existing image entries to preserve; seed the test zone with a normal full
+deployment first if the test CDN must include images.
 
 ## Selected subcollection pages
 
