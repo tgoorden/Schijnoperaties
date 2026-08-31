@@ -4,6 +4,7 @@ import {
       imageThumbUrl,
       imageSrcset,
 } from "./lib/image.js";
+import { compareCollectionItems } from './lib/collection.js';
 
 function slug(value) {
   return slugify(String(value ?? ''), { lower: true, strict: true, trim: true }) || 'item';
@@ -50,17 +51,18 @@ function sortNumber(item, fields) {
 function sortByDate(a, b) {
   const aStart = sortNumber(a, ['date_start', 'datestart', 'begin_date', 'begindatum']);
   const bStart = sortNumber(b, ['date_start', 'datestart', 'begin_date', 'begindatum']);
-  if (aStart === null && bStart === null) return 0;
+  if (aStart === null && bStart === null) return compareCollectionItems(a, b);
   if (aStart === null) return 1;
   if (bStart === null) return -1;
   if (aStart !== bStart) return aStart - bStart;
 
   const aEnd = sortNumber(a, ['date_end', 'dateend', 'end_date', 'einddatum']);
   const bEnd = sortNumber(b, ['date_end', 'dateend', 'end_date', 'einddatum']);
-  if (aEnd === null && bEnd === null) return 0;
+  if (aEnd === null && bEnd === null) return compareCollectionItems(a, b);
   if (aEnd === null) return -1;
   if (bEnd === null) return 1;
-  return aEnd - bEnd;
+  if (aEnd !== bEnd) return aEnd - bEnd;
+  return compareCollectionItems(a, b);
 }
 
 export default class TaxonomyPages {

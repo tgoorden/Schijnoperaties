@@ -5,6 +5,7 @@ import {
       imageSrcset,
 } from "./src/lib/image.js";
 import { catalogueId } from './src/lib/catalogue.js';
+import { compareCollectionItems } from './src/lib/collection.js';
 import eleventyBunnyManifest from 'eleventy-bunny-sync/eleventy';
 
 function asArray(value) {
@@ -35,17 +36,18 @@ function sortByDate(items, dir = 'asc') {
   return [...(items || [])].sort((a, b) => {
     const av = numberOrNull(dataValue(a?.data, ['date_start', 'datestart', 'begin_date', 'begindatum']));
     const bv = numberOrNull(dataValue(b?.data, ['date_start', 'datestart', 'begin_date', 'begindatum']));
-    if (av === null && bv === null) return 0;
+    if (av === null && bv === null) return compareCollectionItems(a, b) * factor;
     if (av === null) return 1;
     if (bv === null) return -1;
     if (av !== bv) return (av - bv) * factor;
 
     const ae = numberOrNull(dataValue(a?.data, ['date_end', 'dateend', 'end_date', 'einddatum']));
     const be = numberOrNull(dataValue(b?.data, ['date_end', 'dateend', 'end_date', 'einddatum']));
-    if (ae === null && be === null) return 0;
+    if (ae === null && be === null) return compareCollectionItems(a, b) * factor;
     if (ae === null) return -1;
     if (be === null) return 1;
-    return (ae - be) * factor;
+    if (ae !== be) return (ae - be) * factor;
+    return compareCollectionItems(a, b) * factor;
   });
 }
 
@@ -175,7 +177,7 @@ export default function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ 'src/img': 'img' });
 
   eleventyConfig.addCollection('metadata', (collectionApi) => {
-    return collectionApi.getFilteredByGlob('src/metadata/*.md');
+    return collectionApi.getFilteredByGlob('src/metadata/*.md').sort(compareCollectionItems);
   });
 
   eleventyConfig.addFilter('asArray', asArray);

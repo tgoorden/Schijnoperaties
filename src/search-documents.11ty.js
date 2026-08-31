@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import yaml from 'js-yaml';
+import { compareCollectionItems } from './lib/collection.js';
 import { imageSrcset, imageThumbUrl } from './lib/image.js';
 
 function asArray(value) {
@@ -45,7 +46,7 @@ export default class SearchDocuments {
   }
 
   render(data) {
-    const documents = (data.collections.metadata || []).map((item) => {
+    const documents = [...(data.collections.metadata || [])].sort(compareCollectionItems).map((item) => {
       const { fields, content } = sourceDocument(item);
       const title = toText(fields.title || fields.Title || item.fileSlug);
       const creatorText = toText(fields.creator);
