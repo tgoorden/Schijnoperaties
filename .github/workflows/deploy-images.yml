@@ -50,7 +50,7 @@ jobs:
         run: npm run build
 
       - name: Deploy to Bunny
-        run: npm run deploy:upload -- --interactive
+        run: npm run deploy:upload -- --interactive --full-purge
         env:
           BUNNY_STORAGE_ZONE_NAME: ${{ vars.BUNNY_STORAGE_ZONE_NAME }}
           BUNNY_ACCESS_KEY: ${{ secrets.BUNNY_ACCESS_KEY }}
