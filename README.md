@@ -247,12 +247,15 @@ Configure these repository variables:
 
 Configure these GitHub Actions repository secrets for the isolated test target:
 
-- `TEST_BUNNY_STORAGE_ZONE_NAME`
 - `TEST_BUNNY_ACCESS_KEY`
+- `TEST_BUNNY_API_KEY` when test CDN invalidation is enabled
+
+Configure these repository variables for the isolated test target:
+
+- `TEST_BUNNY_STORAGE_ZONE_NAME`
 - `TEST_BUNNY_STORAGE_REGION` (optional)
 - `TEST_BUNNY_STORAGE_PATH` (optional)
 - `TEST_BUNNY_CDN_HOSTNAME` (optional)
-- `TEST_BUNNY_API_KEY` when test CDN invalidation is enabled
 - `TEST_BUNNY_PULL_ZONE_ID` when test full-zone invalidation is enabled
 
 The source checkout exclusion and manifest preservation use different path

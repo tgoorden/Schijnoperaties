@@ -50,10 +50,10 @@ jobs:
       - name: Deploy to test Bunny zone
         run: npm run deploy:upload -- --interactive
         env:
-          BUNNY_STORAGE_ZONE_NAME: ${{ secrets.TEST_BUNNY_STORAGE_ZONE_NAME }}
+          BUNNY_STORAGE_ZONE_NAME: ${{ vars.TEST_BUNNY_STORAGE_ZONE_NAME }}
           BUNNY_ACCESS_KEY: ${{ secrets.TEST_BUNNY_ACCESS_KEY }}
-          BUNNY_STORAGE_REGION: ${{ secrets.TEST_BUNNY_STORAGE_REGION }}
-          BUNNY_STORAGE_PATH: ${{ secrets.TEST_BUNNY_STORAGE_PATH }}
-          BUNNY_CDN_HOSTNAME: ${{ secrets.TEST_BUNNY_CDN_HOSTNAME }}
+          BUNNY_STORAGE_REGION: ${{ vars.TEST_BUNNY_STORAGE_REGION }}
+          BUNNY_STORAGE_PATH: ${{ vars.TEST_BUNNY_STORAGE_PATH }}
+          BUNNY_CDN_HOSTNAME: ${{ vars.TEST_BUNNY_CDN_HOSTNAME }}
           BUNNY_API_KEY: ${{ secrets.TEST_BUNNY_API_KEY }}
-          BUNNY_PULL_ZONE_ID: ${{ secrets.TEST_BUNNY_PULL_ZONE_ID }}
+          BUNNY_PULL_ZONE_ID: ${{ vars.TEST_BUNNY_PULL_ZONE_ID }}
