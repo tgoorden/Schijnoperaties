@@ -23,7 +23,7 @@ medium: Oil on wood
 dimensions_height: 17.1 cm
 dimensions_width: 13.3 cm
 dimensions_diameter: ''
-collection: United Kingdom, Londen, Wellcome collection
+collection: 'United Kingdom, Londen, Wellcome collection'
 inventory_number: 44986i
 literature: 'Museum: https://wellcomecollection.org/works/nunt3hr8'
 credits_and_rights: Wellcome Collection / Public domain
