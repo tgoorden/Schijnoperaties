@@ -26,7 +26,7 @@ dimensions_diameter: ''
 collection: Belgium, Brussels, KBR, Print Room
 inventory_number: S.I 23031 [I/III]
 literature:
-  - Van Gils, J.B.F., ‘Het snijden van den kei’, Nederlands Tijdschrift voor Geneeskunde 84, 2 (1940), pp. 1310-1318.
+  - 'Van Gils, J.B.F., ‘Het snijden van den kei’, Nederlands Tijdschrift voor Geneeskunde 84, 2 (1940), pp. 1310-1318.'
   - 'Wauters, Wendy, ‘The Stone Operation or The Dean of Renaix’, Maarten Bassens, Joris van Grieken (eds.), Bruegel in Black and White. The Complete Graphic Works, exh. cat. (Royal Library of Belgium, Brussels), Veurne: Hannibal Publishing, 2019, pp. 256-259.'
 credits_and_rights: Copyright undetermined
 locatie_afbeelding: ''
