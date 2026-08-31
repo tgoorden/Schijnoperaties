@@ -8,6 +8,16 @@ import { catalogueId } from './src/lib/catalogue.js';
 import { compareCollectionItems } from './src/lib/collection.js';
 import eleventyBunnyManifest from 'eleventy-bunny-sync/eleventy';
 
+const contentOnly = process.env.CONTENT_ONLY === 'true';
+const contentPreservePaths = String(process.env.CONTENT_PRESERVE_PATHS ?? '')
+  .split(',')
+  .map(value => value.trim())
+  .filter(Boolean);
+
+if (contentOnly && !contentPreservePaths.length) {
+  throw new Error('CONTENT_PRESERVE_PATHS is required for a content-only build.');
+}
+
 function asArray(value) {
   if (value === undefined || value === null || value === '') return [];
   return Array.isArray(value) ? value : [value];
@@ -171,10 +181,14 @@ function metadataEntries(item) {
 }
 
 export default function(eleventyConfig) {
-  eleventyConfig.addPlugin(eleventyBunnyManifest);
+  eleventyConfig.addPlugin(eleventyBunnyManifest, {
+    preserve: contentOnly ? contentPreservePaths : [],
+  });
 
   eleventyConfig.addPassthroughCopy({ 'src/assets': 'assets' });
-  eleventyConfig.addPassthroughCopy({ 'src/img': 'img' });
+  if (!contentOnly) {
+    eleventyConfig.addPassthroughCopy({ 'src/img': 'img' });
+  }
 
   eleventyConfig.addCollection('metadata', (collectionApi) => {
     return collectionApi.getFilteredByGlob('src/metadata/*.md').sort(compareCollectionItems);

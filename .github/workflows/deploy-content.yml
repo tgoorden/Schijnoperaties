@@ -19,10 +19,17 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     timeout-minutes: 30
+    env:
+      CONTENT_ONLY: "true"
+      CONTENT_PRESERVE_PATHS: "img/**"
     steps:
       - uses: actions/checkout@v6
         with:
           ref: main
+          sparse-checkout: |
+            /*
+            !/src/img/
+          sparse-checkout-cone-mode: false
 
       - uses: actions/setup-node@v7
         with:
