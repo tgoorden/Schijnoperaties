@@ -1,7 +1,7 @@
 ---
 image_file: 68_forging.jpg
 title: The forging of heads
-title_2: Opérateur céphalique
+title_2: 'Opérateur céphalique'
 creator: ''
 former_attribution: ''
 place_creation: France

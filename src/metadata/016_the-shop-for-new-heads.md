@@ -2,7 +2,7 @@
 image_file: 42_headbaker.jpg
 title: The shop for new heads
 title_2: ''
-creator: Paul Fürst (printer)
+creator: 'Paul Fürst (printer)'
 former_attribution: ''
 place_creation: Germany
 place_creation_extra: Nurenberg

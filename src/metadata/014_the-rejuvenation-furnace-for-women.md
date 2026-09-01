@@ -1,7 +1,7 @@
 ---
 image_file: 48_oven.jpeg
 title: The rejuvenation furnace for women
-title_2: Der Jungofen für Frauen
+title_2: 'Der Jungofen für Frauen'
 creator: Anthony Corthoys the Elder
 former_attribution: ''
 place_creation: Germany
