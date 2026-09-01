@@ -2,7 +2,7 @@
 image_file: 135_millofpriests.jpg
 title: The mill of priests
 title_2: Pfaffenmuehle
-creator: ''
+creator: Unknown
 former_attribution: ''
 place_creation: Unknown
 place_creation_extra: Possibly Italy

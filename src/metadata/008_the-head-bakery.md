@@ -2,7 +2,7 @@
 image_file: 35_headbaker.jpg
 title: The Head-bakery
 title_2: The Legend of the Baker of Eekloo
-creator: ''
+creator: Unknown
 former_attribution:
   - Copy after Cornelis van Dalem and Jan van Wechelen
   - Circle of Maerten van Cleve the Younger

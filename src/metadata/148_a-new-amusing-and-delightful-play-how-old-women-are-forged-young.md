@@ -10,7 +10,7 @@ date_start_prefix: c.
 date_start: 1546
 date_end_prefix: c.
 date_end: 1546
-part_of: Ein nüw kurtzwylig hüpsch Spyl wie man alte Wyber jung schmidet, Zürich 1530 / Augsburg 1540 (title page)
+part_of: Hans Hechler, Ein nüw kurtzwylig hüpsch Spyl wie man alte Wyber jung schmidet, Zürich 1530 / Augsburg 1540 (title page)
 artistic_relations: ''
 related_items: ''
 subjects: 12

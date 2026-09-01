@@ -2,7 +2,7 @@
 image_file: 104_head_grindstone.png
 title: Head being held to the grindstone
 title_2: De botte slijper
-creator: Adriaen van de Venne
+creator: Adriaen Pietersz. van de Venne
 former_attribution: ''
 place_creation: Northern Netherlands
 place_creation_extra: Den Haag
@@ -10,7 +10,7 @@ date_start_prefix: ''
 date_start: 1635
 date_end_prefix: ''
 date_end: 1635
-part_of: Adriaen van de Venne, Tafereel van de belacchende werelt
+part_of: Adriaen Pietersz. van de Venne, Tafereel van de belacchende werelt
 artistic_relations: ''
 related_items: ''
 subjects: 8
