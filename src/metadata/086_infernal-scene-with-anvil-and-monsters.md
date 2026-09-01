@@ -2,7 +2,7 @@
 image_file: 54_anvil.jpg
 title: Infernal scene with anvil and monsters
 title_2: ''
-creator: Jheronimus Bosch (attributed to)
+creator: Attributed to Jheronimus Bosch
 former_attribution: ''
 place_creation: Northern Netherlands
 place_creation_extra: ''

@@ -2,7 +2,7 @@
 image_file: 165_stoneoffolly.png
 title: Stones of Madness
 title_2: Keyensteyn
-creator: ''
+creator: Unknown
 former_attribution: ''
 place_creation: Northern Netherlands
 place_creation_extra: Jutphaas

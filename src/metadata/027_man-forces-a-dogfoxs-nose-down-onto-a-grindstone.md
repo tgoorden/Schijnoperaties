@@ -2,7 +2,7 @@
 image_file: 129_fox_grindstone.jpg
 title: Man forces a dog/fox’s nose down onto a grindstone
 title_2: ''
-creator: ''
+creator: Unknown
 former_attribution: ''
 place_creation: France
 place_creation_extra: Dijon

@@ -2,7 +2,7 @@
 image_file: 92_grillen.jpg
 title: Doctor Wurmbrandt
 title_2: ''
-creator: ''
+creator: Unknown
 former_attribution: ''
 place_creation: Germany
 place_creation_extra: ''

@@ -2,7 +2,7 @@
 image_file: 41_headbaker.jpeg
 title: Men placing numerous heads in an oven
 title_2: Des hommes mettent dans un four de nombreuses têtes
-creator: ''
+creator: Unknown
 former_attribution: ''
 place_creation: France
 place_creation_extra: ''

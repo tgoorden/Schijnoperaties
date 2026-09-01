@@ -2,7 +2,7 @@
 image_file: 122_tongue_grinding.jpg
 title: The tongue grinders
 title_2: ''
-creator: ''
+creator: Unknown
 former_attribution: ''
 place_creation: Southern Netherlands
 place_creation_extra: ''

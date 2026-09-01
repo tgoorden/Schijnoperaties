@@ -2,7 +2,7 @@
 image_file: 178_stoneoffolly.png
 title: Extraction of fools
 title_2: ''
-creator: ''
+creator: Unknown
 former_attribution: ''
 place_creation: Germany
 place_creation_extra: ''

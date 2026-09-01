@@ -2,7 +2,7 @@
 image_file: 79_Lustucru_Jeton.jpg
 title: Coin of Lustucru
 title_2: ''
-creator: ''
+creator: Unknown
 former_attribution: ''
 place_creation: France
 place_creation_extra: ''

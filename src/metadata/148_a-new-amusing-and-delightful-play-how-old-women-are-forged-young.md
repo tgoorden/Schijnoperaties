@@ -2,7 +2,7 @@
 image_file: 55_anvil.jpeg
 title: 'A new, amusing and delightful play: How old women are forged young'
 title_2: ''
-creator: ''
+creator: Unknown
 former_attribution: ''
 place_creation: Switserland
 place_creation_extra: Zürich

@@ -2,7 +2,7 @@
 image_file: 174_stoneoffolly.png
 title: The stone of folly found in many heads, for believing in the wind
 title_2: By Veele Zit De Kei In 'T Hooft Om Dat Men In De Wind Gelooft
-creator: ''
+creator: Unknown
 former_attribution: ''
 place_creation: Northern Netherlands
 place_creation_extra: ''

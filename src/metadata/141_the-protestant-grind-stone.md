@@ -2,7 +2,7 @@
 image_file: 132_nosegrinder.jpg
 title: The Protestant Grind Stone
 title_2: ''
-creator: ''
+creator: Unknown
 former_attribution: ''
 place_creation: England
 place_creation_extra: ''

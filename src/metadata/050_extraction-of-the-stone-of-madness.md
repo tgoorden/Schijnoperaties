@@ -2,7 +2,7 @@
 image_file: 164_stoneoffolly.png
 title: Extraction of the Stone of Madness
 title_2: Keyenborch
-creator: ''
+creator: Unknown
 former_attribution: ''
 place_creation: Northern Netherlands
 place_creation_extra: Jutphaas

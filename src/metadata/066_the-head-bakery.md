@@ -2,7 +2,7 @@
 image_file: 37_headbaker.jpg
 title: The Head-bakery
 title_2: The Legend of the Baker of Eekloo
-creator: ''
+creator: Unknown
 former_attribution: ''
 place_creation: Southern Netherlands
 place_creation_extra: ''

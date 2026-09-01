@@ -2,7 +2,7 @@
 image_file: 131_nosegrinder.jpg
 title: The Scots holding their young king's nose to the grindstone
 title_2: ''
-creator: ''
+creator: Unknown
 former_attribution: ''
 place_creation: England
 place_creation_extra: London

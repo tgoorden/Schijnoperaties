@@ -2,7 +2,7 @@
 image_file: 115_stoneoffolly.jpg
 title: The Stone Operation
 title_2: ''
-creator: ''
+creator: Unknown
 former_attribution: ''
 place_creation: Southern Netherlands
 place_creation_extra: ''

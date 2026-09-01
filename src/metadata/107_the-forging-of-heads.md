@@ -5,7 +5,7 @@ title_2: ''
 creator:
   - After print by Hendrick Goltzius (attributed to workshop of)
   - After drawing by Karel van Mander
-former_attribution: Nicolaas Braeu (print maker)
+former_attribution: Nicolaas Braeu (printer)
 place_creation: Northern Netherlands
 place_creation_extra: Haarlem
 date_start_prefix: ''

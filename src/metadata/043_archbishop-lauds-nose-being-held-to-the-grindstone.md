@@ -2,7 +2,7 @@
 image_file: 127_nosegrinder.png
 title: Archbishop Laud’s nose being held to the grindstone
 title_2: ''
-creator: ''
+creator: Unknown
 former_attribution: ''
 place_creation: England
 place_creation_extra: London

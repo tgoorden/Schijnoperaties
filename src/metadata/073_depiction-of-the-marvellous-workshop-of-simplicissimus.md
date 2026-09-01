@@ -2,7 +2,7 @@
 image_file: 2_Simplicissimus.jpg
 title: Depiction of the marvellous workshop of Simplicissimus
 title_2: Abbildung der wunderbarlichen Werckstatt des Weltstreichenden Artzts Simplicissimi
-creator: ''
+creator: Unknown
 former_attribution: ''
 place_creation: Germany
 place_creation_extra: ''

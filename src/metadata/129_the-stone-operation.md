@@ -2,7 +2,7 @@
 image_file: 125_stoneoffolly.jpg
 title: The Stone Operation
 title_2: ''
-creator: ''
+creator: Unknown
 former_attribution: Jan Steen
 place_creation: Northern Netherlands
 place_creation_extra: ''

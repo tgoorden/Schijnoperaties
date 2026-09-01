@@ -2,7 +2,7 @@
 image_file: 102_molen.jpg
 title: Old Wives Mill
 title_2: ''
-creator: ''
+creator: Unknown
 former_attribution: ''
 place_creation: Northern or Southern Netherlands
 place_creation_extra: ''

@@ -2,7 +2,7 @@
 image_file: 15_Schembartlauf_Getty_Research_Library_64.jpg
 title: Baker of fools
 title_2: ''
-creator: ''
+creator: Unknown
 former_attribution: ''
 place_creation: Germany
 place_creation_extra: ''

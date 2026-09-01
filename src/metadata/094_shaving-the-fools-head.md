@@ -2,7 +2,7 @@
 image_file: 9_shavingthefool.JPG
 title: Shaving the fool's head
 title_2: ''
-creator: ''
+creator: Unknown
 former_attribution: ''
 place_creation: Northern or Southern Netherlands
 place_creation_extra: ''

@@ -2,7 +2,7 @@
 image_file: 68_forging.jpg
 title: The forging of heads
 title_2: 'Opérateur céphalique'
-creator: ''
+creator: Unknown
 former_attribution: ''
 place_creation: France
 place_creation_extra: Normandy

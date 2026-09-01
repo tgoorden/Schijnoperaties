@@ -2,7 +2,7 @@
 image_file: 14_shaving.jpg
 title: A freshman being worked on with a plane
 title_2: Depositio cornuum
-creator: ''
+creator: Unknown
 former_attribution: ''
 place_creation: Germany
 place_creation_extra: Erfurt

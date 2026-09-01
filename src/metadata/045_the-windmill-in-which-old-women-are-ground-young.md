@@ -2,7 +2,7 @@
 image_file: 188_oldwivesmill.jpg
 title: The windmill in which old women are ground young
 title_2: ''
-creator: ''
+creator: Unknown
 former_attribution: ''
 place_creation: Germany
 place_creation_extra: Nurenberg

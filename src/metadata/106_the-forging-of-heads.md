@@ -6,7 +6,7 @@ creator:
   - Johann Theodor de Bry (printer)
   - After print by Hendrick Goltzius (attributed to workshop of)
   - After drawing by Karel van Mander
-former_attribution: Nicolaas Braeu (print maker)
+former_attribution: Nicolaas Braeu (printer)
 place_creation: Germany
 place_creation_extra: Oppenheim
 date_start_prefix: ''

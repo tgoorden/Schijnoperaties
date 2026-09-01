@@ -2,7 +2,7 @@
 image_file: 19_schembartbaker.JPEG
 title: Baker of fools
 title_2: ''
-creator: ''
+creator: Unknown
 former_attribution: ''
 place_creation: Germany
 place_creation_extra: ''

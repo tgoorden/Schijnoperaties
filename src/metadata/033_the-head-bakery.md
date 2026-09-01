@@ -2,7 +2,7 @@
 image_file: 30_headbaker.jpg
 title: The Head-bakery
 title_2: The Legend of the Baker of Eekloo
-creator: ''
+creator: Unknown
 former_attribution: Copy after Cornelis van Dalem and Jan van Wechelen
 place_creation: Southern Netherlands
 place_creation_extra: possibly Antwerp
