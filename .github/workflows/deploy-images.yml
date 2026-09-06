@@ -1,6 +1,7 @@
 name: Resize images and deploy to Bunny
 
 on:
+  workflow_dispatch:
   push:
     branches: [main]
     paths:
