@@ -27,7 +27,6 @@ collection: France, Paris, Bibliothèque nationale de France, département Estam
 inventory_number: RESERVE QB-201 (42)-FOL
 literature:
   - 'Museum: https://gallica.bnf.fr/ark:/12148/btv1b8404492x.r=Lustucru?rk=85837'
-  - '2'
   - 'Le mariage sous l''Ancien Régime: https://mariage.uvic.ca/massacre_lagniet.html'
   - 'Wilson, Jé, ‘Lustucru From Severed Heads to Ready-Made Meals’, 2019: https://publicdomainreview.org/essay/lustucru-from-severed-heads-to-ready-made-meals/'
 credits_and_rights: Source gallica.bnf.fr / BnF / public domain, source attribution required
