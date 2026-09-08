@@ -24,8 +24,8 @@ dimensions_height: 24 cm
 dimensions_width: 35 cm
 dimensions_diameter: ''
 collection: 'France, Paris, Bibliothèque nationale de France, département Estampes et photographie'
-inventory_number: RESERVE QB-201 (29)-FOL
-literature: Le mariage sous l'Ancien Régime: https://mariage.uvic.ca/le_fournaux.html 
+inventory_number: 'RESERVE QB-201 (29)-FOL'
+literature: "Le mariage sous l'Ancien Régime: https://mariage.uvic.ca/le_fournaux.html" 
 credits_and_rights: 'Source gallica.bnf.fr / BnF / public domain, source attribution required'
 ---
 Caption: Le Fournox de Jean Tangous
