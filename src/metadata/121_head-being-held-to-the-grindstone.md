@@ -11,7 +11,7 @@ date_start: 1635
 date_end_prefix: ''
 date_end: 1635
 part_of: Adriaen Pietersz. van de Venne, Tafereel van de belacchende werelt
-artistic_relations: ''
+artistic_relations: '32'
 related_items: ''
 subjects: 8
 signatures: ''
