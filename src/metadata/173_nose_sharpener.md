@@ -11,7 +11,7 @@ date_start: 1881
 date_end_prefix: 'before'
 date_end: 1881
 part_of: 'Russkiia narodnyia kartinki, sobral i opisal D.A. Rovinskii, 1881 (p. 212)'
-artistic_relations: 22
+artistic_relations: 
 related_items: 12
 subjects: 9
 signatures: ''
