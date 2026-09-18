@@ -13,8 +13,8 @@ date_start: 1601
 date_end_prefix: ''
 date_end: 1652
 part_of: ''
-artistic_relations: 29
-related_items: ''
+artistic_relations: 
+related_items: 
 subjects: 9
 signatures: ''
 iconclass:
