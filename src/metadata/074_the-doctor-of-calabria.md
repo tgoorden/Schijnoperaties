@@ -1,6 +1,6 @@
 ---
 image_file: 84_grillen.jpg
-title: The Doctor of Calabria
+title: The doctor of Calabria
 title_2: Der Doctor von Calabrian
 creator: Manner of Johann Theodor de Bry
 former_attribution: ''

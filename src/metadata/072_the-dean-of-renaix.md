@@ -1,6 +1,6 @@
 ---
 image_file: 121_stoneoperation.jpg
-title: The Dean of Renaix
+title: The stone operation
 title_2: The Stone Operation
 creator: Manner of Pieter Bruegel
 former_attribution: ''
@@ -33,3 +33,7 @@ credits_and_rights: Leiden University Libraries / public domain
 locatie_afbeelding: ''
 beeldrechten: vrij gebruik
 ---
+
+De Deken van Ronse (...)
+
+Bruegel inven 1557

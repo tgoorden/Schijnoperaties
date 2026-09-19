@@ -1,6 +1,6 @@
 ---
 image_file: 123_stoneoffolly.jpg
-title: Extracting the Stone of Madness
+title: The stone operation
 title_2: ''
 creator: Manner of Pieter Bruegel
 former_attribution: ''

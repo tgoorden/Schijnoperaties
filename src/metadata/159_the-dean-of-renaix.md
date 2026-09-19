@@ -1,6 +1,6 @@
 ---
 image_file: 120_stoneoffolly.png
-title: The Dean of Renaix
+title: The stone operation
 title_2: The Stone Operation
 creator: Manner of Pieter Bruegel
 former_attribution: ''
@@ -14,7 +14,7 @@ part_of: ''
 artistic_relations: 2
 related_items: ''
 subjects: 1
-signatures: ''
+signatures: 'Bruegel inven 1557'
 iconclass:
   - 31B81
   - 49G911
@@ -32,3 +32,5 @@ credits_and_rights: Copyright undetermined
 locatie_afbeelding: ''
 beeldrechten: vragen aan kbr
 ---
+
+Bruegel inven 1557

@@ -1,6 +1,6 @@
 ---
 image_file: 157_stoneoffolly.jpg
-title: The Extraction of the Stone of Folly
+title: The extraction of the stone of madness
 title_2: ''
 creator: Manner of Jheronimus Bosch
 former_attribution: Marcellus Coffermans

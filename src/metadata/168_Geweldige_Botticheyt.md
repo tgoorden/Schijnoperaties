@@ -1,6 +1,6 @@
 ---
 image_file: 168_Geweldige_Botticheyt.jpg
-title: Tremendous Bluntness
+title: Tremendous bluntness
 title_2: ''
 creator: 'Adriaen Pietersz. van de Venne'
 former_attribution: ''

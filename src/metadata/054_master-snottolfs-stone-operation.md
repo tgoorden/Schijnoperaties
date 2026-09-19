@@ -1,6 +1,6 @@
 ---
 image_file: 162_stoneoffolly.jpg
-title: Master Snottolf's Stone Operation
+title: Master Snottolf's stone operation
 title_2: The Witch of Mallegem
 creator: After Pieter Bruegel
 former_attribution: ''

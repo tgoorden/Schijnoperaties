@@ -1,6 +1,6 @@
 ---
 image_file: 132_nosegrinder.jpg
-title: The Protestant Grind Stone
+title: The Protestant grind stone
 title_2: ''
 creator: Unknown
 former_attribution: ''
@@ -30,3 +30,7 @@ credits_and_rights: The Trustees of the British Museum / CC BY-NC-SA 4.0
 locatie_afbeelding: ''
 beeldrechten: ''
 ---
+
+Title: The Protestant Grind Stone
+
+Caption: Old Holy Father, there was once a time / When Clemency was thought a mortall Crime / For Heriticks no pitty you could find: / But, most Severely did their Faces Grind. // The time's now turned harsh Stripes upon you fall. / Too well deserved, and this is done that all / Who see the Whore of Babylon may Say, / Shee's pox't, because her nose is worn away.

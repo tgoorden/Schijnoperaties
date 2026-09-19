@@ -1,6 +1,6 @@
 ---
 image_file: 165_stoneoffolly.png
-title: Stones of Madness
+title: Stones of madness
 title_2: Keyensteyn
 creator: Unknown
 former_attribution: ''

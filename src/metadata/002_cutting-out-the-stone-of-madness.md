@@ -1,6 +1,6 @@
 ---
 image_file: 118_stoneoffolly.jpg
-title: Cutting out the Stone of Madness
+title: The extraction of the stone of madness
 title_2: ''
 creator: Follower of Jheronimus Bosch
 former_attribution: ''

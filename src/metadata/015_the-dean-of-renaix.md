@@ -1,6 +1,6 @@
 ---
 image_file: 106_stoneoffolly.png
-title: The Dean of Renaix
+title: The stone operation
 title_2: The Stone Operation
 creator: Manner of Pieter Bruegel
 former_attribution: ''

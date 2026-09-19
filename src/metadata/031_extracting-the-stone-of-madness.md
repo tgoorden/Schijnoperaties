@@ -1,6 +1,6 @@
 ---
 image_file: 153_stoneoffolly.jpg
-title: Extracting the Stone of Madness
+title: The extraction of the stone of madness
 title_2: ''
 creator: After Jheronimus Bosch
 former_attribution: ''

@@ -1,6 +1,6 @@
 ---
 image_file: 164_stoneoffolly.png
-title: Extraction of the Stone of Madness
+title: The extraction of the stone of madness
 title_2: Keyenborch
 creator: Unknown
 former_attribution: ''

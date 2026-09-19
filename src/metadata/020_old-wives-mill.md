@@ -1,6 +1,6 @@
 ---
 image_file: 103_molen.jpg
-title: Old Wives Mill
+title: Old wives mill
 title_2: ''
 creator: Tycho Lange [...]
 former_attribution: ''

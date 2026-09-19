@@ -1,6 +1,6 @@
 ---
 image_file: 112_stoneoffolly.jpg
-title: Extraction of the Stone of Madness
+title: The extraction of the stone of madness
 title_2: ''
 creator: Jan Sanders van Hemessen
 former_attribution: ''

@@ -1,6 +1,6 @@
 ---
 image_file: 116_stoneoffolly.jpg
-title: A Surgeon Extracting the Stone of Folly
+title: The extraction of the stone of madness
 title_2: ''
 creator: Attributed to Pieter Huys
 former_attribution: ''

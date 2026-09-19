@@ -1,6 +1,6 @@
 ---
 image_file: 11_TeutscheSprichworter.png
-title: German Proverbs
+title: German proverbs
 title_2: Teütsche Sprichworter
 creator: Jakob von der Heyden (?)
 former_attribution: ''

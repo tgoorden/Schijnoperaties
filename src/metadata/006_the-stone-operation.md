@@ -1,6 +1,6 @@
 ---
 image_file: 113_stoneoffolly.jpg
-title: The Stone Operation
+title: The extraction of the stone of madness
 title_2: ''
 creator: Manner of Jheronimus Bosch
 former_attribution: ''
