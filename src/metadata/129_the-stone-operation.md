@@ -1,6 +1,6 @@
 ---
 image_file: 125_stoneoffolly.jpg
-title: The Stone Operation
+title: The extraction of the stone of madness
 title_2: ''
 creator: Unknown
 former_attribution: Jan Steen

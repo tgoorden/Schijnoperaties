@@ -1,6 +1,6 @@
 ---
 image_file: 114_stoneoffolly.jpg
-title: Master Snottolf's Stone Operation
+title: Master Snottolf's stone operation
 title_2: The Witch of Mallegem
 creator:
   - Pieter van der Heyden
