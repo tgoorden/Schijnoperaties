@@ -1,5 +1,5 @@
 ---
-image_file: 181_stoneoffolly.jpg
+image_file: 175_narrenscheider.jpg
 title: Extraction of fools
 title_2: Der Narrenschneider
 creator: possibly Heinrich Wirich
@@ -7,9 +7,9 @@ former_attribution: ''
 place_creation: Germany
 place_creation_extra: ''
 date_start_prefix: ''
-date_start: 1570
+date_start: 1575
 date_end_prefix: ''
-date_end: 1590
+date_end: 1600
 part_of: ''
 artistic_relations: 33
 related_items: ''
@@ -20,13 +20,13 @@ iconclass:
   - 49G913
 classification: Print
 medium: Etching and Engraving
-dimensions_height: 33.2 cm
-dimensions_width: 24.5 cm
+dimensions_height: 33.1 cm
+dimensions_width: 24.7 cm
 dimensions_diameter: ''
-collection: United Kingdom, London, British Museum
-inventory_number: 1880,0710.819
-literature: 'Museum: https://www.britishmuseum.org/collection/object/P_1880-0710-819'
-credits_and_rights: The Trustees of the British Museum / CC BY-NC-SA 4.0
+collection: Netherlands, Amsterdam, Rijksmuseum
+inventory_number: 'RP-P-1999-1'
+literature: 'Museum: https://id.rijksmuseum.nl/200412832'
+credits_and_rights: Public domain
 locatie_afbeelding: ''
 beeldrechten: ''
 ---
