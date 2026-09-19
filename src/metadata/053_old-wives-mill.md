@@ -1,6 +1,6 @@
 ---
 image_file: 99_grinding_women.jpg
-title: Old Wives Mill
+title: Old wives mill
 title_2: Allhie werden alte Weiber jung gemahlen
 creator: Marc Anthoni Hannas (printer)
 former_attribution: ''
@@ -34,4 +34,4 @@ beeldrechten: ''
 ---
 
 Title: Allhie werden alte Weiber jung gemahlen
-Text:
+

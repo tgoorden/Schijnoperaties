@@ -1,6 +1,6 @@
 ---
 image_file: 115_stoneoffolly.jpg
-title: The Stone Operation
+title: The stone operation
 title_2: ''
 creator: Unknown
 former_attribution: ''
@@ -34,5 +34,6 @@ beeldrechten: ''
 ---
 
 Tsa key uit elck make hem bereet / sulcke[n] macht hebbe[n] eene keij grooter da[n] hij weet / die de[n] keij heeft wilter hem met lijde[n]
-Translation: [Out with the stone! Everyone must prepare for it. He may have a stone bigger than he thinks. Whoever has a stone in his head
+
+Translation: Out with the stone! Everyone must prepare for it. He may have a stone bigger than he thinks. Whoever has a stone in his head
 must endure it

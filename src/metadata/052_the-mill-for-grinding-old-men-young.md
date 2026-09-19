@@ -1,9 +1,8 @@
 ---
 image_file: 98_grinding_men.jpg
 title: |-
-  The Mill for Grinding Old
-  Men Young
-title_2: Allhie werden alte Männer jung gemahlen
+  The mill for grinding old men young
+title_2: 'Allhie werden alte Männer jung gemahlen'
 creator: Marc Anthoni Hannas (printer)
 former_attribution: ''
 place_creation: Germany
@@ -36,4 +35,4 @@ beeldrechten: ''
 ---
 
 Title: Allhie werden alte Männer jung gemahlen
-Text:
+

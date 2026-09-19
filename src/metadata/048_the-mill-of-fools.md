@@ -32,3 +32,5 @@ credits_and_rights: Copyright undetermined
 locatie_afbeelding: ''
 beeldrechten: ''
 ---
+
+Title: Quale granum talis est farina

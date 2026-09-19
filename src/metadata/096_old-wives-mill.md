@@ -1,6 +1,6 @@
 ---
 image_file: 102_molen.jpg
-title: Old Wives Mill
+title: Old wives mill
 title_2: ''
 creator: Unknown
 former_attribution: ''
@@ -32,3 +32,4 @@ credits_and_rights: Public domain
 locatie_afbeelding: ''
 beeldrechten: ''
 ---
+Text: Hier worden oude wijven wedrom jong gemalen

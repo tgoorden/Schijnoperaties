@@ -2,7 +2,7 @@
 image_file: 181_stoneoffolly.jpg
 title: Extraction of fools
 title_2: Der Narrenschneider
-creator: possibly Heinrich Wirich
+creator: Possibly Heinrich Wirich
 former_attribution: ''
 place_creation: Germany
 place_creation_extra: ''
