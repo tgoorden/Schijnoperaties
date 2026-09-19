@@ -1,6 +1,6 @@
 ---
 image_file: 168_stoneoffolly.jpg
-title: Master Blaeskake's Stone Operation
+title: Master Blaeskake's stone operation
 title_2: ''
 creator:
   - After Maerten de Vos

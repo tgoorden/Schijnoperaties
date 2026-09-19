@@ -1,6 +1,6 @@
 ---
 image_file: 180_stoneoffolly.jpg
-title: Master Kaccadorus' Stone Operation
+title: Master Kaccadorus' stone operation
 title_2: ''
 creator: Clement, De Vri & Van Stegeren (printer)
 former_attribution: ''

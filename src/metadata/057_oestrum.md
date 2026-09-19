@@ -32,6 +32,7 @@ credits_and_rights: Herzog August Bibliothek Wolfenbüttel / public domain
 locatie_afbeelding: ''
 beeldrechten: ''
 ---
+Title: NIL OPUS ANTICYRAS ABEAS HIC TOLLITUR AESTRUM
 
-Epigram (Latin): Oestrum ; URo, seco, & rabidum cerebrosa e fronte repurgo,
+Epigram: URo, seco, & rabidum cerebrosa e fronte repurgo,
 Arte mea, dudum male quod te exercuit, oestrum.

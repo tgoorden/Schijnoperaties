@@ -1,6 +1,6 @@
 ---
 image_file: 119_stoneoffolly.jpg
-title: Master Blaeskake's Stone Operation
+title: Master Blaeskake's stone operation
 title_2: ''
 creator:
   - After Maerten de Vos
@@ -34,3 +34,9 @@ credits_and_rights: Public domain
 locatie_afbeelding: ''
 beeldrechten: ''
 ---
+
+Title: Hic cerebro arte senex male sanum eradit amorem
+
+Caption (FR): Si tu otes viellard ce tourment inhumain / Quy d’un faux nom d’Amour couvre sa Phrenesie; / Je présente le front à ton artiste main, / Viens arracher ce Diable hors de ma fantasie
+
+Caption (NL): Ick meester blaeskake, doe nu mynen Intrey / voor die van Malleghem, compt vry u tweestere / hebdy de wesp’ int hoot, oft lotert u den key / tot sulcken siecten, ben ick rechts een meestere.

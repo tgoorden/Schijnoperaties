@@ -1,6 +1,6 @@
 ---
 image_file: 181_stoneoffolly.jpg
-title: Extraction of fools
+title: The extraction of fools
 title_2: Der Narrenschneider
 creator: Possibly Heinrich Wirich
 former_attribution: ''

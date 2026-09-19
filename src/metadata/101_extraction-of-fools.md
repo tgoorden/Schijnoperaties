@@ -1,6 +1,6 @@
 ---
 image_file: 177_stoneoffolly.jpg
-title: Extraction of fools
+title: The extraction of fools
 title_2: ''
 creator: Unknown
 former_attribution: ''

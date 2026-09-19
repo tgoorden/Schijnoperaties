@@ -35,3 +35,7 @@ credits_and_rights: Public domain
 locatie_afbeelding: ''
 beeldrechten: ''
 ---
+
+Title: NIL OPUS ANTICYRAS ABEAS HIC TOLLITUR AESTRUM
+
+Epigram: Die Hummeln so in deinem Hirn / Dich hindern/ ligen in der Stirn / Dieselben ich gar artlich dir / Ausschneiden kan / das glaub du mir.
