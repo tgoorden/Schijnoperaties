@@ -6,6 +6,7 @@
   "scripts": {
     "build": "eleventy",
     "start": "eleventy --serve",
+    "test": "node --test",
     "images": "node ./bin/generate-images.mjs",
     "deploy": "npm run build && npm run deploy:upload",
     "deploy:upload": "eleventy-bunny-sync",

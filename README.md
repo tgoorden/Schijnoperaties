@@ -22,7 +22,7 @@ If you **do not** have edit rights:
 
 ### Changing or adding images
 
-All catalogue images are currently kept inside `src/img/originals`. You can add new images in the regular Github interface or using the VS Code Editor. A commit of any changes inside that directory will trigger a process which creates new scaled versions inside `src/resized` and trigger a full website rebuild. So you can actually combine this with text edits as described in the previous section. Since rescaling images is a fairly slow process, it is again (strongly) recommended to combine as many updates/additions as possible in a single commit.
+All catalogue images are currently kept inside `src/img/originals`. You can add new images in the regular Github interface or using the VS Code Editor. A commit of any changes inside that directory will trigger a process which creates new scaled versions inside `src/img/resized` and trigger a full website rebuild. Every supported image in the originals directory is processed, even if it is not yet referenced by a metadata file. So you can actually combine this with text edits as described in the previous section. Since rescaling images is a fairly slow process, it is again (strongly) recommended to combine as many updates/additions as possible in a single commit.
 
 ## Install (technical documentation)
 
@@ -74,7 +74,7 @@ Put the large originals in `src/img/originals/` using those exact filenames. The
 npm run images
 ```
 
-This creates responsive WebP derivatives in `src/img/resized/` at 320, 640, 960, and 1280 pixels wide. You can override the defaults:
+This checks every supported image in `src/img/originals/` and creates any missing responsive WebP derivatives in `src/img/resized/` at 320, 640, 960, and 1280 pixels wide. Metadata references are not required. You can override the defaults:
 
 ```bash
 npm run images -- \

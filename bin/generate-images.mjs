@@ -1,9 +1,20 @@
 #!/usr/bin/env node
 import fs from 'node:fs/promises';
-import fssync from 'node:fs';
 import path from 'node:path';
-import yaml from 'js-yaml';
 import sharp from 'sharp';
+
+const SUPPORTED_IMAGE_EXTENSIONS = new Set([
+  '.avif',
+  '.gif',
+  '.heic',
+  '.heif',
+  '.jpeg',
+  '.jpg',
+  '.png',
+  '.tif',
+  '.tiff',
+  '.webp'
+]);
 
 function usage() {
   console.log(`
@@ -11,8 +22,7 @@ Usage:
   npm run images -- --input-dir src/img/originals --output-dir src/img/resized
 
 Options:
-  --metadata-dir   Directory with generated markdown files. Default: src/metadata
-  --input-dir      Directory containing the large originals named in the image field. Default: src/img/originals
+  --input-dir      Directory containing the original images. Default: src/img/originals
   --output-dir     Directory for resized webp derivatives. Default: src/img/resized
   --sizes          Comma-separated widths. Default: 320,640,960,1280
   --quality        WebP quality, 1-100. Default: 82
@@ -23,7 +33,6 @@ Options:
 
 function parseArgs(argv) {
   const opts = {
-    metadataDir: 'src/metadata',
     inputDir: 'src/img/originals',
     outputDir: 'src/img/resized',
     sizes: [320, 640, 960, 1280],
@@ -37,7 +46,6 @@ function parseArgs(argv) {
       return argv[++i];
     };
     switch (a) {
-      case '--metadata-dir': opts.metadataDir = next(); break;
       case '--input-dir': opts.inputDir = next(); break;
       case '--output-dir': opts.outputDir = next(); break;
       case '--sizes': opts.sizes = next().split(',').map(n => Number(n.trim())).filter(Number.isFinite); break;
@@ -50,24 +58,13 @@ function parseArgs(argv) {
   return opts;
 }
 
-function frontmatter(source) {
-  const match = source.match(/^---\n([\s\S]*?)\n---/);
-  if (!match) return {};
-  return yaml.load(match[1]) || {};
-}
-
-function asArray(value) {
-  if (value === undefined || value === null || value === '') return [];
-  return Array.isArray(value) ? value : [value];
-}
-
-function imageNames(data) {
-  const values = asArray(data.image || data.image_file || data.image_filename);
-  return values
-    .map(value => String(value).trim())
-    .filter(Boolean)
-    .filter(value => !/^https?:\/\//.test(value))
-    .map(value => path.basename(value));
+async function originalImageNames(inputDir) {
+  const entries = await fs.readdir(inputDir, { withFileTypes: true });
+  return entries
+    .filter(entry => entry.isFile())
+    .map(entry => entry.name)
+    .filter(name => SUPPORTED_IMAGE_EXTENSIONS.has(path.extname(name).toLowerCase()))
+    .sort((a, b) => a.localeCompare(b, 'en'));
 }
 
 async function main() {
@@ -75,45 +72,42 @@ async function main() {
   if (opts.help) { usage(); return; }
   if (!opts.sizes.length) throw new Error('At least one image size is required.');
 
-  const metadataDir = path.resolve(opts.metadataDir);
   const inputDir = path.resolve(opts.inputDir);
   const outputDir = path.resolve(opts.outputDir);
   await fs.mkdir(outputDir, { recursive: true });
 
-  const files = (await fs.readdir(metadataDir)).filter(file => file.endsWith('.md'));
-  const names = new Set();
-  for (const file of files) {
-    const data = frontmatter(await fs.readFile(path.join(metadataDir, file), 'utf8'));
-    for (const name of imageNames(data)) names.add(name);
-  }
+  const names = await originalImageNames(inputDir);
 
   let generated = 0;
-  let missing = 0;
   for (const name of names) {
     const input = path.join(inputDir, name);
-    if (!fssync.existsSync(input)) {
-      console.warn(`Missing original: ${input}`);
-      missing += 1;
-      continue;
-    }
     const base = name.replace(/\.[^.]+$/, '');
     const metadata = await sharp(input).metadata();
+    let generatedForImage = 0;
     for (const width of opts.sizes) {
       const output = path.join(outputDir, `${base}-${width}.webp`);
-      if (!opts.force && fssync.existsSync(output)) continue;
+      if (!opts.force) {
+        try {
+          await fs.access(output);
+          continue;
+        } catch (error) {
+          if (error.code !== 'ENOENT') throw error;
+        }
+      }
       await sharp(input)
         .rotate()
         .resize({ width, withoutEnlargement: true })
         .webp({ quality: opts.quality })
         .toFile(output);
       generated += 1;
+      generatedForImage += 1;
     }
-    if (metadata.width) {
-      console.log(`${name}: source ${metadata.width}px wide → ${opts.sizes.join(', ')}px variants`);
+    if (generatedForImage > 0 && metadata.width) {
+      console.log(`${name}: source ${metadata.width}px wide → generated ${generatedForImage} variant(s)`);
     }
   }
 
-  console.log(JSON.stringify({ originalsFound: names.size - missing, originalsMissing: missing, filesGenerated: generated, outputDir }, null, 2));
+  console.log(JSON.stringify({ originalsFound: names.length, filesGenerated: generated, outputDir }, null, 2));
 }
 
 main().catch(err => {
