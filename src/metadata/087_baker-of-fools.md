@@ -1,5 +1,5 @@
 ---
-image_file: 23_schembartbaker.jpeg
+image_file: 23_schembartbaker.jpg
 title: Baker of fools
 title_2: ''
 creator: Unknown
@@ -23,7 +23,9 @@ dimensions_width: ''
 dimensions_diameter: ''
 collection: Germany, Dusseldorf, Universitäts- und Landesbibliothek
 inventory_number: urn:nbn:de:hbz:061:1-21793
-literature: For further reading, see https://digi.ub.uni-heidelberg.de/de/schembart/informationen/literatur.html
+literature: 
+- "Institution: https://nbn-resolving.org/urn:nbn:de:hbz:061:1-21793"
+- "For further reading, see https://digi.ub.uni-heidelberg.de/de/schembart/informationen/literatur.html"
 credits_and_rights: Public domain
 locatie_afbeelding: |-
   https://commons.wikimedia.org/wiki/File:Hamburg_Schembartbuch_75.jpg
