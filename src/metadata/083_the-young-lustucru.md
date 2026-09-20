@@ -31,5 +31,10 @@ locatie_afbeelding: https://commons.wikimedia.org/wiki/File:Le_Cadet_Lustucru_Op
 beeldrechten: ''
 ---
 
-Le Cadet Lustucru / Operateur Céphalique qui purge / le Cerveau des foux amoureux ; Amoureux me/ lancolique / Jeune fol amoureux / qui ne veut pas être / guéri. ; Vieux Rèsureurs amoureux - Amoureux transy / Boudan excu / Ie gueris tous les maux, que l'Amour peut produire, / Avec mon baume exquis, Cupidon ne peut nuire / Ie gueris tous les maux cachez, / Qui viennent sans aucuns pechez, / Comme maux d'yeux, de dents, de Poulmons, et de Ratte / Et donne quinze et Bisc au Scavant Hypocrate ;
+Le Cadet Lustucru / Operateur Céphalique qui purge / le Cerveau des foux amoureux 
+
+Amoureux me/ lancolique / Jeune fol amoureux / qui ne veut pas être / guéri. 
+
+Vieux Rèsureurs amoureux - Amoureux transy / Boudan excu / Ie gueris tous les maux, que l'Amour peut produire, / Avec mon baume exquis, Cupidon ne peut nuire / Ie gueris tous les maux cachez, / Qui viennent sans aucuns pechez, / Comme maux d'yeux, de dents, de Poulmons, et de Ratte / Et donne quinze et Bisc au Scavant Hypocrate 
+
 VILLE / DE / PARIS

@@ -14,7 +14,7 @@ part_of: ''
 artistic_relations: 2
 related_items: ''
 subjects: 1
-signatures: ''
+signatures: 'Bruegel'
 iconclass:
   - 31B81
   - 49G911

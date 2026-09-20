@@ -28,4 +28,5 @@ inventory_number: 'P 1466'
 literature: "Museum: https://pba-opacweb.lille.fr/r/0d811394-a208-43d7-9d38-d9b3026da65c"
 credits_and_rights: 'Public domain'
 ---
-Caption: Al te bot 
+
+Al te bot 

@@ -28,4 +28,5 @@ inventory_number: ''
 literature: "Institution: https://www.dorotheum.com/it/l/8050848/" 
 credits_and_rights: 'Public domain'
 ---
-Caption: Geweldige Botticheyt
+
+Geweldige Botticheyt

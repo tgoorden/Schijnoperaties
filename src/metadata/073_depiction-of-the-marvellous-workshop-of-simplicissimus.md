@@ -41,10 +41,17 @@ beeldrechten: Afbeelding in 2019 aangekocht voor Volkskunde publicatie
 ---
 
 Title: Abbildung der wunderbarlichen Werckstatt des Weltstreichenden Artzts Simplicissimi
+
 Subtitle: Darinnen Er als ein landstörtzender Vagant aus eigener Experientz und Practic zuvernemen gibt / Wie etlicher Leute imaginirte Haupt-Kranckheiten zu Curiren seyn. Allen Sorgfältigen haus Vättern und hausmüttern vor ihre Kinder und Gesinde höchstdienlich Sinnteichnußlich und fleissig zu gebrauchen.
+
 First four lines of the accompanying text: Du zwar allbereit zu Hans Sachsen Zeiten ein Wurmschneider sich gefunden! Wann schon bry nahe vor 30 Jahren Doctor Wurmbrand Sich ein-gestellt! Ob gleich am eben dieselbige Zeit ein Schleifftstein vor die grosse Naßen und eine Windmuhl die Alte Weiber darauf Jung zu machen erfunden. (Note: It is not possible to produce a complete transcription on the basis of the available photographic material.)
+
 Above the baker’s oven: [...] ein gebacken ver[...]gerde Manner
+
 On the athanor: Weib und Kinder / Krieg [...] (Note: The remaining text is illegible. It may refer to the symbols being boiled out.)
+
 The coat of arms on the far right: Erwarte des Alters / so bringe ich frucht
+
 The coat of arms to the left of this: Erwarte des Alters / so gieb ich die frucht
+
 The banderole above the coats of arms: Der Doctor [...] nicht auf[...] / Der [...]

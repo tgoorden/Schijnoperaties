@@ -25,9 +25,7 @@ medium: Engraving
 dimensions_height: 22.5 cm
 dimensions_width: 26 cm
 dimensions_diameter: ''
-collection: |-
-  Netherlands, Amsterdam,
-  Rijksmuseum
+collection: "Netherlands, Amsterdam, Rijksmuseum"
 inventory_number: RP-P-OB-78.805
 literature: 'Wauters, Wendy, ‘The Stone Operation or The Witch of Mallegem’, Maarten Bassens, Joris van Grieken (eds.), Bruegel in Black and White. The Complete Graphic Works, exh. cat. (Royal Library of Belgium, Brussels), Veurne: Hannibal Publishing, 2019, p. 184, fig. 1.'
 credits_and_rights: Public domain

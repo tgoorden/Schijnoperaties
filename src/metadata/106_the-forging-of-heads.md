@@ -36,5 +36,6 @@ locatie_afbeelding: ''
 beeldrechten: ''
 ---
 
-Motto: DURUM TUNDE CAPUT NEC PARCE PYRAGMOLABOR ;
+Motto: DURUM TUNDE CAPUT NEC PARCE PYRAGMOLABOR 
+
 Epigram (Dutch): Maer al deden wy t'ambacht reuwich met pyne / Noch sal men over al in Landen end'steden / Qua hoofden ghenoech vinden t'allen termyne

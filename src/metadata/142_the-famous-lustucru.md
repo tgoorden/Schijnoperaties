@@ -14,7 +14,7 @@ part_of: ''
 artistic_relations: ''
 related_items: ''
 subjects: 11
-signatures: ''
+signatures: 'Jean'
 iconclass:
   - 31B81
   - 31A9
@@ -31,4 +31,8 @@ locatie_afbeelding: ''
 beeldrechten: ''
 ---
 
-Lettered with title in upper margin, followed by 'Seul et unique dans son genre pour repolir les tetes des femmes &c', a line of text beneath 'Oh! Que les maris seraient heureux si Lustucru et son fils Lustucuit venaient à Paris !!!', and publication line 'A Paris chez Jean rue St Jean de Beauvais no.10'
+Lettered with title in upper margin, followed by 'Seul et unique dans son genre pour repolir les tetes des femmes &c'
+
+A line of text beneath 'Oh! Que les maris seraient heureux si Lustucru et son fils Lustucuit venaient à Paris !!!'
+
+Publication line 'A Paris chez Jean rue St Jean de Beauvais no.10'

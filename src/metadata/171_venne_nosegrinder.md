@@ -28,4 +28,5 @@ inventory_number: 'GKM 0086'
 literature: 'Museum: https://collection.goteborgskonstmuseum.se/en/collection/item/7695/' 
 credits_and_rights: 'Copyright undetermined'
 ---
-Inscription: 16[18?]
+
+16[18?]

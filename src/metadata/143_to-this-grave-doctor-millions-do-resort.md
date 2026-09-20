@@ -42,10 +42,14 @@ beeldrechten: ''
 
 Title: To This Grave Doctor Millions Doe Resorte, / both from the cuntry, citty & the court, // whence though they com as thick as raine can foll, / such is his skill as hee can cure them all, // for by his waters druggs, conserves & potions, / he purgeth fancies, follies, idle motions.
 
-Banner, bottom right: While clensing flames laft refuge of my skill - purge out these projetcs here I must instell / these wholesome herbs although I greatly feare - Theyle not fill up those rooms the empty are / so when these ayrie castles forth are gott - his braine being empty h’eele prove idiott.;
-On the furnace: Herbgrasse / Sophia / Thrift / Hearts ease / Patience / Agnus Castus / Hore strange / Sage of Jerusalem;
-On the athanor: Ofte having tride to purg the Gallants Braine / I tooke them washt them: putt them in againe, / but to no end: so since I did desire / to try conclusions by the force of fire, / and heere behould what good successe I had / these strange chimaera-crotchetts made him mad;
-Banner, center top: Say good Sir Briske, spruce master Cittyzsinne / I have a potion for your worth within / a dosis Sir where the ingredients be / Religion Truth plaine dealing Honestie / it will expell proud humors sly deceits / knaves peacocks foxes Jayes & couzening weights ;
+Banner, bottom right: While clensing flames laft refuge of my skill - purge out these projetcs here I must instell / these wholesome herbs although I greatly feare - Theyle not fill up those rooms the empty are / so when these ayrie castles forth are gott - his braine being empty h’eele prove idiott.
+
+On the furnace: Herbgrasse / Sophia / Thrift / Hearts ease / Patience / Agnus Castus / Hore strange / Sage of Jerusalem
+
+On the athanor: Ofte having tride to purg the Gallants Braine / I tooke them washt them: putt them in againe, / but to no end: so since I did desire / to try conclusions by the force of fire, / and heere behould what good successe I had / these strange chimaera-crotchetts made him mad
+
+Banner, center top: Say good Sir Briske, spruce master Cittyzsinne / I have a potion for your worth within / a dosis Sir where the ingredients be / Religion Truth plaine dealing Honestie / it will expell proud humors sly deceits / knaves peacocks foxes Jayes & couzening weights 
+
 Banner, center bottom: Once (faire) I knew the tongues phlebotomie / had powre to cure your sexes maladie / but now youre manly humors boile so highe / that you must in the gallants fornace lye
 
 Banner, bottom left: A slender purge serves the rude rusticall / too druggs expell his vicious humors all, / by wisedomes force and understanding passe / the goose, foole, woodcock, buzzard, calfe & asse.
