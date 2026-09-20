@@ -14,7 +14,7 @@ part_of: ''
 artistic_relations: 12
 related_items: ''
 subjects: 1
-signatures: ''
+signatures: 'Clement, De Vri & Van Stegeren'
 iconclass:
   - 31B81
   - 49G911
@@ -31,4 +31,6 @@ locatie_afbeelding: ''
 beeldrechten: ''
 ---
 
-Is iemand met de kei gebruit, Die komt maar hier ik snijze uit, Probatum of daarvoor geen duit
+Is iemand met de kei gebruit, Die komt maar hier ik snijze uit, Probatum of daarvoor geen duit.
+
+Zie zoo, zie zoo, kom breng maar an, Ik zalje zonder te doene zeere, ’t Zij Vrijer, Vrijster, Wijf of Man, Straks van de Kei Cureeren.

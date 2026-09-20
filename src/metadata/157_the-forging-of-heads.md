@@ -33,3 +33,9 @@ credits_and_rights: Wellcome Collection / Public domain
 locatie_afbeelding: https://wellcomecollection.org/works/z2e2ks8b/images?id=sytrtvew&resultPosition=22
 beeldrechten: gratis
 ---
+
+Operateur cephalique. 
+
+Vous pauvres malheureux que l'esprit lunatique / Des femmes d'apresent fait toujours enrager; / Et qui ne croyez pas les voir jamais changer / Amenez les icy dedans nostre boutique ... / De quelque qualité que leurs teste puisse être / Nous y mettrons si bien la lime et le marteau : / Que la lune en son plein fut elle en leur cerveau / Au sortir de chez nous en serez le maitre. // Nostre boutique aussi n'est jamais deserte / L'on y voit aborder de toutes nations : / Toutes sortes d'etats et de conditions, / Jour et nuit en tout temps elle demeure ouvert. / On ameine en vaisseau, a cheval, en brouëtte / Sans jntermission l'on nous fait travailler; / Nous n'avons pas le temps même de someiller / Car tant plus nous vivons, leurs teste sont mal faites 
+
+A l'enseigne tout en est bon. / Ceans maitre Lustucru, a un secret admirable, qu'il a apporter de Madagascar pour reforger et repolir sans faire mal n'y douleur les testes des femmes accariastres, bigeardes, criardes, diables..., enragées, fantasques, glorieuses, hargneuses, insuportables, lunatiques, meschantes, noiseuses, obstinées, pigriesches, revesches, sottes, testuës, volontaires, et qui ont d'autres incomodités, le tout a prix raisonable, aux riches pour de argent, et aux pauvres gratis.
