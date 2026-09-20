@@ -34,6 +34,7 @@ beeldrechten: ''
 ---
 
 Epigram (Latin) : Circumforaneus 
+
 UNica si cunctos tollit medicina dolores, Semper quo mundus decipiatur, erit. 
 
 Epigram (German): Der Marktschreyer ; WEil die Welt wil betrogen seyn / Durch falschen eusserlichen Schein / Drumb ists kein wunder daß sich findt / Allenthalben solch loß Gesindt / Die da betriegen vmb das Gelt / Wie vns hiermit wird fürgestelt: / Mein Salb ist gut/ ich sag nicht viel / Laß ligen wers nicht haben wil. / Doch kompt herbey kaufft in der Z[e]it / Ehe daß jhr gantz schadhafftig seyd. / Mein Salb dient zu einer jeden Wunden / Sie steh gleich oben oder vnden. / Kaufft sie vmb ein geringes Gelt / Vnd braucht sie wann es euch gefelt.
