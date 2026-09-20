@@ -23,9 +23,7 @@ dimensions_width: ''
 dimensions_diameter: ''
 collection: ''
 inventory_number: ''
-literature: |-
-  Brückner, Wolfgang, ​Populäre Druckgraphik Europas: Deutschland vom 15. bis zum 20. Jahrhundert​, München 1975, nr. 115.
-  _x000b_
+literature: "Brückner, Wolfgang, ​Populäre Druckgraphik Europas: Deutschland vom 15. bis zum 20. Jahrhundert​, München 1975, nr. 115."
 credits_and_rights: Copyright undetermined
 locatie_afbeelding: ''
 beeldrechten: ''

@@ -14,8 +14,8 @@ part_of: Eugène Canseliet, L’alchimie expliquée sur ses textes classiques, 1
 artistic_relations: 16
 related_items: ''
 subjects:
-  - '5'
-  - '14'
+  - 5
+  - 14
 signatures: ''
 iconclass:
   - 31B813

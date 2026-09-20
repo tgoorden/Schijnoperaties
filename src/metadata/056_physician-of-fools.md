@@ -14,8 +14,8 @@ part_of: Johann Theodor de Bry, Proscenium vitæ humanæ sive Emblematum Secular
 artistic_relations: 8
 related_items: 9
 subjects:
-  - '5'
-  - '14'
+  - 5
+  - 14
 signatures: ''
 iconclass:
   - 31B813
