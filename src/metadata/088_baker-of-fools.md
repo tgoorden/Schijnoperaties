@@ -1,5 +1,5 @@
 ---
-image_file: 17_schembartlaufbaker.jpeg
+image_file: 17b_schembartlaufbaker.jpg
 title: Baker of fools
 title_2: ''
 creator: Unknown
@@ -22,8 +22,10 @@ dimensions_height: ''
 dimensions_width: ''
 dimensions_diameter: ''
 collection: Germany, Nuremberg, Germanisches Nationalmuseum
-inventory_number: Merkel Hs 2° 241
-literature: For further reading, see https://digi.ub.uni-heidelberg.de/de/schembart/informationen/literatur.html
+inventory_number: "Merkel Hs 2° 241"
+literature: 
+- "For further reading, see https://digi.ub.uni-heidelberg.de/de/schembart/informationen/literatur.html"
+- "Institution: https://dlib.gnm.de/item/HsMerkel241/165"
 credits_and_rights: Public domain
 locatie_afbeelding: http://dlib.gnm.de/item/HsMerkel241/165
 beeldrechten: vrij gebruik
