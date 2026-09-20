@@ -1,5 +1,5 @@
 ---
-image_file: 22_schembartbaker.jpg
+image_file: 22b_schembartbaker.jpg
 title: Baker of fools
 title_2: ''
 creator: Unknown
@@ -23,8 +23,8 @@ dimensions_width: ''
 dimensions_diameter: ''
 collection: Czech Republic, Prague, National Museum
 inventory_number: Cod. XIII D 24
-literature: 
-- "Institution: https://dlib.gnm.de/item/HsMerkel271/7"
+literature:
+- "Institution: https://www.manuscriptorium.com/apis/resolver-api/en/catalog/default/detail/manuscriptorium%7CAIPDIG-NMP___XIII_D_24___3WVPIN1-cs"
 - "For further reading, see https://digi.ub.uni-heidelberg.de/de/schembart/informationen/literatur.html"
 credits_and_rights: Obrazový repozitář NK ČR (Image Repository of the National Library of the Czech Republic) / CC BY-NC-SA 4.0 International
 locatie_afbeelding: https://www.manuscriptorium.com/apis/resolver-api/en/catalog/default/detail/manuscriptorium%7CAIPDIG-NMP___XIII_D_24___3WVPIN1-cs

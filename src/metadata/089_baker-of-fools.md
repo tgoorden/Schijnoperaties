@@ -22,8 +22,10 @@ dimensions_height: ''
 dimensions_width: ''
 dimensions_diameter: ''
 collection: Germany, Nuremberg, Germanisches Nationalmuseum
-inventory_number: Merkel Hs 2° 271
-literature: For further reading, see https://digi.ub.uni-heidelberg.de/de/schembart/informationen/literatur.html
+inventory_number: "Merkel Hs 2° 271"
+literature: 
+- "For further reading, see https://digi.ub.uni-heidelberg.de/de/schembart/informationen/literatur.html"
+- "Institution: https://dlib.gnm.de/item/HsMerkel271/7"
 credits_and_rights: Public domain
 locatie_afbeelding: |-
   http://dlib.gnm.de/item/HsMerkel271/253
