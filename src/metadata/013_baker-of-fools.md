@@ -1,5 +1,5 @@
 ---
-image_file: 16_schembartlaufbaker.jpg
+image_file: 16b_schembartlaufbaker.jpg
 title: Baker of fools
 title_2: ''
 creator: Unknown
@@ -10,7 +10,7 @@ date_start_prefix: c.
 date_start: 1590
 date_end_prefix: ''
 date_end: 1640
-part_of: Schembartsbuch (fol. 245v-246r)
+part_of: "Schembartsbuch (fol. 245v-246r): Anno 1513, 55th Schembart with 39 men. Captain, Hieronimus Pessler."
 artistic_relations: 10
 related_items: ''
 subjects: 3
