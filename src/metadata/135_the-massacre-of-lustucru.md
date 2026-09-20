@@ -33,3 +33,22 @@ credits_and_rights: Source gallica.bnf.fr / BnF / public domain, source attribut
 locatie_afbeelding: https://commons.wikimedia.org/wiki/File:Le_Massacre_de_Lustucru.jpg
 beeldrechten: ''
 ---
+
+LE MASSACRE DE LVSTVCRV par les femmes //
+Il nous est besoing et necessaire pour noſtre repos d'oster du monde cest ennemy de notr ſexe ce forgeron d'enfer qui veut mesler de reforger polir et rabonir nos testes pour contenter l'esprit bouru de nos ialoux maris qui croyent faire beaucoup de nous envoyer chez Lustusru ils ont beau dire il n'y a point de ſecret qui nous puiſse faire autre que nous ſommes, c'est pourquoy, afin que des ormais il n'y ait plus d'operateur ſi impudent qu'il n'en ſoit iamais parlé alons toutes mettre fin a une ſi glorieuse entreprise donnons luy cent coups apres ſa mort mettons le en piece, portons sa Diable de teste par tout tesmoing de nos courage alons mettre le feu au vaiſſeau qui uient
+
+COMPLAINTE de LVSTVCRV aux Maris Martirs // Messieurs aurez vous bien lame ſi lache delaiſer maſacrer Lustucru ce bien facteur de vos menages celuy qui a tant pour reforger et rabonir les testes de vos meschantes femẽs quoy faut il que j'aye tant voyagé pour decouuri ce rare ſecret et en etre ſi mal recompencé ſongé donc a me ſecourir promtement car ſi vous attendé ma mort vous estes perdus n'ayant plus de Lustucru vos femmes vous feront enrager plus que jamais, aie voy bien que mes cris ſont perdus ie ſuis accablé ces Diablesse mont ſurpris a Dieu il n'y a plus de LUSTUCRU
+
+Lustucru et mort
+
+Lustucru trainé a la riviere
+
+Mr. la confrerie des Martirs sera plus grande
+
+Nous sommes bien lache d'auoir laissé masac le P.e Lustucru
+
+Helas mes Dames ie vous cri mercy
+
+Le Compagnon de Lustucru
+
+Viuat le Diable de Luſtucru et mort

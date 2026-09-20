@@ -32,3 +32,5 @@ credits_and_rights: Source gallica.bnf.fr / BnF / public domain, source attribut
 locatie_afbeelding: https://commons.wikimedia.org/wiki/File:Destruction_de_Lustrucu.jpg
 beeldrechten: ''
 ---
+
+La Grande Deſtruction de Lvstucrv, par les Femmes Fortes et Vertueuses.
