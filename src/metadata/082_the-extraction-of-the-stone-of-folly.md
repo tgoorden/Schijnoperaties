@@ -3,7 +3,9 @@ image_file: 157_stoneoffolly.jpg
 title: The extraction of the stone of madness
 title_2: ''
 creator: Manner of Jheronimus Bosch
-former_attribution: Marcellus Coffermans
+former_attribution: 
+- Marcellus Coffermans
+- Henri de Bles
 place_creation: Unknown
 place_creation_extra: possibly Northern Netherlands
 date_start_prefix: c.
@@ -24,12 +26,13 @@ classification: Painting
 medium: Oil on wood
 dimensions_height: ''
 dimensions_width: ''
-dimensions_diameter: 45 cm
-collection: France, Bailleul, Musée Benoît-De-Puydt
-inventory_number: ''
+dimensions_diameter: 30.2 cm
+collection: 'France, Bailleul, Musée Benoît-De-Puydt'
+inventory_number: '992.21.34'
 literature:
   - Koldeweij, A.M., P. Vandenbroeck, B. Vermet, Jheronimus Bosch. Alle schilderijen en tekeningen, Rotterdam / Ghent (2001), p. 147
   - 'Unverfehrt, G., Hieronymus Bosch: Die Rezeption seiner Kunst im frühen 16. Jahrhundert, Berlin / Mann, 1980, nr. 55b.'
+  - "KIK-IRPA: https://www.kikirpa.be/friedlaender/6661"
 credits_and_rights: Public domain
 locatie_afbeelding: ''
 beeldrechten: ''
