@@ -1,5 +1,5 @@
 ---
-image_file: 19_schembartbaker.JPEG
+image_file: 19b_schembartbaker.jpg
 title: Baker of fools
 title_2: ''
 creator: Unknown
@@ -21,9 +21,11 @@ medium: ''
 dimensions_height: 31 cm
 dimensions_width: 21 cm
 dimensions_diameter: ''
-collection: France, Paris, Bibliothèque nationale de France, Département des manuscrits
+collection: "France, Paris, Bibliothèque nationale de France, Département des manuscrits"
 inventory_number: Allemand 259
-literature: For further reading, see https://digi.ub.uni-heidelberg.de/de/schembart/informationen/literatur.html
+literature: 
+- "For further reading, see https://digi.ub.uni-heidelberg.de/de/schembart/informationen/literatur.html"
+- "Institution: http://gallica.bnf.fr/ark:/12148/btv1b525037219/f122.item"
 credits_and_rights: Source gallica.bnf.fr / BnF / public domain, source attribution required
 locatie_afbeelding: |-
   ark:/12148/btv1b525037219
