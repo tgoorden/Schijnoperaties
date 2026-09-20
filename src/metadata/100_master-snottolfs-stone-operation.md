@@ -33,3 +33,5 @@ credits_and_rights: Public domain
 locatie_afbeelding: ''
 beeldrechten: ''
 ---
+
+Ghy lieden van Mallegem, wilt nu wel syn gesint / Ick Vrouw Hexe wil hier oock wel worden bemint / Om u te genesen, ben ick gecomen hier / Tuwen dienste met myn onder meesteressen fier / Compt vry den meesten met den minsten, sonder verbeyen / Hebdy de wesp int hooft, oft loteren u de keyen

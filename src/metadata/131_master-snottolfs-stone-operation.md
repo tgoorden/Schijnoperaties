@@ -17,7 +17,7 @@ part_of: ''
 artistic_relations: 13
 related_items: ''
 subjects: 1
-signatures: ''
+signatures: 'IOAN GALLE EXCVDIT'
 iconclass:
   - 31B81
   - 49G911
@@ -33,3 +33,5 @@ credits_and_rights: Rosenwald Collection / public domain
 locatie_afbeelding: https://commons.wikimedia.org/wiki/File:Pieter_van_der_Heyden_after_Pieter_Bruegel_the_Elder,_The_Witch_of_Malleghem,_published_1559,_NGA_47635.jpg
 beeldrechten: ''
 ---
+
+Ghy lieden van Mallegem, wilt nu wel syn gesint / Ick Vrouw Hexe wil hier oock wel worden bemint / Om u te genesen, ben ick gecomen hier / Tuwen dienste met myn onder meesteressen fier / Compt vry den meesten met den minsten, sonder verbeyen / Hebdy de wesp int hooft, oft loteren u de keyen
