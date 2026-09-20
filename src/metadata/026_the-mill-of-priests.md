@@ -29,4 +29,6 @@ locatie_afbeelding: ''
 beeldrechten: ''
 ---
 
-Top inscription: “Wies Korn ist, also wirts Mal.” Below are the signature “Hans Jacob Kilchsperger 1566” and Kilchsperger’s coat of arms.
+Top inscription: Wies Korn ist, also wirts Mal.
+
+Below are the signature “Hans Jacob Kilchsperger 1566” and Kilchsperger’s coat of arms.

@@ -23,7 +23,7 @@ dimensions_width: ''
 dimensions_diameter: ''
 collection: Germany, Munchen, Bayerische Staatsbibliothek
 inventory_number: L.impr.c.n.mss. 200
-literature: 'Jones, Malcolm, ‘Mills of Rejuvenation and Transformation — incl. the Altweibermuhle, the Narrenmuhle, and the Pfaffenmuhle’, Early Modern Album Amicorum Iconography & related images, 2026: https://albumamicorumear-e4qvahs764.live-website.com/mills-of-rejuvenation-and-transformation-incl-the-altweibermuhle-the-narrenmuhle-and-the-pfaffenmuhle/'
+literature: "Jones, Malcolm, ‘Mills of Rejuvenation and Transformation — incl. the Altweibermuhle, the Narrenmuhle, and the Pfaffenmuhle’, Early Modern Album Amicorum Iconography & related images, 2026: https://albumamicorumear-e4qvahs764.live-website.com/mills-of-rejuvenation-and-transformation-incl-the-altweibermuhle-the-narrenmuhle-and-the-pfaffenmuhle/"
 credits_and_rights: Bayerische Staatsbibliothek / public domain
 locatie_afbeelding: https://www.digitale-sammlungen.de/en/view/bsb00035710?page=400
 beeldrechten: ''

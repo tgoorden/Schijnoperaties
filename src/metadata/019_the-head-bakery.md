@@ -12,9 +12,9 @@ date_end_prefix: c.
 date_end: 1580
 part_of: ''
 artistic_relations:
-  - '3'
-  - '4'
-  - '2'
+  - 3
+  - 4
+  - 2
 related_items: ''
 subjects: 2
 signatures: ''

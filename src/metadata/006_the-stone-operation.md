@@ -23,9 +23,8 @@ medium: Oil on wood
 dimensions_height: 18.5 cm
 dimensions_width: 25 cm
 dimensions_diameter: ''
-collection: |-
-  Unknown (last seen in New York, art
-  dealer Harry G. Sperling)
+collection: "Unknown (last seen in New York, art
+  dealer Harry G. Sperling)"
 inventory_number: ''
 literature:
   - 'KIK-IRPA: https://www.kikirpa.be/friedlaender/6722'

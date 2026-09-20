@@ -12,8 +12,8 @@ date_end_prefix: c.
 date_end: 1620
 part_of: ''
 artistic_relations:
-  - '3'
-  - '4'
+  - 3
+  - 4
 related_items: ''
 subjects: 2
 signatures: ''

@@ -12,8 +12,8 @@ date_end_prefix: c.
 date_end: 1640
 part_of: ''
 artistic_relations:
-  - '3'
-  - '4'
+  - 3
+  - 4
 related_items: ''
 subjects: 2
 signatures: ''
@@ -24,7 +24,7 @@ dimensions_height: 38.5 cm
 dimensions_width: 67 cm
 dimensions_diameter: ''
 collection: Germany, Leipzig, Museum der bildenden Künste Leipzig
-inventory_number: 1441
+inventory_number: '1441'
 literature:
   - 'RKD: https://rkd.nl/images/54346'
   - 'Hazelzet, Korine, ​Heethoofden, misbaksels en halve garen: De bakker van Eeklo en de burgermoraal​ , Zwolle 1988, p. 55.'

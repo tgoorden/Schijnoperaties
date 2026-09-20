@@ -1,7 +1,7 @@
 ---
 image_file: 89_grillen.jpg
 title: The doctor curing fantasies, and also purging folly with drugs
-title_2: Le médecin guarissant Phantasie - purgeant aussi par drogues la folie
+title_2: "Le médecin guarissant Phantasie - purgeant aussi par drogues la folie"
 creator: Unknown
 former_attribution: ''
 place_creation: France
@@ -14,8 +14,8 @@ part_of: ''
 artistic_relations: 16
 related_items: ''
 subjects:
-  - '5'
-  - '14'
+  - 5
+  - 14
 signatures: ''
 iconclass:
   - 31B813

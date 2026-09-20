@@ -12,8 +12,8 @@ date_end_prefix: c.
 date_end: 1685
 part_of: ''
 artistic_relations:
-  - '19'
-  - '27'
+  - 19
+  - 27
 related_items: ''
 subjects: 1
 signatures: ''
