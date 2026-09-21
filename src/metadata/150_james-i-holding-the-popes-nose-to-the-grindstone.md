@@ -1,5 +1,8 @@
 ---
 image_file: 134_clock_grindstone.jpg
+extra_images:
+  - 134 extra a.jpg
+  - 134 extra b.jpg
 title: James I holding the Pope’s nose to the grindstone
 title_2: ''
 creator: David Ramsay (clockmaker)

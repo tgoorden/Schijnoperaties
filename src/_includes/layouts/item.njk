@@ -2,12 +2,11 @@
 layout: base.njk
 ---
 {% set titleText = title or Title or page.fileSlug %}
-{% set img = image_file | imageDetailUrl %}
-{% set srcset = image_file | imageSrcset %}
+{% set extraImages = extra_images | asArray %}
 {% set itemId = page | catalogueId %}
 {% set permalinkUrl = site.host + '/s/' + itemId %}
 {% set dateText = (date_start_prefix or Date_start_prefix) | dateComposite(date_start or Date_start, date_end_prefix or Date_end_prefix, date_end or Date_end) %}
-{% set dimensionText = (dimensions_height or Dimensions_Height) | dimensions(dimensions_width or Dimensions_Width) %}
+{% set dimensionText = (dimensions_height or Dimensions_Height) | dimensions(dimensions_width or Dimensions_Width, dimensions_diameter or Dimensions_Diameter) %}
 {% macro valueList(value, lookup) %}
   {% set values = value | asArray %}
   {% if values.length > 1 %}
@@ -52,20 +51,34 @@ layout: base.njk
     <span class="empty-value">{{ site.ui.emptyValue }}</span>
   {% endif %}
 {% endmacro %}
+{% macro imageViewer(imageFile, altText, modifierClass) %}
+  {% set imageUrl = imageFile | imageDetailUrl %}
+  {% set imageSources = imageFile | imageSrcset %}
+  <figure class="detail-image{% if modifierClass %} {{ modifierClass }}{% endif %}"{% if imageUrl %} data-image-viewer{% endif %}>
+    {% if imageUrl %}
+      <img src="{{ imageUrl }}"{% if imageSources %} srcset="{{ imageSources }}" sizes="(min-width: 900px) 45vw, 100vw"{% endif %} data-original-src="{{ imageUrl }}" alt="{{ altText }}" draggable="false">
+      <button class="image-fullscreen-toggle" type="button" data-image-fullscreen-toggle aria-label="View image fullscreen" aria-pressed="false" title="View image fullscreen"><span aria-hidden="true">⛶</span></button>
+    {% else %}
+      <div class="placeholder-image placeholder-large" role="img" aria-label="No image available for {{ altText }}">No image available</div>
+    {% endif %}
+  </figure>
+{% endmacro %}
 <article class="detail-view" aria-labelledby="item-title">
   <nav class="breadcrumb" aria-label="Breadcrumb">
     <a href="/">All images</a><span aria-hidden="true">/</span><span id="item-title">{{ titleText }}</span>
   </nav>
 
   <div class="detail-layout">
-    <figure class="detail-image"{% if img %} data-image-viewer{% endif %}>
-      {% if img %}
-        <img src="{{ img }}"{% if srcset %} srcset="{{ srcset }}" sizes="(min-width: 900px) 45vw, 100vw"{% endif %} data-original-src="{{ img }}" alt="{{ titleText }}" draggable="false">
-        <button class="image-fullscreen-toggle" type="button" data-image-fullscreen-toggle aria-label="View image fullscreen" aria-pressed="false" title="View image fullscreen"><span aria-hidden="true">⛶</span></button>
-      {% else %}
-        <div class="placeholder-image placeholder-large" role="img" aria-label="No image available for {{ titleText }}">No image available</div>
+    <div class="detail-media">
+      {{ imageViewer(image_file, titleText, 'detail-image-main') }}
+      {% if extraImages.length %}
+        <div class="extra-images" role="group" aria-label="Additional views">
+          {% for extraImage in extraImages %}
+            {{ imageViewer(extraImage, titleText ~ ' — additional view ' ~ loop.index, 'extra-image') }}
+          {% endfor %}
+        </div>
       {% endif %}
-    </figure>
+    </div>
 
     <div class="detail-copy">
       <section class="tab-card" data-tabs aria-label="Catalogue item details">

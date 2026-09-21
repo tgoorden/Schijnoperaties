@@ -1,5 +1,7 @@
 ---
 image_file: 68_forging.jpg
+extra_images:
+  - 68_forgingextra.jpg
 title: The forging of heads
 title_2: 'Opérateur céphalique'
 creator: Unknown

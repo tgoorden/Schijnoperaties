@@ -1,5 +1,7 @@
 ---
 image_file: 129_fox_grindstone.jpg
+extra_images:
+  - 129 extra.jpg
 title: Man forces a dog/fox’s nose down onto a grindstone
 title_2: ''
 creator: Unknown

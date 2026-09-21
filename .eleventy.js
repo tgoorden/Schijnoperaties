@@ -117,12 +117,14 @@ function dateComposite(startPrefix, startValue, endPrefix, endValue) {
   return start || end || 'Date unknown';
 }
 
-function dimensions(heightOrData, width) {
+function dimensions(heightOrData, width, diameter) {
   const isData = heightOrData && typeof heightOrData === 'object';
   const h = isData ? dataValue(heightOrData, ['dimensions_height', 'dimensionsheight']) : heightOrData;
   const w = isData ? dataValue(heightOrData, ['dimensions_width', 'dimensionswidth']) : width;
-  if (h && w) return `${h} x ${w}`;
-  return h || w || '';
+  const d = isData ? dataValue(heightOrData, ['dimensions_diameter', 'dimensionsdiameter']) : diameter;
+  const rectangular = h && w ? `${h} x ${w}` : h || w || '';
+  const circular = d ? `${d} d` : '';
+  return [rectangular, circular].filter(Boolean).join('; ');
 }
 
 function relationValues(data, field) {
