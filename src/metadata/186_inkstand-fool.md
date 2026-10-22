@@ -34,4 +34,4 @@ beeldrechten: ''
 
 Inscribed in black on back of chair: [...] CERV[...] IOTUTO LIETO
 
-Transl.: [Mi lambico il] cerv[ello] io tutto lieto (I distill my brain and am totally happy)
+'Transl.: [Mi lambico il] cerv[ello] io tutto lieto (I distill my brain and am totally happy)'
