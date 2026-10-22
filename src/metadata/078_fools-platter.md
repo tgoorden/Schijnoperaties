@@ -18,7 +18,9 @@ related_items: ''
 subjects:
   - '1'
   - '4'
+  - '6'
   - '14'
+  - '20'
 signatures: Bertel Kesselschmid
 iconclass:
   - 31B81
