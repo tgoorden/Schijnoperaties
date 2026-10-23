@@ -17,7 +17,7 @@ part_of: ''
 artistic_relations: ''
 related_items: ''
 subjects: 3
-signatures: ''
+signatures: "G. H ivt/ Cruikshank fect/ Pubd April 1st 1814 by H. Humphrey St James St."
 iconclass: 31B812
 classification: Print
 medium: Etching
@@ -28,7 +28,20 @@ collection: United Kingdom, London, British Museum
 inventory_number: '1978,U.826'
 literature:
   - 'Museum: https://www.britishmuseum.org/collection/object/P_1978-U-826'
+  - "Other impression (with description): https://search.library.yale.edu/catalog/99136352243408651"
 credits_and_rights: 'The Trustees of the British Museum / CC BY-NC-SA 4.0'
 locatie_afbeelding: ''
 beeldrechten: ''
 ---
+
+I tell you what, Woronzow, the Hinges want a little Russia Oil.
+
+In with it Blücher.
+
+Pull away Frank! you Keep us waiting! 
+
+Murder! Murder!!
+
+This door Sticks! I dont think I shall get it open?!
+
+Shove alltogather [sic] Gentlemen! D-me shove door & all in!
