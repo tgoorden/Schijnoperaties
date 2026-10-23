@@ -27,6 +27,8 @@ collection: "United States, New York, The Met"
 inventory_number: '2002.51'
 literature:
   - "Museum: https://www.metmuseum.org/art/collection/search/352434"
+  - "M. Bury, The Print in Italy 1550-1620, British Museum, London, 2001."
+  - "Rigoli and Savarese, Fuoco, acqua, cielo, terra : Stampe popolari profane della 'Civica Raccolta Achille Bertarelli', Diakronia, 1995."
 credits_and_rights: 'Public domain'
 locatie_afbeelding: ''
 beeldrechten: ''
@@ -34,4 +36,4 @@ beeldrechten: ''
 
 In plate top center: Questo mondo è come una gabbia de matti / imperoche ciascuno, chi per una uia, chi per / un altra dimostra la sua pazzia / in Roma / Intagliata in rame per Sebastiano di re da Chioggia.
 
-Descriptory text throughout
+Caption for the detail of the man with his head in an oven: Mi lambico il cervello io tutto lieto (I distil my brain and am totally happy)
