@@ -29,7 +29,7 @@ collection: Unknown
 inventory_number: ''
 literature: 
 - 'Unverfehrt, G., Hieronymus Bosch: Die Rezeption seiner Kunst im frühen 16. Jahrhundert, Berlin / Mann, 1980, nr. 55b/c.'
-- KIK-IRPA: https://www.kikirpa.be/friedlaender/6556
+- "KIK-IRPA: https://www.kikirpa.be/friedlaender/6556"
 credits_and_rights: Copyright undetermined
 locatie_afbeelding:
   - https://imagov.tumblr.com/post/162632939898/pastiche-after-jheronimus-bosch-the-extraction-of
