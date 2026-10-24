@@ -24,7 +24,7 @@ dimensions_diameter: ''
 collection: 'Unknown'
 inventory_number: ''
 literature:
-  - Institution: https://www.kollerauktionen.ch/de/-1196_422375.html"
+  - "Institution: https://www.kollerauktionen.ch/de/-1196_422375.html"
   - "Kitti Jurina, Vom Quacksalber bis zum Doctor medicinae. Die Heilkunde in der deutschen Graphik des 16. Jahrhunderts, Keulen/ Wenen 1985, p. 249 fig. 341."
 credits_and_rights: Copyright undetermined
 locatie_afbeelding: ''
