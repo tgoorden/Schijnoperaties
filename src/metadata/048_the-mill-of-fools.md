@@ -33,4 +33,6 @@ locatie_afbeelding: ''
 beeldrechten: ''
 ---
 
-Title: Quale granum talis est farina
+Quale granum talis est farina
+
+Meister, das korn sey ewoh befolen, / Lugt das mirs mit habl werd gestolen; / Und lieffert mir gut mehl als dan, / Daraus joh semeln backen kan. // Guten man, die müll bhelt ihren art, / Sie wirdts ewoh malen rein und zart: / Aber wie das korn, so bits auch mehl; / Sorgt nit das man ewoh viel drab stehl.

@@ -18,7 +18,7 @@ related_items: 10
 subjects:
   - '1'
   - '11'
-signatures: ''
+signatures: 'Lagniet ex'
 iconclass:
   - 31B81
   - 49G913
@@ -36,3 +36,9 @@ credits_and_rights: Source gallica.bnf.fr / BnF / public domain, source attribut
 locatie_afbeelding: ''
 beeldrechten: ''
 ---
+
+L’invention des femmes / qui font oster la meschanceté de la teste des hommes et les font marquer a l A pour marque de bon mary
+
+Une femme qui regarde penser son Mary dit Mr. Ne lespargne pas incisé le bien avant a celle fin quil ne me balle plus
+
+Un charlatant dans ce tableu incisant bien pres du cerveau soit par hazard soit par caprice / C’est homme par luy garrotte fait que ce qu’il a de malice se change soudain en bonte

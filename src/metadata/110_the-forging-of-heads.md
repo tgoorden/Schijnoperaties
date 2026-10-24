@@ -1,5 +1,5 @@
 ---
-image_file: 61_anvil.jpg
+image_file: 110_head-smiths.jpg
 title: The forging of heads
 title_2: ''
 creator:

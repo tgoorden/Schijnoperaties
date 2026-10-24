@@ -37,6 +37,10 @@ beeldrechten: ''
 
 Epigram (German): Falsche Zung 
 
+Epigram (Latin): Calumnia
+
+Parvum lingua malum quo non lethalius ullum
+
 Jch hört einst sagen einen Mann / Gewiß ists/ daß er etwas kan: / Er wolt lieber in Distel vnd Dorn baden / Als mit falschen Zungen seyn beladen / Dann Disteln vnd Dornen stechen sehr / Doch falsche Zungen noch viel mehr / Drumb ich hierauff mich gleget hab / Daß ich von Zungn das böß abschab / Vnd schleiff sie stets auff vnserm Stein / Förcht doch es werd verlohren seyn. 
 
-Epigram (Latin): Calumnia ; Non seps, non morsu tantum nocet aspis acerbo, / Quantum lethiferis instructa calumnia fucis: / Et nos tentamus tam foeda aerugine linguam / Cote sub assidua purgare, at littus aramus.
+ Non seps, non morsu tantum nocet aspis acerbo, / Quantum lethiferis instructa calumnia fucis: / Et nos tentamus tam foeda aerugine linguam / Cote sub assidua purgare, at littus aramus.

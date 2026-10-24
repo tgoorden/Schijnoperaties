@@ -35,3 +35,7 @@ credits_and_rights: Institut für Kunstgeschichte und Archäologien Europas
 locatie_afbeelding: https://diathek.kunstgesch.uni-halle.de/dbview/fullview.php?id=21133
 beeldrechten: ''
 ---
+
+Die Grille Krottestisch Mül zu Römischer frucht
+
+Wie das Korn ist / so gibt es Mäl: Um Korn ist hie der gröste fäl / Wie solchs bezeuget dise prob / Welche zwar nicht ist weinig grob.

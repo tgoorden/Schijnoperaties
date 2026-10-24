@@ -16,7 +16,7 @@ part_of: ''
 artistic_relations: ''
 related_items: ''
 subjects: 19
-signatures: ''
+signatures: 'H cock exc'
 iconclass: 31B8
 classification: Print
 medium:
@@ -32,3 +32,7 @@ credits_and_rights: Public domain
 locatie_afbeelding: 'andere versie: http://diglib.hab.de?grafik=graph-a1-512a'
 beeldrechten: ''
 ---
+
+Al wert datme den sot in den mortier stiet metten stamper / zoo en ghaet nochtans sijn sotheyt niet van hem – prov – 27
+
+Stultum sie contuderis pistillo in mortario / non recedet ab eo stultitia eius prover 27 

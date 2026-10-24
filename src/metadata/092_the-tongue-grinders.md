@@ -33,3 +33,5 @@ credits_and_rights: Public domain
 locatie_afbeelding: ''
 beeldrechten: eigen foto
 ---
+
+Non seps, non morsu tantum nocet Aspis acerbo, / Quantum lethiseris instructa calumnia fucis. / Et nos tentamus tam feda aerugine linguam / Cote sub assidua purgare, at littus aramus.

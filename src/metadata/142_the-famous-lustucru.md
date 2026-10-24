@@ -14,7 +14,7 @@ part_of: ''
 artistic_relations: ''
 related_items: ''
 subjects: 11
-signatures: 'Jean'
+signatures: "A Paris chez Jean Rue St. Jean de Beauvais N°10"
 iconclass:
   - 31B81
   - 31A9
@@ -31,8 +31,10 @@ locatie_afbeelding: ''
 beeldrechten: ''
 ---
 
-Lettered with title in upper margin, followed by 'Seul et unique dans son genre pour repolir les tetes des femmes &c'
+LE FAMEUX LUSTUCRU. Seul et unique dans son genre pour repolir les têtes des femmes
 
-A line of text beneath 'Oh! Que les maris seraient heureux si Lustucru et son fils Lustucuit venaient à Paris !!!'
+GRANDS OPERATEURS / CEPHALIQUES
 
-Publication line 'A Paris chez Jean rue St Jean de Beauvais no.10'
+Lustucru et son fils, Lustucuit. nouvellement arrivés / de Madagascar reforgent / et repolissent les têtes des femmes et - / des filles méchantes Acariatres / criardes gourmandes &Ca &Ca &Ca / Sans mal ni douleur
+
+Oh Que les maris seraient heureux si Lustucru et son fils Lustucuit venaient à Paris.!!! 

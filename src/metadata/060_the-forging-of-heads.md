@@ -35,12 +35,12 @@ locatie_afbeelding: ''
 beeldrechten: ''
 ---
 
-Motto: DURUM TUNDE CAPUT NEC PARCE PYRAGMOLABOR 
-
-Epigram (German): Hartnäckigkeit 
-
-Man findt vnter Gottes Geschöpff / Viel stoltzer Sinn / viel harter Köpff. / Ach wern sie all zusamm gebracht? / Ach wer der Amboß schon gemacht? / Drauff sie der Schmidt schlüg lang vnd breyt / Vnd vertrieb jhn die Härtigkeit.
+Motto: DURUM TUNDE CAPUT NEC PARCE PYRAGMO LABOR 
 
 Epigram (Latin): Pertinacia
 
 MVlta superciliis capita cristisq[ue] superbaFemina virq[ue] simul mixtus vbique gerit. Quam bene Vulcanus tundendo absumeret horas, Si omnem duritiem tolleret atq[ue] malum.
+
+Epigram (German): Hartnäckigkeit 
+
+Man findt vnter Gottes Geschöpff / Viel stoltzer Sinn / viel harter Köpff. / Ach wern sie all zusamm gebracht? / Ach wer der Amboß schon gemacht? / Drauff sie der Schmidt schlüg lang vnd breyt / Vnd vertrieb jhn die Härtigkeit. 

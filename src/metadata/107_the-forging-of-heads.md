@@ -34,3 +34,7 @@ credits_and_rights: Public domain
 locatie_afbeelding: ''
 beeldrechten: ''
 ---
+
+parcite tonsoi Licino, Helleboroi potenti, et tribus anticyris, quois dura atqi aspera cervix. effrenis cerebri vis hac incude nouatur, et tudes hic rabiem vesano e vertice pollit
+
+Spijtighe herde bollen wy hier versmeden / Maer al deden // wy t’ ambacht eeuwich met pijne, / Noch sal men over al in landen end’ steden / Qua hoofden ghenoech vinden t’allen termijne

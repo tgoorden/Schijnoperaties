@@ -17,7 +17,7 @@ part_of: ''
 artistic_relations: 6
 related_items: 8
 subjects: 10
-signatures: ''
+signatures: 'N.G / F.E.'
 iconclass:
   - 31B81
   - 31A9
@@ -35,3 +35,7 @@ credits_and_rights: Public domain
 locatie_afbeelding: ''
 beeldrechten: ''
 ---
+
+Non seps, non morsu tantum nocet Aspis acerbo, / Quantum lethiseris instructa calumnia fucis. / Et nos tentamus tam feda aerugine linguam / Cote sub assidua purgare, at littus aramus.
+
+Hier verslijptmen qua tonghen metter dozijne / Die vol fenijne // elck lasterich begrijpen, Achterclappen end’ schelden: hoe wel ten sijne / Wy niet en vermoghen t’ minste deel te slijpen.

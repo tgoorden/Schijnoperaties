@@ -30,3 +30,7 @@ credits_and_rights: Public domain
 locatie_afbeelding: https://commons.wikimedia.org/wiki/File:Lustucru_Jeton.jpg
 beeldrechten: ''
 ---
+
+Unicus est specie
+
+Omne ferens malum
