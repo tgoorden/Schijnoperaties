@@ -10,7 +10,7 @@ date_start_prefix: ''
 date_start: 1512
 date_end_prefix: ''
 date_end: 1512
-part_of: "Thomas Murner, Narrenbeschwörung, Strasbourg 1512 (title page)"
+part_of: "Thomas Murner, Narrenbeschwörung, Strasbourg 1512. (Title page)"
 artistic_relations: 36
 related_items: ''
 subjects: 5
