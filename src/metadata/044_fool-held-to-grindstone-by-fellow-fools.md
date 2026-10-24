@@ -4,7 +4,7 @@ title: Fool held to grindstone by fellow fools
 title_2: ''
 creator: Jacob Gessner
 former_attribution: ''
-place_creation: Switserland
+place_creation: Switzerland
 place_creation_extra: Zürich
 date_start_prefix: ''
 date_start: 1555

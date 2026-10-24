@@ -4,7 +4,7 @@ title: 'A new, amusing and delightful play: How old women are forged young'
 title_2: ''
 creator: Unknown
 former_attribution: ''
-place_creation: Switserland
+place_creation: Switzerland
 place_creation_extra: Zürich
 date_start_prefix: c.
 date_start: 1546
