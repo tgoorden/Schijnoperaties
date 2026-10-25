@@ -1,5 +1,5 @@
 ---
-image_file: 179_stoneoffolly.png
+image_file: 083_young-lustucru.jpg
 title: The young Lustucru
 title_2: Le Cadet Lustucru
 creator: Alexandre Boudan (printer)

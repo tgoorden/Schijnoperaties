@@ -14,7 +14,7 @@ part_of: ''
 artistic_relations: 12
 related_items: ''
 subjects: 1
-signatures: ''
+signatures: 'M. DE VOS'
 iconclass:
   - 31B81
   - 49G911
