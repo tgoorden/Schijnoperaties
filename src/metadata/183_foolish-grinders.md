@@ -1,5 +1,5 @@
 ---
-image_file: 183_foolish-grinders.jpg
+image_file: 183_foolish-grinders-big.jpg
 title: "The foolish right of the nose-grinders"
 title_2: ''
 creator: Unknown
