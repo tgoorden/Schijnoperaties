@@ -1,5 +1,5 @@
 ---
-image_file: 176_stoneoffolly.jpg
+image_file: 120_mocking-of-follies.jpg
 title: The mocking of human follies
 title_2: ''
 creator: Attributed to atelier of Frans Verbeeck
