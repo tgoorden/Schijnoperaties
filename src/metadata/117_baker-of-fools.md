@@ -7,7 +7,7 @@ former_attribution: ''
 place_creation: Germany
 place_creation_extra: ''
 date_start_prefix: ''
-date_start: 1501
+date_start: 1513
 date_end_prefix: ''
 date_end: 1599
 part_of: Schembartsbuch
