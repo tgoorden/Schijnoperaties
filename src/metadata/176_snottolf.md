@@ -1,5 +1,5 @@
 ---
-image_file: 176_snottolf.jpg
+image_file: 176_snottolf_res.jpg
 title: Master Snottolf's stone operation
 title_2: The Witch of Mallegem
 creator:
