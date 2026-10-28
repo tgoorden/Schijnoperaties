@@ -6,9 +6,9 @@ creator: Manner of Pieter Bruegel
 former_attribution: ''
 place_creation: Southern Netherlands
 place_creation_extra: ''
-date_start_prefix: ''
+date_start_prefix: 'in or after'
 date_start: 1557
-date_end_prefix: 'after'
+date_end_prefix: 'in or after'
 date_end: 1557
 part_of: ''
 artistic_relations: 2
@@ -27,6 +27,7 @@ collection: Netherlands, Rotterdam, Museum Boijmans - Van Beuningen
 inventory_number: L 1955/84 (PK)
 literature:
   - 'Museum: https://www.boijmans.nl/en/collection/artworks/60900'
+  - "Other impression: Belgium, Brussels, KBR, Print Room, inv. nr. S.I 23031 [I/III]"
   - Van Gils, J.B.F., ‘Het snijden van den kei’, Nederlands Tijdschrift voor Geneeskunde 84, 2 (1940), pp. 1310-1318.
   - Wauters, Wendy, Een oven vol van menig hoofd en zotten bol, thesis (KU Leuven, Art History), Leuven 2017, fig. 32.
 credits_and_rights: Collection Museum Boijmans Van Beuningen, Rotterdam
