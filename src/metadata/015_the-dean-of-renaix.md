@@ -8,13 +8,13 @@ place_creation: Southern Netherlands
 place_creation_extra: ''
 date_start_prefix: ''
 date_start: 1557
-date_end_prefix: ''
+date_end_prefix: 'after'
 date_end: 1557
 part_of: ''
 artistic_relations: 2
 related_items: ''
 subjects: 1
-signatures: ''
+signatures: 'Bruegel inven 1557'
 iconclass:
   - 31B81
   - 49G911

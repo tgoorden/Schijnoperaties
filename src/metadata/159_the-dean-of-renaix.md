@@ -32,5 +32,3 @@ credits_and_rights: Copyright undetermined
 locatie_afbeelding: ''
 beeldrechten: vragen aan kbr
 ---
-
-Bruegel inven 1557
