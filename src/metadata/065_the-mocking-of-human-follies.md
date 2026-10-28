@@ -28,8 +28,7 @@ inventory_number: ''
 literature:
   - 'RKD: https://rkd.nl/images/264012'
   - J. Op de Beeck,‘ De Familie Verbeeck. Een raar schildergeslacht uit Mechelen’ De zotte schilders. Moraalridders van het penseel rond Bosch, Bruegel en Brouwer, Malines, 2003, pp. 88-93, no. 5.
-  - P. Vandenbroeck,‘Het schildergeslacht Verbeeck. Voorlopige werkkataloog’, Jaarboek van het Koninklijk Museum voor Schone Kunsten, Antwerp, 1981, pp. 31-60
-  - pp. 55-57, no. 14a.
+  - P. Vandenbroeck,‘Het schildergeslacht Verbeeck. Voorlopige werkkataloog’, Jaarboek van het Koninklijk Museum voor Schone Kunsten, Antwerp, 1981, pp. 55-57, no. 14a.
   - 'P. Vandenbroeck, ‘Hieronymous Bosch: The wisdom of the riddle’ Hieronymus Bosch: The Complete Paintings and Drawings, Rotterdam / Amsterdam, 2001, pp. 100-193.'
   - A. Wied, ‘Een onlangs ontdekt schilderij van Frans Verbeeck’ Antiek (1980), pp. 214-216.
 credits_and_rights: Kanselarij Phoebus Foundation vzw
