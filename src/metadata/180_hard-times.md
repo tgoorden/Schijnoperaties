@@ -1,5 +1,7 @@
 ---
-image_file: 180_hard-times.jpg
+image_file: 180_hard-times-detail.jpg
+extra_images:
+  - 180_hard-times.jpg
 title: "Hard times | Worse & worse, semper idem!!"
 title_2: ''
 creator: 
