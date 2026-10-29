@@ -6,10 +6,10 @@ creator: After Maerten de Vos
 former_attribution: ''
 place_creation: Southern Netherlands
 place_creation_extra: ''
-date_start_prefix: ''
-date_start: 1600
-date_end_prefix: ''
-date_end: 1699
+date_start_prefix: 'after'
+date_start: 1580
+date_end_prefix: 'after'
+date_end: 1580
 part_of: ''
 artistic_relations: 12
 related_items: ''
