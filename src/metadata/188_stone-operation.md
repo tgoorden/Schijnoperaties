@@ -2,7 +2,7 @@
 image_file: 188_stone-operation.jpeg
 title: The extraction of the stone of madness
 title_2: ''
-creator: Manner of Jheronimus Bosch
+creator: Follower of Jheronimus Bosch
 former_attribution: 
 - Marcellus Coffermans
 place_creation: Unknown
