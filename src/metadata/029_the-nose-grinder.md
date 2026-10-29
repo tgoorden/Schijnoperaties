@@ -1,5 +1,7 @@
 ---
-image_file: 128_nosegrinding.jpg
+image_file: 128_nosegrinding-detail.jpg
+extra_images:
+  - 128_nosegrinding-full.jpg
 title: The nose grinder
 title_2: Noi Macrobio Culaccione
 creator: Pietro Ridolfo
@@ -19,14 +21,16 @@ iconclass:
   - 31B81
   - 31A9
 classification: Print
-medium: Etching
+medium: 'Etching, hand-colored'
 dimensions_height: 27 cm
 dimensions_width: 16.5 cm
 dimensions_diameter: ''
-collection: United States, New Jersey, Princeton University, Graphic Arts Collection
-inventory_number: ''
+collection: United States, Chicago, Newberry Library
+inventory_number: 'NC1529.R48 A7 1710'
 literature: 'Karr Schmidt, Suzanne, Entry 41: Fan-Shaped Diploma for the ''University of Big Noses'', Noémie Ndiaye and Lia Markey (eds.), Seeing Race Before Race: Visual Culture and the Racial Matrix in the Premodern World, Tempe 2023, p. 212 : The certificate is dated 1668, suggesting it may have been based on an even earlier version'
 credits_and_rights: Copyright undetermined
 locatie_afbeelding: ''
 beeldrechten: ''
 ---
+
+Noi Macrobio Culaccione visitatore generale dell’Universita de Nasi grossi
