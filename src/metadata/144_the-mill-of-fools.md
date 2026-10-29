@@ -1,5 +1,5 @@
 ---
-image_file: 94_mill_fools.jpg
+image_file: 94_mill-fools-big.jpg
 title: The mill of fools
 title_2: ''
 creator: Hieronymus Andreae
