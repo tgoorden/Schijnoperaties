@@ -1,5 +1,7 @@
 ---
-image_file: 166_overseas_grindstone.jpg
+image_file: 166_overseas_grindstone-detail.jpg
+extra_images:
+  - 166_overseas_grindstone.jpg
 title: The overseas grindstone of peaceful heads
 title_2: ''
 creator: 'Turner (printer)'

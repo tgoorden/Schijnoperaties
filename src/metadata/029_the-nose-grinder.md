@@ -33,4 +33,4 @@ locatie_afbeelding: ''
 beeldrechten: ''
 ---
 
-Noi Macrobio Culaccione visitatore generale dell’Universita de Nasi grossi
+Noi Macrobio Culaccione visitatore generale dell’ Università de Nasi Grossi indecenti nappioni smisurati dinutili difformati e sproportionati auditore di male lingue e maldicenti consultore della Congregatione de Gossi, protettore de buffoni magri, &c.
