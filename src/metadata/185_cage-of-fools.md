@@ -1,5 +1,7 @@
 ---
-image_file: 185_cage-of-fools.jpg
+image_file: 185_cage-of-fools-detail.jpg
+extra_images:
+  - 185_cage-of-fools.jpg
 title: "The cage of fools"
 title_2: "La gabbia de' matti"
 creator: Sebastiano di Re
