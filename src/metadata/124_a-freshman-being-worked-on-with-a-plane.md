@@ -11,7 +11,7 @@ date_start: 1578
 date_end_prefix: ''
 date_end: 1578
 part_of: "Friedrich Widebrand,\_Carmen heroicum de typo despositionis"
-artistic_relations: 29
+artistic_relations: ''
 related_items: 3
 subjects: 6
 signatures: ''
