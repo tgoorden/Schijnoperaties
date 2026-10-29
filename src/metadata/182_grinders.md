@@ -1,5 +1,7 @@
 ---
-image_file: 182_grinders.jpg
+image_file: 182_grinders-detail.jpg
+extra_images:
+  - 182_grinders.jpg
 title: "The Foreign Grinder / The Domestic Grinder / The Court Grinder / The Finisher"
 title_2: ''
 creator: Unknown
