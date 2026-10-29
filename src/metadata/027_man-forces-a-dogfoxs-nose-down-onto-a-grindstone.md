@@ -1,8 +1,8 @@
 ---
-image_file: 129_fox_grindstone.jpg
+image_file: 129_fox_grindstoneb.jpg
 extra_images:
-  - 129 extra.jpg
-title: Man forces a dog/fox’s nose down onto a grindstone
+  - 129 extrab.jpg
+title: "Man forces a dog/fox’s nose down onto a grindstone"
 title_2: ''
 creator: Unknown
 former_attribution: ''
@@ -12,7 +12,7 @@ date_start_prefix: c.
 date_start: 1299
 date_end_prefix: c.
 date_end: 1299
-part_of: Breviary of St. Bénigne (fol. 204v)
+part_of: "Breviary of St. Bénigne (fol. 204v)"
 artistic_relations: ''
 related_items: ''
 subjects: 9
