@@ -2,7 +2,7 @@
 image_file: 182_grinders-detail.jpg
 extra_images:
   - 182_grinders.jpg
-title: "The Foreign Grinder / The Domestic Grinder / The Court Grinder / The Finisher"
+title: "The foreign grinder"
 title_2: ''
 creator: Unknown
 former_attribution: ''
@@ -33,3 +33,5 @@ credits_and_rights: 'The Trustees of the British Museum / CC BY-NC-SA 4.0'
 locatie_afbeelding: ''
 beeldrechten: ''
 ---
+
+The Foreign Grinder / The Domestic Grinder / The Court Grinder / The Finisher
