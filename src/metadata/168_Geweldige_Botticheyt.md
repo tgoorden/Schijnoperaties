@@ -12,7 +12,7 @@ date_end_prefix: 'c.'
 date_end: 1635
 part_of: ''
 artistic_relations: '32'
-related_items: ''
+related_items: 13
 subjects: 8
 signatures: 'AP'
 iconclass: 
