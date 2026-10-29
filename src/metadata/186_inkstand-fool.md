@@ -1,5 +1,7 @@
 ---
 image_file: 186_inkstand-fool.jpg
+extra_images:
+  - 186_inkstand-fool-back.jpg
 title: "Inkstand with a madman distilling his brains"
 title_2: ''
 creator: Unknown
