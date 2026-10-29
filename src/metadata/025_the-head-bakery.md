@@ -1,5 +1,5 @@
 ---
-image_file: 33_headbaker.jpg
+image_file: 33_headbaker-big.jpg
 title: The head-bakery
 title_2: The Legend of the Baker of Eekloo
 creator: Unknown
