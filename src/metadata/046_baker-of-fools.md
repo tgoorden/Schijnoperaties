@@ -1,5 +1,7 @@
 ---
-image_file: 25_schembartbaker.png
+image_file: 25_schembartbaker-detail.jpg
+extra_images:
+  - 25_schembartbaker-full.jpg
 title: Baker of fools
 title_2: ''
 creator: Mullerianis (printer)
@@ -21,9 +23,9 @@ medium: Engraving
 dimensions_height: ''
 dimensions_width: ''
 dimensions_diameter: ''
-collection: ''
+collection: 'United States, Los Angeles, Getty Research Institute'
 inventory_number: ''
-literature: ''
+literature: 'Institution: https://archive.org/details/nurnbergischessc00will/page/n119/mode/2up'
 credits_and_rights: Copyright undetermined
 locatie_afbeelding: |-
   Laptop – beeldbank – DEF – schembartsbuch - Nuernbergisches_Schoenbart-Buch_und_Gesellenstechen_Tafel_7
