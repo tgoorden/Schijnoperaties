@@ -1,5 +1,7 @@
 ---
-image_file: 60_anvil.jpg
+image_file: 60_anvil-detail.jpg
+extra_images:
+  - 60_anvil.jpg
 title: The forging of heads
 title_2: ''
 creator:
