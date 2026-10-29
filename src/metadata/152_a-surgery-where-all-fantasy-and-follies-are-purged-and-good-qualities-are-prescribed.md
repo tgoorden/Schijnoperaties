@@ -4,7 +4,7 @@ title: A surgery where all fantasy and follies are purged and good qualities are
 title_2: Le médecin guarissant Phantasie - purgeant aussi par drogues la folie
 creator:
   - Boulonnois
-  - After anonymous
+  - "Manner of Matthäus Greuter"
   - Lagniet (printer)
 former_attribution: ''
 place_creation: France
