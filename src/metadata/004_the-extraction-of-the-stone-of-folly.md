@@ -2,7 +2,7 @@
 image_file: 156_stoneoffolly.jpg
 title: The extraction of the stone of madness
 title_2: ''
-creator: Manner of Jheronimus Bosch
+creator: Follower of Jheronimus Bosch
 former_attribution: Marcellus Coffermans
 place_creation: Unknown
 place_creation_extra: possibly Northern Netherlands
