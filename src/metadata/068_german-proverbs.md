@@ -3,7 +3,7 @@ image_file: "11_TeütscheSprichworter-detail-big.jpg"
 extra_images:
   - "11_TeütscheSprichworter-full-big.jpg"
 title: German proverbs
-title_2: Teütsche Sprichworter
+title_2: "Teütsche Sprichworter"
 creator: Jakob von der Heyden (?)
 former_attribution: ''
 place_creation: Germany
