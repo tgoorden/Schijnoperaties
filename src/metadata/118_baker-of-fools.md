@@ -1,5 +1,7 @@
 ---
 image_file: 21b_schembartbaker.jpg
+extra_images:
+  - 21_schembartbaker-extra.jpg
 title: Baker of fools
 title_2: ''
 creator: Unknown
