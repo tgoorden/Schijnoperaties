@@ -1,5 +1,7 @@
 ---
 image_file: 188_stone-operation.jpeg
+extra_images:
+  - 188_stone-operation-extra.jpeg
 title: The extraction of the stone of madness
 title_2: ''
 creator: Follower of Jheronimus Bosch
