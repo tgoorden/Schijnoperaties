@@ -40,4 +40,4 @@ Il faict bon seigner toutes gens / quand barbier na point dargent
 
 la conscience / qui foule au pieds
 
-15. Espagnol dont la fain nest jamais assouuie / Il uous fault rendre gorge ou bien perdre la uie / Seigne seigne francois ouure bien ceste ueine / Il faut chercher le mal jusques a la racine -- O prodige nouueau quelle estrange matiere / Par ce uomissement du deuant et derriere / Ie ne scaurois plus uoir uos grimasses estranges / Prenes de grace un peu de jus de ces oranges.
+15 Espagnol dont la fain nest jamais assouuie / Il uous fault rendre gorge ou bien perdre la uie / Seigne seigne francois ouure bien ceste ueine / Il faut chercher le mal jusques a la racine -- O prodige nouueau quelle estrange matiere / Par ce uomissement du deuant et derriere / Ie ne scaurois plus uoir uos grimasses estranges / Prenes de grace un peu de jus de ces oranges.
