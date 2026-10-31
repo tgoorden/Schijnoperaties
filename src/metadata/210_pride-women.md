@@ -11,7 +11,7 @@ date_start: 1600
 date_end_prefix: c.
 date_end: 1624
 part_of: "Collection Marolles. Pièces facétieuses et bouffonnes de 1500 à 1630"
-artistic_relations: ''
+artistic_relations: 39
 related_items: 14
 subjects: ''
 signatures: ''

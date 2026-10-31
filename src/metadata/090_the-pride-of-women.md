@@ -11,7 +11,7 @@ date_start: 1600
 date_end_prefix: c.
 date_end: 1624
 part_of: 'Wolfegger Kabinett, album nr. 236'
-artistic_relations: ''
+artistic_relations: 39
 related_items: 2
 subjects: ''
 signatures: ''
