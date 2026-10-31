@@ -11,7 +11,7 @@ date_start: 1639
 date_end_prefix: ''
 date_end: 1640
 part_of: ''
-artistic_relations: ''
+artistic_relations: 38
 related_items: ''
 subjects: 14
 signatures: ''
