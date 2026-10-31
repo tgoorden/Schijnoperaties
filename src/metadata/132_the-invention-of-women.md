@@ -26,7 +26,7 @@ dimensions_diameter: ''
 collection: "France, Paris, Bibliothèque nationale de France"
 inventory_number: RES TF 2 FOL
 literature: 
-- "Institution: https://gallica.bnf.fr/ark:/12148/btv1b53266964c/f91.item.r=TF%202%20FOL"
+- "Institution: https://gallica.bnf.fr/ark:/12148/btv1b53266964c/f91.item"
 - 'Le mariage sous l''Ancien Régime: https://mariage.uvic.ca/invention_femmes_2.html'
 credits_and_rights: Source gallica.bnf.fr / BnF / public domain, source attribution required
 locatie_afbeelding: ''
