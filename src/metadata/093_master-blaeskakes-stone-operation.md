@@ -12,7 +12,7 @@ date_start_prefix: ''
 date_start: 1580
 date_end_prefix: ''
 date_end: 1589
-part_of: ''
+part_of: 'Wolfegger Kabinett, album nr. 236'
 artistic_relations: 12
 related_items: 2
 subjects: 1

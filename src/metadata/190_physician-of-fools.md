@@ -10,7 +10,7 @@ date_start_prefix: after
 date_start: 1596
 date_end_prefix: after
 date_end: 1596
-part_of: ''
+part_of: 'Wolfegger Kabinett, album nr. 236'
 artistic_relations:
 - 8
 - 9

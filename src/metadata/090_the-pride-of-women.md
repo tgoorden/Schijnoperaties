@@ -10,7 +10,7 @@ date_start_prefix: c.
 date_start: 1600
 date_end_prefix: c.
 date_end: 1600
-part_of: ''
+part_of: 'Wolfegger Kabinett, album nr. 236'
 artistic_relations: ''
 related_items: 2
 subjects: ''

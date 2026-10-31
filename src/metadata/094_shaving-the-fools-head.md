@@ -10,7 +10,7 @@ date_start_prefix: after
 date_start: 1570
 date_end_prefix: after
 date_end: 1570
-part_of: ''
+part_of: 'Wolfegger Kabinett, album nr. 236'
 artistic_relations: ''
 related_items: 2
 subjects: 13
