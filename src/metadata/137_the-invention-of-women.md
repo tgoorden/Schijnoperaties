@@ -15,9 +15,7 @@ artistic_relations:
   - '25'
   - '27'
 related_items: 10
-subjects:
-  - '1'
-  - '11'
+subjects: 1
 signatures: 'Lagniet ex'
 iconclass:
   - 31B81
