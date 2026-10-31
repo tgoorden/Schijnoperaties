@@ -2,7 +2,7 @@
 image_file: 202_stone-operation.jpg
 title: The stone operation
 title_2: ''
-creator: Pieter Quast
+creator: Pieter Jansz Quast
 former_attribution: ''
 place_creation: Northern Netherlands
 place_creation_extra: possibly Amsterdam
