@@ -4,8 +4,8 @@ title: Physician of fools
 title_2: ''
 creator: After Johann Theodor de Bry
 former_attribution: ''
-place_creation: Unknown
-place_creation_extra: possibly France
+place_creation: France
+place_creation_extra: ''
 date_start_prefix: after
 date_start: 1596
 date_end_prefix: after
