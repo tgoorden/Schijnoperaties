@@ -18,7 +18,7 @@ signatures: ''
 iconclass:
   - 31B81
   - 49G911
-classification: Painting
+classification: Print
 medium: Mezzotint
 dimensions_height: '18 cm'
 dimensions_width: '23 cm'
