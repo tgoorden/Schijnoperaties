@@ -4,7 +4,7 @@ title: 'A Dutch physician and good apothecary who rejuvenates old people'
 title_2: ''
 creator: 'Ekspeditsiia zagotovleniia gos. bumag (Expedition for the Procurement of State Papers)'
 former_attribution: ''
-place_creation: Russia
+place_creation: Russian Empire
 place_creation_extra: St Peterburg
 date_start_prefix: 'before'
 date_start: 1881
