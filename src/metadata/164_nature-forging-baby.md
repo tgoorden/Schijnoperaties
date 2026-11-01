@@ -23,6 +23,7 @@ dimensions_width: 29 cm
 dimensions_diameter: ''
 collection: United Kingdom, London, British Library
 inventory_number: Harley 4425
-literature: ''
+literature:
+- "Suzanne Conklin Akbari, 'Nature's forge recast in the Roman de Silence', Literary Aspects of Courtly Culture, Donald Maddox and Sara Sturm-Maddox, (eds.) Cambridge, Brewer, 1994, p. 39-46. See https://share.google/hj5PHMt39902BqTTC"
 credits_and_rights: Public domain
 ---
