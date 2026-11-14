@@ -11,7 +11,7 @@ date_start: 1700
 date_end_prefix: ''
 date_end: 1725
 part_of: ''
-artistic_relations: 30
+artistic_relations: ''
 related_items: ''
 subjects: 16
 signatures: ''
