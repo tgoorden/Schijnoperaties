@@ -4,8 +4,8 @@ title: James Ensor and Ernest Rousseau jr. in the dunes
 title_2: ''
 creator: "Eugène La Barre"
 former_attribution: ''
-place_creation: Belgium
-place_creation_extra: Ostend
+place_creation: Southern Netherlands
+place_creation_extra: Ostend (Belgium)
 date_start_prefix: ''
 date_start: 1892
 date_end_prefix: ''
