@@ -15,7 +15,7 @@ part_of: ''
 artistic_relations: ''
 related_items: ''
 subjects: 16
-signatures: H. NORDEN 73
+signatures: ''
 iconclass: 
 - 31A9(+8)
 classification: Painting
