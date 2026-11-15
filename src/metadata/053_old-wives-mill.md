@@ -11,7 +11,9 @@ date_start: 1580
 date_end_prefix: c.
 date_end: 1630
 part_of: ''
-artistic_relations: 17
+artistic_relations: 
+- 17
+- 47
 related_items: ''
 subjects: 16
 signatures: ''

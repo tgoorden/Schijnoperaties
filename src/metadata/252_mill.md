@@ -6,7 +6,7 @@ creator:
 - Unknown
 former_attribution: ''
 place_creation: Slovenia
-place_creation_extra: ''
+place_creation_extra: probably Upper Carniola
 date_start_prefix: c.
 date_start: 1850
 date_end_prefix: c.
