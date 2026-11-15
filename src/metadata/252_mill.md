@@ -19,7 +19,7 @@ signatures: ''
 iconclass: 
 - 31A9(+8)
 classification: Painting
-medium: ''
+medium: Oil on panel
 dimensions_height: ''
 dimensions_width: ''
 dimensions_diameter: ''
