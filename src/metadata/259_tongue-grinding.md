@@ -1,5 +1,5 @@
 ---
-image_file: 258_tongue-grinding.jpg
+image_file: 259_tongue-grinding.jpg
 title: "Devil sharpening an old woman's tongue"
 title_2: ''
 creator:
