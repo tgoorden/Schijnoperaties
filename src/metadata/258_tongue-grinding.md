@@ -25,7 +25,8 @@ dimensions_width: ''
 dimensions_diameter: ''
 collection: Slovenia, Radovljica, Museum of Apiculture
 inventory_number: ''
-literature: ''
+literature:
+- "Goeman, Steven, De Tongenslijpers van Denderbelle, Denderbelle 2024, fig. 190."
 credits_and_rights: Public domain
 locatie_afbeelding: ''
 beeldrechten: ''
